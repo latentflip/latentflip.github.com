@@ -7,6 +7,6 @@ title: Blog
 
 <ul>
 {% for post in site.posts %}
-  <li><a href="file://localhost/Users/latentflip/Blog/_site/{{post.url}}">{{ post.title || post.slug }}</a></li>
+  <li><a href="{{post.url}}">{{ post.title || post.slug }}</a></li>
 {% endfor %}
 </ul>
