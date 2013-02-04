@@ -1,0 +1,74 @@
+---
+date: 2012-04-29
+layout: text
+title: A Shakey Victory&#58; Culture Hack Scotland 2012
+---
+
+Having just returned home from Culture Hack Scotland 2012, I can safely say that it is one of my favourite tech events of the year. Since anyone who wasn't there will have seen all my tweets without knowing what I was up to, I thought I should give a run down of what I've been up to for the last 24 hours.
+
+### Culture Hack what?
+
+Culture Hack is a 24 hour long hackathon. This year it was held at SocietyM in Glasgow - a beautiful coworking space under the equally cool CitizenM hotel.
+
+The basic premise is thus: lots of cultural organisations (festivals, museums, libraries, universities) generate a crap load of interesting data that they don't do anything with or share. Meanwhile there are lots of developers and designers who would love to build useful/interesting/cool things using this data, but they don't get the chance. Culture Hack is an event that encourages these organisations to share their data, and see what cool stuff developers and designers can do with it in under 24 hours.
+
+This years data included things like: 
+
+* full event listings from numerous festivals in Scotland (Glasgow International, the Edinburgh Festivals, Arika)
+* electricity, water, gas usage data for some of Edinburgh Universities buildings recorded every half hour for the last year
+* data and images of the National and Glasgow museums
+
+### Our hack: Shakey, a Massively Multiplayer, RealTime, Macbeth Parlour game
+
+This year I teamed up with the hugely talented [Jim Newbery (@froots101)](http://twitter.com/#!/froots101), [Rory Fitzpatrick (@roryf)](http://twitter.com/#!/roryf) and [Padmini Murray (@praymurray)](http://twitter.com/#!/praymurray).
+
+Jim, Rory and I had met up in the pub the night before, and discussed using one of the datasets: a fully digitised, annotated and computer friendly copy of Macbeth, to create a massively multiplayer, realtime parlour game. We met Padmini on the night who came on board as producer, Shakespeare expert and all-round great gal.
+
+The idea of our game was to merge Shakespeare's Macbeth, with modern technology (computers, projectors, mobile phones and realtime tech). Here's a photo of the game in action during our live demo:
+
+![Shakey Live](http://farm8.staticflickr.com/7062/7123158567_95ff376ef4_c.jpg)
+
+It works something like this:
+
+<!-- more -->
+
+* On the big screen there is a picture of an empty theatre stage
+* Everyone in the room can join the game by visiting a link on their smartphones/computers, and entering their twitter handles
+* The game puts most people into the audience, and a few people are selected to be in the cast. Everyone's twitter avatar's appear in the proper place on the screen
+* **The game begins**
+* The cast are now prompted when it's their turn to recite lines from Macbeth, with the lines appearing on the screen.
+* Meanwhile everyone in the audience has the option to "throw a tomato" or "throw flowers" which are animated on the screen behind the cast with appropriate fart/splat noises (of course)
+
+Here's a clearer screenshot of the projected image halfway through another game, along with what an audience member sees on their phone:
+
+![Shakey App Screenshot](https://img.skitch.com/20120429-ckukqquy99r7jhh179t7gqdchg.jpg)
+
+Note in particular:
+
+* The awesome stage design, by [Duich McKay](https://twitter.com/#!/duichmckay)
+* The wicked Macbeth, Lennox, Porter and Macduff characters by [NIcola Osborne](http://twitter.com/#!/suchprettyeyes)
+* The tomato/flower splats on Macduff as animated and sonified by [Rory](http://twitter.com/#!/roryf)
+* Terrible grammar
+
+### The Tech
+
+* Jim wrote a little Ruby on Rails app that imported the Macbeth script and characters into a database
+* Pretty much everything else was written in JavaScript/HTML/CSS. The computer hooked up to the projector acted as the game server: animating the screen, keeping score, sending lines to phones, and listening for hurled tomatoes/flowers.
+* Communication between all the phones and the game server was done over websockets using [Pusher](http://pusher.com/)
+
+Building something so real-time was fairly new to us all, and mind-meltingly confusing, but I think we were all pretty chuffed with what we achieved in such a short space of time. Once I've recovered I'll try and write the tech stuff up in a little more detail
+
+
+### The demo
+
+At the end of the day, everyone demos their hacks, and prizes are awarded. Our demo went pretty well, until 100 people in the room tried to throw tomatoes - promptly crashing Google Chrome on my computer. Apparently 1400 tomatoes/minute were being thrown!
+
+Our hack was awarded most playful _and_ the overall grand prize winner. Not bad for 24 hours work! Look out for a video of our demo soon - I can't wait to see it myself. 
+
+![Porter](https://img.skitch.com/20120429-8qt7edhfhycjxuenpd2q2stxau.jpg)
+
+
+
+
+
+

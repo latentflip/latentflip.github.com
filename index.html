@@ -1,0 +1,12 @@
+---
+layout: default
+title: Blog
+---
+
+<h1>{{ title }}</h1>
+
+<ul>
+{% for post in site.posts %}
+  <li><a href="file://localhost/Users/latentflip/Blog/_site/{{post.url}}">{{ post.title || post.slug }}</a></li>
+{% endfor %}
+</ul>

@@ -1,0 +1,11 @@
+---
+date: 2012-02-24
+layout: text
+title: Collider - a d3.js game
+---
+
+![Collider](https://img.skitch.com/20120224-ksui49113jgk7tii95wdxw1jha.jpg)
+
+I made a [quick game](http://latentflip.github.com/LearningD3/collider/) using D3.js as a way to learn, and show, how it works. It feels like jQuery++, with extra confusion.
+
+I've [documented the source](http://latentflip.github.com/LearningD3/collider/docs/collider.html) pretty thoroughly to show how it fits together: 
