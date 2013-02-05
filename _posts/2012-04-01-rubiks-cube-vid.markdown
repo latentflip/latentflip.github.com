@@ -9,3 +9,4 @@ Since I was on playlist duty, I figured we needed some appropriate visuals and w
 Blog post coming soon."
 ---
 
+<iframe width="500" height="374" src="http://www.youtube.com/embed/DnGWXlBpSpY?wmode=transparent&autohide=1&egm=0&hd=1&iv_load_policy=3&modestbranding=1&rel=0&showinfo=0&showsearch=0" frameborder="0" allowfullscreen></iframe>

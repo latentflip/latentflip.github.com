@@ -1,0 +1,18 @@
+@import 'grid';
+@import 'typography';
+
+main {
+  display: block;
+  @extend .container;
+}
+
+.post {
+  img {
+    width: 90%;
+    display: block;
+    margin: 30px auto;
+    background: #F5F5F5;
+    border: 1px #DDD solid;
+    padding: 1%;
+  }
+}

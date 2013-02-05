@@ -1,29 +1,116 @@
-/* Artfully masterminded by ZURB  */
+.container, main {
+  max-width: 960px;
+  margin: 0 auto; }
 
-/* -------------------------------------------------- 
-   Table of Contents
------------------------------------------------------
-:: Shared Styles
-:: Page Name 1
-:: Page Name 2
-*/
+.row:before,
+.row:after {
+  content: " ";
+  display: table; }
 
+.row:after {
+  clear: both; }
 
-/* -----------------------------------------
-   Shared Styles
------------------------------------------ */
+.row {
+  *zoom: 1; }
 
+.col {
+  border: 0px solid rgba(0, 0, 0, 0);
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding-box !important;
+  -webkit-background-clip: padding-box !important;
+  background-clip: padding-box !important;
+  margin: 0 2%;
+  display: block; }
 
+.three-one, .three-two, .three-three,
+.four-one, .four-two, .four-three, .four-four {
+  width: 96%; }
 
-/* -----------------------------------------
-   Page Name 1
------------------------------------------ */
+.nested {
+  margin: 0;
+  width: 100%; }
+  .nested .row {
+    margin: 0; }
 
+@media screen and (min-width: 480px) {
+  .row,
+  .col {
+    margin: 0 1%; }
 
+  .three-one {
+    width: 48%; }
 
+  .three-two {
+    width: 48%; }
 
-/* -----------------------------------------
-   Page Name 2
------------------------------------------ */
+  .three-three {
+    width: 98%; }
 
+  .three-one.tablet-full {
+    width: 98%; }
 
+  .four-one {
+    width: 48%; }
+
+  .four-two {
+    width: 48%; }
+
+  .four-three {
+    width: 98%; }
+
+  .four-four {
+    width: 98%; }
+
+  .four-one.tablet-full {
+    width: 98%; }
+
+  .nested {
+    margin: 0;
+    width: 100%; }
+    .nested .row {
+      margin: 0; } }
+@media screen and (min-width: 760px) {
+  .three-one, .three-one.tablet-full {
+    width: 31.33333333%; }
+
+  .three-two {
+    width: 64.66666667%; }
+
+  .four-one, .four-one.tablet-full {
+    width: 23%; }
+
+  .four-two {
+    width: 48%; }
+
+  .four-three {
+    width: 73%; }
+
+  .three-one .row,
+  .three-one .col, .three-two .row,
+  .three-two .col, .three-three .row,
+  .three-three .col,
+  .four-one .row,
+  .four-one .col, .four-two .row,
+  .four-two .col, .four-three .row,
+  .four-three .col, .four-four .row,
+  .four-four .col {
+    margin: 0%; }
+  .three-one .col, .three-two .col, .three-three .col,
+  .four-one .col, .four-two .col, .four-three .col, .four-four .col {
+    margin: 0 1%; } }
+body {
+  font: 13px/18px "Droid Sans", Helvetica, sans; }
+
+main {
+  display: block; }
+
+.post img {
+  width: 90%;
+  display: block;
+  margin: 30px auto;
+  background: #F5F5F5;
+  border: 1px #dddddd solid;
+  padding: 1%; }
