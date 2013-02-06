@@ -1,12 +1,35 @@
-@import 'grid';
+@import 'reset';
 @import 'typography';
+@import 'font-awesome';
+
 
 main {
   display: block;
-  @extend .container;
+  padding: 1em;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
 }
 
+
+@media screen and (min-width: 500px) {
+  main {
+    width: 500px;
+  }
+}
+
+
+
 .post {
+  h2, h3, h4, h5, h6 {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+  }
+  
+  p {
+    margin-top: 0.5em;
+  }
+
   img {
     width: 90%;
     display: block;
@@ -14,5 +37,56 @@ main {
     background: #F5F5F5;
     border: 1px #DDD solid;
     padding: 1%;
+  }
+}
+
+.post-quote .source p:before {
+  content: "— ";
+}
+
+
+.posts-list {
+  h1 {
+    text-align: center;
+    font-weight: 200;
+    border-bottom: 1px #999 solid;
+    padding-bottom: 0.25em;
+    margin-bottom: 1em;
+  }
+}
+
+ul.posts {
+  list-style-type: none;
+
+  li {
+    margin-bottom: 0.25em;
+  }
+
+  li:before {
+    position: relative;
+    left: -0.5em;
+  }
+
+  li.text {
+    @extend .icon-pencil;
+  }
+
+  li.quote {
+    @extend .icon-quote-left;
+  }
+
+  li.photo {
+    @extend .icon-camera-retro;
+  }
+
+  li.video {
+    @extend .icon-film;
+  }
+  li:before {
+    font-family: FontAwesome;
+  }
+
+  a {
+    text-decoration: none;
   }
 }

@@ -1,4 +1,34 @@
 
 body {
-  font: 13px/18px 'Droid Sans', Helvetica, sans;
+  font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, sans;
+  font-size: medium;
+  line-height: 1.4;
+  font-weight: 200;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+blockquote {
+  margin-left: 0.5em;
+  margin-right: 1.25em;
+  border-left: 0.25em solid #eee;
+  padding-left: 0.5em;
+}
+
+
+a, a:visited {
+  color: #DE6600;
+  color: #D0002A;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+strong, b {
+  font-weight: 500;
 }
