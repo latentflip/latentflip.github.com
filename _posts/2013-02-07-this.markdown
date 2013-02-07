@@ -1,0 +1,95 @@
+---
+layout: code
+title: This
+---
+
+JavaScript's `this` can be confusing.
+
+`this` is the context that a JavaScript function is run in. Since functions are first class objects in JavaScript, they can be passed around, and reused as you see fit. But often we want to run them in the context of an object so that we can interact with the object from within a function.
+
+## First Steps
+
+With a function which is not bound to any given object, the default value for `this` is the global context (object). In the browser this is `window`.
+
+{% highlight javascript %}
+function myFunc() {
+  console.log('"this" is:', this);
+}
+myFunc();
+{% endhighlight %}
+
+## Objects
+
+If the function is a property of another object, and we call it as a method on that object `this` will be set to that object. In this example, since we call `dog.greet()`, `this` is `dog`:
+
+{% highlight javascript %}
+var dog = {
+  color: "purple",
+  greet: function() {
+    console.log("The " + this.color + " dog barked.");
+  }
+};
+
+dog.greet();
+{% endhighlight %}
+
+Since functions are first class objects, we can pass them around, just like any other object. When we do that `this` doesn't remain bound to the original object. This is where much of the confusion about `this` comes from:
+
+{% highlight javascript %}
+var dog = {
+  color: "purple",
+  greet: function() {
+    console.log("The " + this.color + " dog barked.");
+  }
+};
+
+dog.greet();
+
+var myFunction = dog.greet;
+myFunction();
+{% endhighlight %}
+
+## Call and apply
+
+But that's not very interesting! If we want to call a function within the context of a different object, we can do so using `call()` and passing in our context object. Think of it like "borrowing" a function from somewhere else, and using it on our own object.
+
+{% highlight javascript %}
+function myFunc() {
+  console.log('"this" is:', this);
+}
+
+var dog = { ears: 2, color: "red" };
+myFunc.call(dog);
+{% endhighlight %}
+
+
+If the function you are applying takes its own arguments, you can just pass them to apply after your object:
+
+{% highlight javascript %}
+function eat(foodType, adjective) {
+  console.log("The " + this.color +
+              " dog eats the " + foodType +
+              " " + adjective);
+}
+
+var dog = { ears: 2, color: "red" };
+
+eat.call(dog, "bone", "hungrily");
+{% endhighlight %}
+
+
+There is a very similar function to `call()` called `apply()`. The _only_ difference is that the "extra arguments" in `apply()` have to be provided as an array:
+
+
+{% highlight javascript %}
+function eat(foodType, adjective) {
+  console.log("The " + this.color +
+              " dog eats the " + foodType +
+              " " + adjective);
+}
+
+var dog = { ears: 2, color: "red" };
+
+//Note that we have to use an array here
+eat.apply(dog, ["carrot", "slowly"]);
+{% endhighlight %}
