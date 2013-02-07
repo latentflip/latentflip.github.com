@@ -32,3 +32,34 @@ a, a:visited {
 strong, b {
   font-weight: 500;
 }
+
+
+code {
+  font-family: DroidSansMonoRegular, "Courier New";
+  font-size: small;
+}
+
+pre {
+  padding: 0.5em;
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.code-output {
+  border: 1px gray dotted;
+  position: relative;
+  padding-top: 20px;
+  margin-bottom: 2em;
+  &::before {
+    content: "OUTPUT";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    color: gray;
+    font-family: Helvetica Neue, sans;
+    font-size: 10px;;
+  }
+}
