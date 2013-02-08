@@ -70,13 +70,120 @@ var dog = {
 };
 
 //calls dog.greet after 0.5 seconds.
-setTimeout(dog.greet, 2000);
+setTimeout(dog.greet, 500);
 {% endhighlight %}
+
+So what's happening here? It _looks_ like `setTimeout` should be calling the method on `dog` and all should work as we would expect. But `setTimeout` isn't calling a method on dog, it's receiving a reference to a function, which it calls after the timeout. So the above code is effectively the same as:
+
+{% highlight javascript %}
+var dog = {
+  color: "purple",
+  greet: function() {
+    console.log("The " + this.color + " dog barked.");
+  }
+};
+
+var myFunction = dog.greet;
+setTimeout(myFunction, 500);
+{% endhighlight %}
+
+Which as we saw before, will unbind `greet` from `dog` and `this` will be the global object again. Sigh!
+
+So how can we deal with this? We want to call `dog.greet` after 0.5 seconds, and we want `greet` to still be bound to dog. One way is to not pass `dog.greet` to `setTimeout` directly, but to call it from within another function:
+
+{% highlight javascript %}
+var dog = {
+  color: "purple",
+  greet: function() {
+    console.log("The " + this.color + " dog barked.");
+  }
+};
+
+setTimeout(function() {
+  dog.greet();
+}, 500);
+{% endhighlight %}
+
+Yay!
+
+## Binding
+
+We've used the word binding a couple of times. And you may have come across `bind` functions. **Note, this is different to jQuery's (now deprecated) `bind()` function (now known as `on()`).**
+
+Underscore has `_.bind` and JavaScript functions themselves have `function.bind()` in _most_ browsers (not IE < 8). And if you have used CoffeeScript you may have come across the fat-arrow (`=>`) which binds functions too.
+
+So what does `bind` generally do? Bind ensures that no matter how we call a function, it's `this` will always be the object we expect it to be.
+
+We already sort of know how to do this, as we saw in the last example. We could even modify the `greet` method a little so that we wouldn't have to remember to wrap it in a function before we called it from `setTimeout`. This is a little ugly but it works:
+
+{% highlight javascript %}
+var dog = {
+  color: "purple",
+  greet: function() {
+    console.log("The " + this.color + " dog barked.");
+  }
+};
+
+//Save our original greet function
+dog.oldGreet = dog.greet;
+dog.greet = function() {
+  dog.oldGreet();
+}
+
+//This now works
+setTimeout(dog.greet, 500);
+
+//As does this
+var myFunction = dog.greet;
+dog.greet();
+{% endhighlight %}
+
+By replacing our `greet()` method with a new method which _always_ calls the original `greet()` function (now `oldGreet`) directly on `dog`, `this` will always be `dog`.
+
+## Our own `bind` function
+
+So could we create a function, which given an object, and the name of one of it's methods, could do that work for us?
+
+Sure we can, let's call it `myBind`. `myBind` will take an object, and the name of one of it's methods, and ensure that whenever the method is called, `this` will always be the object.
+
+{% highlight javascript %}
+function myBind(obj, methodName) {
+  var oldMethodName = "old_"+methodName;
+
+  //Set obj.old_methodName to our original method
+  obj[oldMethodName] = obj[methodName]
+
+  //Overwrite our original method name with a method
+  //which calls the original one, but bound to obj
+  obj[methodName] = function() {
+    obj[oldMethodName]();
+  };
+}
+
+var dog = {
+  color: "purple",
+  greet: function() {
+    console.log("The " + this.color + " dog barked.");
+  }
+};
+
+//Bind 'greet' on dog.
+myBind(dog, 'greet');
+
+//This now works
+setTimeout(dog.greet, 500);
+
+//As does this
+var myFunction = dog.greet;
+dog.greet();
+{% endhighlight %}
+
+But `myBind` has a couple of limitations. First we can only bind to the original owner of the object. It's also a little ugly to have lots of `old_greet` methods lying around. And finally our bound methods currently couldn't accept any arguments, as they wouldn't be passed through by bind.
 
 
 ## Call and apply
 
-But that's not very interesting! If we want to call a function within the context of a different object, we can do so using `call()` and passing in our context object. Think of it like "borrowing" a function from somewhere else, and using it on our own object.
+If we want to call a function within the context of a different object, we can do so using `call()` and passing in our context object. Think of it like "borrowing" a function from somewhere else, and using it on our own object.
 
 {% highlight javascript %}
 function myFunc() {

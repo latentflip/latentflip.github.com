@@ -71,3 +71,22 @@ blog.directive('code', function() {
           }
   }
 });
+
+function slugify(text) {
+  text = text.toLowerCase();
+  text = text.replace(/[^-a-zA-Z0-9,&\s]+/ig, '');
+  text = text.replace(/-/gi, "_");
+  text = text.replace(/\s/gi, "-");
+  return text;
+}
+
+blog.directive('h2', function() {
+  return {
+    restrict: 'E',
+    link: function(scope, element) {
+      var slug = slugify(element.text());
+      var anchor = $('<a name="'+slug+'" href="#'+slug+'" class="permalink""> Link to this section</a>')
+      element.append(anchor);
+    }
+  }
+});

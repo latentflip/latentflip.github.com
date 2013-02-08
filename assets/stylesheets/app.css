@@ -66,6 +66,16 @@ pre {
     font-family: Helvetica Neue, sans;
     font-size: 10px; }
 
+h2 {
+  position: relative; }
+  h2 .permalink {
+    color: #ccc;
+    display: none;
+    text-decoration: none;
+    font-size: small; }
+  h2:hover .permalink {
+    display: inline; }
+
 /*
  *  Font Awesome 3.0.2
  *  the iconic font designed for use with Twitter Bootstrap
