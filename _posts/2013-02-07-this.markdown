@@ -7,9 +7,11 @@ JavaScript's `this` can be confusing.
 
 `this` is the context that a JavaScript function is run in. Since functions are first class objects in JavaScript, they can be passed around, and reused as you see fit. But often we want to run them in the context of an object so that we can interact with the object from within a function.
 
+Note: a function's `this` and a function's scope are _different things_.
+
 ## First Steps
 
-With a function which is not bound to any given object, the default value for `this` is the global context (object). In the browser this is `window`.
+When a function which is not bound to any given object, the default value for `this` is the global context (object). In the browser this is `window`.
 
 {% highlight javascript %}
 function myFunc() {
@@ -20,7 +22,7 @@ myFunc();
 
 ## Objects
 
-If the function is a property of another object, and we call it as a method on that object `this` will be set to that object. In this example, since we call `dog.greet()`, `this` is `dog`:
+If the function is a property on another object, (this is known as a method) and we call it as a method on that object `this` will be set to that object. In this example, since we call `dog.greet()`, `this` is `dog`:
 
 {% highlight javascript %}
 var dog = {
@@ -32,9 +34,13 @@ var dog = {
 
 dog.greet();
 {% endhighlight %}
+
+## Passing functions around
 
 Since functions are first class objects, we can pass them around, just like any other object. When we do that `this` doesn't remain bound to the original object. This is where much of the confusion about `this` comes from:
 
+In this example, when we call `greet` as a method on `dog` it is bound to that object, so `this.color` is defined. But when we pass `dog`'s `greet` function around, and assign it to `var myFunction` and call that, it's an unbound function, so `this` is now `window`, and `this.color` is undefined.
+
 {% highlight javascript %}
 var dog = {
   color: "purple",
@@ -43,11 +49,30 @@ var dog = {
   }
 };
 
+//call `greet` as a method on `dog`
 dog.greet();
 
+//assign `dog.greet` to a variable, `myFunction` and call that
 var myFunction = dog.greet;
 myFunction();
 {% endhighlight %}
+
+## Callback functions
+
+The first place time many people get tripped up by this behaviour is when they use object methods in callback functions, typically when using jQuery or `setTimeout`/`setInterval`
+
+{% highlight javascript %}
+var dog = {
+  color: "purple",
+  greet: function() {
+    console.log("The " + this.color + " dog barked.");
+  }
+};
+
+//calls dog.greet after 0.5 seconds.
+setTimeout(dog.greet, 2000);
+{% endhighlight %}
+
 
 ## Call and apply
 

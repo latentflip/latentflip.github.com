@@ -44,13 +44,14 @@ blog.directive('code', function() {
   function runTheCode(code, output) {
     var console = {}
     console.log = function() {
-      
       var args = Array.prototype.slice.call(arguments);
+      window.console.log("Displaying", args);
       
-      window.console.log("Logging", args);
       args = args.map(function(arg) { return stringifySomething(arg, true) });
 
-      output.text(args.join(', '));
+      var currentText = output.text();
+      if (currentText.length) { currentText += "\n"; }
+      output.text( currentText + '> ' + args.join(', ') );
     }
     eval(code);
   }
