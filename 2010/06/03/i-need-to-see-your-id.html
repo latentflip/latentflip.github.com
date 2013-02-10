@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sorry Sir, I need to see your Id.</title>
+    <link rel='stylesheet' href='/assets/stylesheets/app.css'>
+
+    <script src='/assets/javascripts/jquery.js'></script>
+    <script src='/assets/javascripts/underscore-min.js'></script>
+    <script src='/assets/javascripts/angular.js'></script>
+    <script src='/assets/javascripts/app.js'></script>
+  </head>
+  <body>
+    <main ng-app='blog'>
+      <div ng-controller='PostCtrl'>
+  <div class="post post-text">
+  <h1>Sorry Sir, I need to see your Id.</h1>
+  <p>I just bumped into the following little &quot;bug&quot; in my rails app. I was getting the id of a related object to use to fill a newly added column in a migration, and suddenly far too many of the objects were linked to id=4. (Take particular note of the final line).</p>
+
+<script src="http://gist.github.com/423842.js"></script>
+
+<p>So what&#39;s going on? It turns out that as well as a database &quot;id&quot; (if the object is stored in the database), every object has an object_id (which is also accessible through .id if the object is not an ActiveRecord model).</p>
+
+<p>So when we do: <em>jonny.parent.id</em> we are actually getting the id of the <em>nil</em> object (since <em>jonny.parent</em> returns nil). This id is always 4, hence the confusion.</p>
+
+<p>By doing: <em>jonny.parent_id</em> instead, we don&#39;t try and actually retrieve the parent object, but just look at the database row to get the value.</p>
+
+<p>Admittedly you will get a warning if you do <em>nil.id</em> : <em>warning: Object#id will be deprecated; use Object#object</em>id_, not that I spotted the warning.</p>
+
+<p>So maybe this issue will disappear in the future, if <em>.id</em> gets removed from the Ruby syntax, but until then consider yourself warned.</p>
+
+</div>
+
+
+</div>
+
+<nav>
+  <a href="/2010/05/16/creation-why.html">←</a>
+  <a href="/">⚑</a>
+  <a href="/2010/06/12/same-same-but-different.html">→</a>
+</nav>
+
+    </main>
+  </body>
+</html>

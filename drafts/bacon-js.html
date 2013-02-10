@@ -1,0 +1,203 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Enemy of the state</title>
+    <link rel='stylesheet' href='/assets/stylesheets/app.css'>
+
+    <script src='/assets/javascripts/jquery.js'></script>
+    <script src='/assets/javascripts/underscore-min.js'></script>
+    <script src='/assets/javascripts/angular.js'></script>
+    <script src='/assets/javascripts/app.js'></script>
+  </head>
+  <body>
+    <main ng-app='blog'>
+      <div ng-controller='PostCtrl'>
+  <div class="post post-text post-code">
+  <h1>Enemy of the state</h1>
+  <p>State</p>
+
+<p>We hear a lot about state. And if you are anything like me you probably think you have a pretty reasonable idea of what &quot;state&quot; generally means, but you may not have thought about it all that much. And trying to explaining why state is good or bad might be tough. Or you might have heard about things like Haskell, which don&#39;t have &quot;state&quot;. What does that even <em>mean</em>?</p>
+
+<p>Unless you came directly from a computer science background (I certainly didn&#39;t) you most likely started writing programs like this.</p>
+
+<div class="highlight"><pre><code class="javascript"><span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="s2">&quot;What&#39;s your name&quot;</span><span class="p">);</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="nx">name</span> <span class="o">===</span> <span class="s2">&quot;Phil&quot;</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Man, you smell good&quot;</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Guh, go take a shower&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+Then you learned about functions, so you start wrapping things in functions to make them a bit easier to re-use:
+
+
+<div class="highlight"><pre><code class="javascript"><span class="kd">function</span> <span class="nx">smellChecker</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="s2">&quot;What&#39;s your name&quot;</span><span class="p">);</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="nx">name</span> <span class="o">===</span> <span class="s2">&quot;Phil&quot;</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Man, you smell good&quot;</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Guh, go take a shower&quot;</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">smellChecker</span><span class="p">()</span>
+</code></pre></div>
+
+
+Then you learned about objects, and you realised you can wrap functions and "state" up into an object. So for our smell checker we might want to configure "who" smells good:
+
+
+<div class="highlight"><pre><code class="javascript"><span class="nx">smellChecker</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">smellsOkay</span><span class="o">:</span> <span class="s2">&quot;Phil&quot;</span><span class="p">,</span>
+
+  <span class="nx">check</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">name</span> <span class="o">===</span> <span class="k">this</span><span class="p">.</span><span class="nx">smellsOkay</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Man, you smell good&quot;</span><span class="p">,</span> <span class="nx">name</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Guh, go take a shower&quot;</span><span class="p">,</span> <span class="nx">name</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">smellChecker</span><span class="p">.</span><span class="nx">check</span><span class="p">(</span><span class="s2">&quot;Phil&quot;</span><span class="p">)</span>
+
+<span class="c1">//Change smells okay</span>
+<span class="nx">smellChecker</span><span class="p">.</span><span class="nx">smellsOkay</span> <span class="o">=</span> <span class="s2">&quot;Pete&quot;</span>
+<span class="nx">smellChecker</span><span class="p">.</span><span class="nx">check</span><span class="p">(</span><span class="s2">&quot;Phil&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+
+And as long as you keep writing "Business Logic" type apps, this never gets old, right. It just kinda works.
+
+* We can save things in local variables and use them later:
+
+
+<div class="highlight"><pre><code class="javascript"><span class="kd">var</span> <span class="nx">priceOfEggs</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;3 eggs cost &#39;</span> <span class="o">+</span> <span class="mi">3</span><span class="o">*</span><span class="nx">priceOfEggs</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;5 eggs cost &#39;</span> <span class="o">+</span> <span class="mi">5</span><span class="o">*</span><span class="nx">priceOfEggs</span><span class="p">);</span>
+</code></pre></div>
+
+
+* We can do clever things with variable scope:
+
+
+<div class="highlight"><pre><code class="javascript"><span class="kd">var</span> <span class="nx">priceOfEggs</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+
+<span class="kd">function</span> <span class="nx">countTotal</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">n</span> <span class="o">+</span> <span class="s1">&#39; eggs cost &#39;</span> <span class="o">+</span> <span class="nx">n</span><span class="o">*</span><span class="nx">priceOfEggs</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">countTotal</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+<span class="nx">countTotal</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+</code></pre></div>
+
+
+And this is all fine and well, as long as we keep writing code that runs from top to bottom. But then, along comes the UI. And UI makes things hard. Really hard. But _why_?
+
+//*
+
+## Attack of the callback
+
+Top to bottom code is easy to reason about and easy to follow. This happens, then that happens then, this happens. We can literally _see_ in what order, and when things are going to happen.
+
+But as soon as we have user interaction. we don't have top to bottom any more. The user might click on any part of our app at any time. This means we have to deal with things asynchronously, which is a fancy way of saying, not in any particular order, not at any given time, and maybe not even at all.
+
+Typically in JavaScript we deal with this with _The Callback_. Now if you've used jQuery you know what a callback is. It's that functiony bit in here right: `$('button').click(function(){})`. That much is obvious.
+
+But let's think about what's actually going on here.
+
+* We are defining a new function, and not executing it immediately. So we are saying, here's some things to do (inside the function body), but don't do them now, do them later whenever.
+* A callback is just a function. It "becomes" a callback by the context it's used in. If the function is executed as a result of something else happening, rather than our own code, it's a callback.
+* More subtly we are also capturing the scope.
+
+Callbacks aren't inherently _a bad thing_ though. This callback is just fine, no problems here:
+
+
+<div class="highlight"><pre><code class="javascript">  <span class="kd">var</span> <span class="nx">theCallback</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;The callback ran&#39;</span><span class="p">);</span>
+  <span class="p">};</span>
+  
+  <span class="c1">// `theCallback` will be called asynchronously</span>
+  <span class="c1">// (after 500 milliseconds)</span>
+  <span class="nx">setTimeout</span><span class="p">(</span><span class="nx">theCallback</span><span class="p">,</span> <span class="mi">500</span><span class="p">);</span>
+
+  <span class="c1">// Note how this is output before the callback </span>
+  <span class="c1">// output, even though we called it after the</span>
+  <span class="c1">// callback (in the code anyway)</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Immediately after the setTimeout call&#39;</span><span class="p">);</span>
+</code></pre></div>
+
+
+
+## Let's make it harder
+
+Okay let's try and make it a little bit harder.
+
+
+
+<div class="highlight"><pre><code class="javascript">  <span class="kd">var</span> <span class="nx">num_eggs</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">price_eggs</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+  <span class="kd">var</span> <span class="nx">updateTotal</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">newTotal</span> <span class="o">=</span> <span class="nx">num_eggs</span> <span class="o">*</span> <span class="nx">price_eggs</span><span class="p">;</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#total&#39;</span><span class="p">).</span><span class="nx">text</span><span class="p">(</span> <span class="nx">newTotal</span><span class="p">.</span><span class="nx">toFixed</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#price_eggs&#39;</span><span class="p">).</span><span class="nx">change</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">price_eggs</span> <span class="o">=</span> <span class="nb">parseFloat</span><span class="p">(</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">val</span><span class="p">()</span> <span class="p">);</span>
+    <span class="nx">updateTotal</span><span class="p">();</span>
+  <span class="p">});</span>
+
+  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#num_eggs&#39;</span><span class="p">).</span><span class="nx">change</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">num_eggs</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">val</span><span class="p">()</span> <span class="p">);</span>
+    <span class="nx">updateTotal</span><span class="p">();</span>
+  <span class="p">});</span>
+
+  <span class="c1">//Show the app</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#eggsapp&#39;</span><span class="p">).</span><span class="nx">show</span><span class="p">();</span>
+  <span class="nx">updateTotal</span><span class="p">();</span>
+</code></pre></div>
+
+
+<div id="eggsapp" style="display: none">
+  <h3>Egg Counter</h3>
+  <table>
+    <tr>
+      <td>
+        <select id="price_eggs">
+          <option>Choose your eggs</option>
+          <option value="5">Free-range eggs (£5)</option>
+          <option value="0.2">Rotten eggs (£0.20)</option>
+        </select>
+      </td>
+      <td>
+        <select id="num_eggs">
+          <option>How many?</option>
+          <option value="1">One</option>
+          <option value="6">Half a dozen</option>
+          <option value="12">A full dozen</option>
+        </select>
+      </td>
+      <td font-size="small">Total: <span id="total"></span></td>
+    </tr>
+  </table>
+</div>
+
+</div>
+
+</div>
+
+<nav>
+  <a href="">←</a>
+  <a href="/">⚑</a>
+  <a href="">→</a>
+</nav>
+
+    </main>
+  </body>
+</html>

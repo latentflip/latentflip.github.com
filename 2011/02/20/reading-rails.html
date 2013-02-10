@@ -1,0 +1,121 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Reading Rails</title>
+    <link rel='stylesheet' href='/assets/stylesheets/app.css'>
+
+    <script src='/assets/javascripts/jquery.js'></script>
+    <script src='/assets/javascripts/underscore-min.js'></script>
+    <script src='/assets/javascripts/angular.js'></script>
+    <script src='/assets/javascripts/app.js'></script>
+  </head>
+  <body>
+    <main ng-app='blog'>
+      <div ng-controller='PostCtrl'>
+  <div class="post post-text">
+  <h1>Reading Rails</h1>
+  <p>I have been reading through the Rails source code today to spot bits of ruby/conventions/etc I haven&#39;t seen before. Here are the ones I have got so far. </p>
+
+<ul>
+<li>ActiveSupport adds Hash#symbolize_keys which returns a hash with the keys symbolized</li>
+<li><p>If you are setting up constants in a class, it might be a good idea to freeze them so they don&#39;t get changed later</p>
+<div class="highlight"><pre><code class="text">ADAPTER_NAME = &#39;PostgreSQL&#39;.freeze
+</code></pre></div></li>
+<li><p>You can use a rescue in a method to catch things without requiring a begin</p>
+<div class="highlight"><pre><code class="text">def a_method(a)
+  if a
+    raise &#39;AnException&#39;
+  else
+    puts &#39;a was false&#39;
+  end
+rescue
+  &#39;Rescued&#39;
+end
+
+a_method(true) #=&gt; &#39;Rescued&#39;
+a_method(false) #=&gt; &#39;a was false&#39;
+</code></pre></div></li>
+<li><p>is<em>a? and kind</em>of? are the same method.</p></li>
+<li><p>is<em>a? or kind</em>of? will check if the object is a member of that class anywhere on the inheritance chain. instance<em>of? checks if the object is exactly the class supplied:
+    a</em>num = 5</p>
+<div class="highlight"><pre><code class="text">a_num.class #=&gt; &quot;Fixnum&quot;
+a_num.is_a?(Integer) #=&gt; true
+a_num.instance_of?(Integer) #=&gt; false
+</code></pre></div></li>
+<li><p>If you want to pass a multi-line string (here doc) to a method you can use this odd looking syntax:</p>
+<div class="highlight"><pre><code class="text">query(&lt;&lt;-SQL, name)
+  SELECT blah
+    FROM table
+   WHERE ...
+SQL
+</code></pre></div></li>
+<li><p>You can use ranges, or comma seperated lists in switch statements.</p>
+<div class="highlight"><pre><code class="text">case limit
+  when 1..2; &#39;small&#39;
+  when 3..4; &#39;bigger&#39;
+  when 5..6; &#39;biggest&#39;
+end
+</code></pre></div></li>
+<li><p>Anywhere you need a comma seperated list (like the previous point) but you have an array, you can use the splat operator.</p>
+<div class="highlight"><pre><code class="text">SMALL = [1,2]
+BIGGER = [3,4]
+BIGGEST = [5,6]
+
+case limit
+  when *SMALL; &#39;small&#39;
+  when *BIGGER; &#39;bigger&#39;
+  when *BIGGEST; &#39;biggest&#39;
+end
+</code></pre></div></li>
+<li><p>autoload may be a more efficient method of including modules than require. The difference is that using autoload, the module will only be included if the module is actually accessed.</p>
+<div class="highlight"><pre><code class="text">#instead of
+require &#39;awesome_module&#39;
+class ThisIsAClass
+  include AwesomeModule
+end
+
+#you can do
+require &#39;awesome_module&#39;
+class ThisIsAClass
+  autoload AwesomeModule, &#39;awesome_module&#39;
+end
+</code></pre></div>
+<ul>
+<li>See also:</li>
+<li><a href="http://www.rubyinside.com/ruby-techniques-revealed-autoload-1652.html">The basics</a></li>
+<li><a href="http://www.subelsky.com/2008/05/using-rubys-autoload-method-to.html">Some more tips</a></li>
+<li><a href="https://redmine.ruby-lang.org/issues/show/921">Concerns about autoload + threads</a></li>
+</ul></li>
+<li><p>You can set a callback on a class which gets called when the class is subclassed.</p>
+<div class="highlight"><pre><code class="text">class Foo
+  def self.inherited(subclass)
+    puts &quot;New subclass: #{subclass}&quot;
+  end
+end
+
+class Bar &lt; Foo
+end 
+#=&gt; New subclass: Bar
+
+class Baz &lt; Bar
+end
+#=&gt; New subclass: Baz
+</code></pre></div></li>
+<li><p>Object.inherited is used by activerecord to fill up an array (stored in a class variable) of all the Models that exist. This is used at the very least to reset all the models&#39; instance variables in the application.</p></li>
+</ul>
+
+</div>
+
+
+</div>
+
+<nav>
+  <a href="/2010/08/04/upper-bounds.html">←</a>
+  <a href="/">⚑</a>
+  <a href="/2011/03/24/struggling-to-remember-the-order-of-the-block.html">→</a>
+</nav>
+
+    </main>
+  </body>
+</html>

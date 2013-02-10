@@ -1,0 +1,186 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>FRP</title>
+    <link rel='stylesheet' href='/assets/stylesheets/app.css'>
+
+    <script src='/assets/javascripts/jquery.js'></script>
+    <script src='/assets/javascripts/underscore-min.js'></script>
+    <script src='/assets/javascripts/angular.js'></script>
+    <script src='/assets/javascripts/app.js'></script>
+  </head>
+  <body>
+    <main ng-app='blog'>
+      <div ng-controller='PostCtrl'>
+  <div class="post post-text post-code">
+  <h1>FRP</h1>
+  <script src="https://raw.github.com/raimohanska/bacon.js/master/dist/Bacon.js"> </script> 
+
+<p>High level - avoid the irrelevant.</p>
+
+<p>But what is irrelevant?</p>
+
+<p>What is &quot;abstract&quot; for UI?</p>
+
+<p>Events
+Combiners
+Properties</p>
+
+<p>What is FRP?
+- Dynamic/evolving values, are first class <em>things</em>.
+- Basic values (constant, time varying).
+- Events</p>
+
+<p>Domain specific languages that capture the notion of time-varying values.</p>
+
+<hr>
+
+<p>from ftp://ftp.cs.brown.edu/pub/techreports/03/cs03-20.pdf</p>
+
+<p>Reactive systems are:</p>
+
+<ul>
+<li>concurrent</li>
+<li>continuous</li>
+<li>inverted control structure</li>
+</ul>
+
+<h2>Example (Vegan)</h2>
+
+<div class="highlight"><pre><code class="javascript"><span class="kd">var</span> <span class="nx">values</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">in1</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">in2</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">in3</span><span class="o">:</span> <span class="mi">0</span> <span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">evToFloat</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">ev</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nb">parseFloat</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="nx">ev</span><span class="p">.</span><span class="nx">currentTarget</span><span class="p">).</span><span class="nx">val</span><span class="p">());</span>
+<span class="p">}</span>
+
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#jqueryDemo .in1&#39;</span><span class="p">).</span><span class="nx">change</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">ev</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">values</span><span class="p">.</span><span class="nx">in1</span> <span class="o">=</span> <span class="nx">evToFloat</span><span class="p">(</span><span class="nx">ev</span><span class="p">);</span>
+  <span class="nx">updateTotal</span><span class="p">();</span>
+<span class="p">});</span>
+
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#jqueryDemo .in2&#39;</span><span class="p">).</span><span class="nx">change</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">ev</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">values</span><span class="p">.</span><span class="nx">in2</span> <span class="o">=</span> <span class="nx">evToFloat</span><span class="p">(</span><span class="nx">ev</span><span class="p">);</span>
+  <span class="nx">updateTotal</span><span class="p">();</span>
+<span class="p">});</span>
+
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#jqueryDemo .in3&#39;</span><span class="p">).</span><span class="nx">change</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">ev</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">values</span><span class="p">.</span><span class="nx">in3</span> <span class="o">=</span> <span class="nx">evToFloat</span><span class="p">(</span><span class="nx">ev</span><span class="p">);</span>
+  <span class="nx">updateTotal</span><span class="p">();</span>
+<span class="p">});</span>
+
+<span class="kd">var</span> <span class="nx">updateTotal</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#jqueryDemo .result&#39;</span><span class="p">).</span><span class="nx">text</span><span class="p">(</span><span class="nx">values</span><span class="p">.</span><span class="nx">in1</span> <span class="o">+</span> <span class="nx">values</span><span class="p">.</span><span class="nx">in2</span> <span class="o">+</span> <span class="nx">values</span><span class="p">.</span><span class="nx">in3</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">//Kick off the app</span>
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#jqueryDemo&#39;</span><span class="p">).</span><span class="nx">show</span><span class="p">();</span>
+<span class="nx">updateTotal</span><span class="p">();</span>
+</code></pre></div>
+
+
+<div id="jqueryDemo" style="display: none">
+<h3>My calculator</h3>
+<input class="in1"/> + <input class="in2"/> + <input class="in3"/> = <span class="result"></span>
+</div>
+
+<h2>Example (With Bacon)</h2>
+
+<div class="highlight"><pre><code class="javascript"><span class="kd">var</span> <span class="nx">values</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">in1</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">in2</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">in3</span><span class="o">:</span> <span class="mi">0</span> <span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">evToFloat</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">ev</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nb">parseFloat</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="nx">ev</span><span class="p">.</span><span class="nx">currentTarget</span><span class="p">).</span><span class="nx">val</span><span class="p">());</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">in1</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#baconDemo .in1&#39;</span><span class="p">)</span>
+            <span class="p">.</span><span class="nx">asEventStream</span><span class="p">(</span><span class="s1">&#39;change&#39;</span><span class="p">,</span> <span class="nx">evToFloat</span><span class="p">)</span>
+            <span class="p">.</span><span class="nx">toProperty</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="kd">var</span> <span class="nx">in2</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#baconDemo .in2&#39;</span><span class="p">)</span>
+            <span class="p">.</span><span class="nx">asEventStream</span><span class="p">(</span><span class="s1">&#39;change&#39;</span><span class="p">,</span> <span class="nx">evToFloat</span><span class="p">)</span>
+            <span class="p">.</span><span class="nx">toProperty</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="kd">var</span> <span class="nx">in3</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#baconDemo .in3&#39;</span><span class="p">)</span>
+            <span class="p">.</span><span class="nx">asEventStream</span><span class="p">(</span><span class="s1">&#39;change&#39;</span><span class="p">,</span> <span class="nx">evToFloat</span><span class="p">)</span>
+            <span class="p">.</span><span class="nx">toProperty</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="kd">var</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">Bacon</span><span class="p">.</span><span class="nx">combineWith</span><span class="p">(</span> <span class="p">[</span><span class="nx">in1</span><span class="p">,</span> <span class="nx">in2</span><span class="p">,</span> <span class="nx">in3</span><span class="p">],</span>
+              <span class="kd">function</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span>
+              <span class="p">}</span>
+            <span class="p">)</span>
+
+<span class="nx">result</span> <span class="o">=</span> <span class="nx">result</span><span class="p">.</span><span class="nx">toProperty</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="nx">result</span><span class="p">.</span><span class="nx">log</span><span class="p">()</span>
+
+<span class="nx">result</span><span class="p">.</span><span class="nx">assign</span><span class="p">(</span> <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#baconDemo .result&#39;</span><span class="p">),</span> <span class="s1">&#39;text&#39;</span> <span class="p">)</span>
+
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#baconDemo&#39;</span><span class="p">).</span><span class="nx">show</span><span class="p">();</span>
+</code></pre></div>
+
+
+<div id="baconDemo" style="display: none">
+<h3>My calculator</h3>
+<input class="in1"/> + <input class="in2"/> + <input class="in3"/> = <span class="result"></span>
+</div>
+
+<h3>Okay, that&#39;s kind of interesting, but the benefits are perhaps not <em>hugely</em> obvious.</h3>
+
+<p>How about we make our little &quot;spreadsheet&quot; multiple user. For simplicity, let&#39;s just say that our &quot;other user&quot; changes the first element to 5 every 2 seconds.</p>
+
+<h2>Example (Vegan)</h2>
+
+<div class="highlight"><pre><code class="javascript"><span class="kd">var</span> <span class="nx">values</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">in1</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">in2</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">in3</span><span class="o">:</span> <span class="mi">0</span> <span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">evToFloat</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">ev</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nb">parseFloat</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="nx">ev</span><span class="p">.</span><span class="nx">currentTarget</span><span class="p">).</span><span class="nx">val</span><span class="p">());</span>
+<span class="p">}</span>
+
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#jqueryDemo2 .in1&#39;</span><span class="p">).</span><span class="nx">change</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">ev</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">values</span><span class="p">.</span><span class="nx">in1</span> <span class="o">=</span> <span class="nx">evToFloat</span><span class="p">(</span><span class="nx">ev</span><span class="p">);</span>
+  <span class="nx">updateTotal</span><span class="p">();</span>
+<span class="p">});</span>
+
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#jqueryDemo2 .in2&#39;</span><span class="p">).</span><span class="nx">change</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">ev</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">values</span><span class="p">.</span><span class="nx">in2</span> <span class="o">=</span> <span class="nx">evToFloat</span><span class="p">(</span><span class="nx">ev</span><span class="p">);</span>
+  <span class="nx">updateTotal</span><span class="p">();</span>
+<span class="p">});</span>
+
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#jqueryDemo2 .in3&#39;</span><span class="p">).</span><span class="nx">change</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">ev</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">values</span><span class="p">.</span><span class="nx">in3</span> <span class="o">=</span> <span class="nx">evToFloat</span><span class="p">(</span><span class="nx">ev</span><span class="p">);</span>
+  <span class="nx">updateTotal</span><span class="p">();</span>
+<span class="p">});</span>
+
+<span class="kd">var</span> <span class="nx">updateTotal</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#jqueryDemo2 .result&#39;</span><span class="p">).</span><span class="nx">text</span><span class="p">(</span><span class="nx">values</span><span class="p">.</span><span class="nx">in1</span> <span class="o">+</span> <span class="nx">values</span><span class="p">.</span><span class="nx">in2</span> <span class="o">+</span> <span class="nx">values</span><span class="p">.</span><span class="nx">in3</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">//Add multi-user</span>
+<span class="nx">setInterval</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#jqueryDemo2 .in1&#39;</span><span class="p">).</span><span class="nx">val</span><span class="p">(</span><span class="mi">5</span><span class="p">).</span><span class="nx">change</span><span class="p">();</span>
+<span class="p">},</span> <span class="mi">2000</span><span class="p">);</span>
+
+<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#jqueryDemo2&#39;</span><span class="p">).</span><span class="nx">show</span><span class="p">();</span>
+<span class="nx">updateTotal</span><span class="p">();</span>
+</code></pre></div>
+
+
+<div id="jqueryDemo2" style="display: none">
+<h3>My calculator</h3>
+<input class="in1"/> + <input class="in2"/> + <input class="in3"/> = <span class="result"></span>
+</div>
+
+</div>
+
+</div>
+
+<nav>
+  <a href="">←</a>
+  <a href="/">⚑</a>
+  <a href="">→</a>
+</nav>
+
+    </main>
+  </body>
+</html>
