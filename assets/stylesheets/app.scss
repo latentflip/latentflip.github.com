@@ -84,6 +84,11 @@ ul.posts {
   li.video {
     @extend .icon-film;
   }
+
+  li.code {
+    @extend .icon-file-alt;
+  }
+
   li:before {
     font-family: FontAwesome;
   }

@@ -990,7 +990,7 @@ ul.icons {
 .icon-food:before {
   content: "\f0f5"; }
 
-.icon-file-alt:before {
+.icon-file-alt:before, ul.posts li.code:before {
   content: "\f0f6"; }
 
 .icon-building:before {
