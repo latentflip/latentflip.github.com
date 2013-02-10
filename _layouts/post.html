@@ -7,7 +7,22 @@ layout: default
 </div>
 
 <nav>
-  <a href="{{ page.previous.url }}">←</a>
-  <a href="/">⚑</a>
-  <a href="{{ page.next.url }}">→</a>
+  {% if page.previous %}
+    <a href="/{{ page.previous.url }}">
+      <span class="icon icon-arrow-left"></span>
+      <span class=hidden>older</span>
+    </a>
+  {% endif %}
+
+  <a href="/">
+    <span class="icon icon-home"></span>
+    <span class=hidden>home</span>
+  </a>
+
+  {% if page.next %}
+    <a href="/{{ page.next.url }}">
+      <span class=hidden>newer</span>
+      <span class="icon icon-arrow-right"></span>
+    </a>
+  {% endif %}
 </nav>

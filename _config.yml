@@ -13,7 +13,7 @@ future:      true
 lsi:         false
 pygments:    true
 markdown:    redcarpet
-permalink:   title
+permalink:   ":title"
 
 maruku:
   use_tex:    false

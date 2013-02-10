@@ -15,5 +15,7 @@ end
 
 desc "Deploy"
 task :deploy do
-  puts `cd _deploy && ls -l | grep -v '.git' | xargs rm -rf`
+  `cd _deploy && ls -l | grep -v '.git' | xargs rm -rf`
+  `cp -r _site/* _deploy/`
+  puts "Cleaned and copied from _site to _deploy"
 end
