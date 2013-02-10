@@ -12,3 +12,10 @@ task :reload do
     end
   end
 end
+
+desc "Deploy"
+task :deploy do
+  `cd _deploy && ls -l | grep -v '.git' | xargs rm -rf`
+  `cp -r _site/* _deploy/`
+  puts "Cleaned and copied from _site to _deploy"
+end

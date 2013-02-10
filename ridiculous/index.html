@@ -1,0 +1,128 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>I'm just going to leave this here&#58;</title>
+    <link rel='stylesheet' href='/assets/stylesheets/app.css'>
+
+    <script src='/assets/javascripts/jquery.js'></script>
+    <script src='/assets/javascripts/underscore-min.js'></script>
+    <script src='/assets/javascripts/angular.js'></script>
+    <script src='/assets/javascripts/app.js'></script>
+  </head>
+  <body>
+    <main ng-app='blog'>
+      <div ng-controller='PostCtrl'>
+  <div class="post post-text">
+  <h1>I'm just going to leave this here&#58;</h1>
+  <p>If you aren&#39;t interested in Ruby, metaprogramming, or ridiculous things, move swiftly on ;)</p>
+
+<hr>
+
+<p>So @MattWynne totally <a href="http://xkcd.com/356/">nerd-sniped</a> me this evening, by 
+asking this:</p>
+
+<blockquote>
+<p>Is is possible to dynamically add ActiveModel::Naming 
+compliance to an object at runtime? My meta-fu is 
+letting me down.</p>
+</blockquote>
+
+<p>As far as I can figure out, it&#39;s not doable, but I 
+can get &#39;pretty&#39; close, here&#39;s what I learned:</p>
+
+<!-- more -->
+
+<p>ActiveModel::Naming is normally invoked like this:</p>
+<div class="highlight"><pre><code class="text">class Foo
+  extend ActiveModel::Naming
+end
+</code></pre></div>
+<p>Which lets you do things like:</p>
+<div class="highlight"><pre><code class="text">Foo.model_name #=&gt; &#39;Foo&#39;
+
+x = Foo.new
+x.class.model_name #=&gt; &#39;Foo&#39;
+</code></pre></div>
+<p>So how can we add this functionality at runtime? The 
+obvious way is:</p>
+<div class="highlight"><pre><code class="text">x = Foo.new
+x.class.extend(ActiveModel::Naming)
+</code></pre></div>
+<p>But if we do that, then we may as well have done it 
+initially, as we are modifying the <em>class</em> not 
+just the instance. This will affect all &#39;Foo&#39;s in 
+our system, which isn&#39;t really what we want.</p>
+
+<p>We could try to modify the eigenclass of an 
+instance, like so:</p>
+<div class="highlight"><pre><code class="text">require &#39;active_support/all&#39;
+require &#39;active_model&#39;
+
+class Foo
+  def eigen
+    class &lt;&lt; self
+      self
+    end
+  end
+end
+
+x = Foo.new
+x.eigen.extend(ActiveModel::Naming)
+</code></pre></div>
+<p>But when doing a classwise lookup, ruby uses the actual 
+class, not the eigen class:</p>
+<div class="highlight"><pre><code class="text">x.class.model_name #=&gt; wrap2.rb:14:in `&lt;main&gt;&#39;: undefined 
+                   #   method `model_name&#39; for Foo:Class 
+                   # (NoMethodError)
+</code></pre></div>
+<p>So, we could override <code>Foo#class</code>, to return the eigenclass 
+(now we are getting a bit crazy):</p>
+<div class="highlight"><pre><code class="text">require &#39;active_support/all&#39;
+require &#39;active_model&#39;
+
+class Foo
+  def eigen
+    class &lt;&lt; self
+      self
+    end
+  end
+  def class
+    eigen
+  end
+end
+
+x = Foo.new
+x.eigen.extend(ActiveModel::Naming)
+</code></pre></div>
+<p>But this doesn&#39;t work either, as now ActiveModel::Naming 
+get&#39;s confused as it&#39;s not in a named class:</p>
+<div class="highlight"><pre><code class="text">x.class.model_name #=&gt; Class name cannot be blank. You 
+                   #   need to supply a name argument 
+                   #   when anonymous class given 
+                   #   (ArgumentError)
+</code></pre></div>
+<p>So the best I can come up with is what is in the file 
+below. This instantiates a wrapper class with the same 
+name (dynamically) as the original class, extends it 
+with ActiveRecord::Naming, and forwards all calls to 
+the original. The one caveat is that our class is now 
+within a module, so the names will have the module name 
+in... I don&#39;t know how this affects <code>form_for</code>, etc</p>
+
+<div class='gist' data-gist='3049516'></div>
+
+</div>
+
+
+</div>
+
+<nav>
+  <a href="lightning">←</a>
+  <a href="/">⚑</a>
+  <a href="rejection">→</a>
+</nav>
+
+    </main>
+  </body>
+</html>

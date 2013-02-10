@@ -1,0 +1,163 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>The making of Shakey&#58; a Realtime, Massively Multiplayer, Shakespearean parlour game</title>
+    <link rel='stylesheet' href='/assets/stylesheets/app.css'>
+
+    <script src='/assets/javascripts/jquery.js'></script>
+    <script src='/assets/javascripts/underscore-min.js'></script>
+    <script src='/assets/javascripts/angular.js'></script>
+    <script src='/assets/javascripts/app.js'></script>
+  </head>
+  <body>
+    <main ng-app='blog'>
+      <div ng-controller='PostCtrl'>
+  <div class="post post-text">
+  <h1>The making of Shakey&#58; a Realtime, Massively Multiplayer, Shakespearean parlour game</h1>
+  <p>At Culture Hack Scotland (#chscot) last weekend, we won <em>most playful</em> and <em>the grand prize</em> for a real-time game we made using Rails, JavaScript and Pusher. For a bit of background <a href="http://blog.latentflip.com/post/22047287999/chscot2012">read this post</a>.</p>
+
+<p>I thought it might be interesting to break down the technical details of how it was developed and worked. Bear in mind that apart from a tiny bit of prep work, all the code in this project was coded in 16 hours - so the architecture/code will not be optimal.</p>
+
+<p>Credit where it&#39;s due, the code and architecture I am talking about here was created by <a href="http://twitter.com/philip_roberts">myself</a>, <a href="http://twitter.com/roryf">Rory Fitzpatrick</a> and <a href="http://twitter.com/froots101">Jim Newbery</a>, with a little help from <a href="http://twitter.com/leggetter">Phil Leggetter of Pusher</a>.</p>
+
+<h2>The Premise</h2>
+
+<p>The idea of the game was thus:</p>
+
+<ul>
+<li>On a big projector screen would be an image of a theatre stage complete with actors and audience.</li>
+<li>Players register by visiting a url on their phones.</li>
+<li>Players are assigned to be in the cast, or in the audience, and appear on the big screen using their twitter avatars.</li>
+<li><strong>The game starts</strong></li>
+<li>The actors then recite a short piece of Macbeth, reading the lines from their phones as they are prompted to do so.</li>
+<li>The audience have the option to throw tomatoes/flowers depending on how well they think the cast members are doing.</li>
+</ul>
+
+<h2>Getting Started [Midnight friday]</h2>
+
+<p>Since we wanted a game that worked in real-time, with multiple devices communicating with each other, we quickly settled on using WebSockets, which allows JavaScript on the browsers of two devices to talk to each other. We quickly settled on using <a href="http://pusher.com/">Pusher</a> which is a hosted solution for implementing websockets easily. We were pretty pleased with that decision as it was easy to use - the only drawback being no fallback support for the default Android browser (unless Flash lite is installed).</p>
+
+<!-- more -->
+
+<p>The rest of the app (serving assets etc) was served from a rails app running on heroku. Here&#39;s a very rough diagram detailing the architecture.</p>
+
+<p><img src="https://img.skitch.com/20120501-ghbcrnnwdt9x7tk84ck4snj9p9.jpg" alt="Shakey Architecture"> <a href="https://img.skitch.com/20120501-ghbcrnnwdt9x7tk84ck4snj9p9.jpg">see bigger</a></p>
+
+<p>I&#39;ll explain what&#39;s going on a bit better below.</p>
+
+<h2>Getting up and running with Pusher [1am Saturday]</h2>
+
+<p>I quickly spiked out some JavaScript code to demonstrate two browsers talking to each other with pusher.</p>
+
+<p>Pusher is essentially a PubSub implementation on top of WebSockets. Pusher&#39;s normal operating mode is that you would have your server sitting on the internet somewhere <em>Publishing</em> messages to a channel, and browsers (the clients) <em>Subscribe</em> to those messages.</p>
+
+<p>In Shakey however, we wanted the game server to be running in a browser (the left hand side of the image above), so as far as Pusher is concerned, even our game-server is a client. (Yup, it is confusing, try figuring this out at 2am, after cocktails!)</p>
+
+<p>This requires setting up pusher to enable client to client messages. The process for this is:</p>
+
+<ul>
+<li>When setting up your pusher channel, make it a <a href="http://pusher.com/docs/client_api_guide/client_presence_channels">&quot;presence&quot; or &quot;private&quot; channel</a>. A presence channel allows for client-client messages, and is suitable for games where you need to know &quot;who&quot; is speaking/listening.</li>
+<li>Presence channels require your users to be authenticated (you don&#39;t want any old Joe Bloggs sending messages to your other users. To do this Pusher hits an endpoint in your app (/pusher/auth), where you must check the logged in user, and tell Pusher about them (using the Pusher gem makes this easy, more info <a href="http://pusher.com/docs/authenticating_users">here</a>.</li>
+</ul>
+
+<p>Once you have setup your presence channel and authentication, you can now talk to each other, as an example:</p>
+
+<div class="gist" data-gist="2571207"></div>
+
+<p>Open game<em>server.html in one browser, and game</em>client.html on another, and an alert will appear on the server&#39;s window with the message &quot;Hello, world!&quot;.</p>
+
+<h2>Baby Steps</h2>
+
+<p>Now that we had very basic communication between a server and a client working, we could comfortably split into two teams. To keep ourselves straight, we wrote down all the messages we would need to run the game, they were. </p>
+
+<p><strong>Sent from the clients</strong></p>
+<div class="highlight"><pre><code class="text">// register a new user
+&quot;player:register&quot;, &quot;&lt;username&gt;&quot; 
+
+// audience member wants to throw flowers
+&quot;player:hurl&quot;, &quot;&lt;username&gt;&quot;, &quot;flowers&quot; 
+
+// a cast member has finished reading their lines
+&quot;player:exuent&quot; 
+</code></pre></div>
+<p><strong>Sent from the game-server</strong></p>
+<div class="highlight"><pre><code class="text">// starts the game
+&quot;scene:start&quot; 
+
+// announces which role the user is going to play
+&quot;player:assignRole&quot;, &quot;&lt;username&gt;&quot;, &quot;audience/cast&quot; 
+
+// player should start reading lines
+&quot;player:deliver&quot;, &quot;&lt;username&gt;&quot;, {lines: &#39;---&#39;} 
+
+// ends the game
+</code></pre></div>
+<p>The beauty of having a nicely event-driven architecture like this was that Rory and I could develop the game-server, completely oblivious of what Jim was doing with the messages, and vice-versa.</p>
+
+<p>Indeed, Jim wrote his game-clients in JavaScript, and we wrote the game-server in CoffeeScript and it didn&#39;t matter a bit.</p>
+
+<h2>Building out the server</h2>
+
+<p>Now that we had the messaging setup, and the protocol designed, Rory and I focused on building out the game-server. It&#39;s responsibilities (roughly in order) were:</p>
+
+<ul>
+<li>Grab the current scene we were going to act out, along with the characters in it.</li>
+<li>Listen for &quot;player:register&quot; events, and when one was heard, assign the new player to be in the audience or cast, and announce it to them by triggering a &quot;player:assignRole&quot; event&quot;.</li>
+<li>Wait for someone to click the &quot;start&quot; button, and when it was pressed, trigger a &quot;scene:start&quot; event to everyone, followed by a &quot;player:deliver&quot; event to the first cast member, who needed to speak, with their lines.</li>
+<li>While someone was speaking, listen for &quot;player:hurl&quot; events, and trigger the appropriate fart-noise and animation on the screen to indicate something had been thrown at the current speaker.</li>
+<li>Wait for &quot;player:exuent&quot; events, and when one was heard, send a &quot;player:deliver&quot; event to the next speaker.</li>
+<li>And so on.</li>
+</ul>
+
+<p>We built the server using <a href="http://documentcloud.github.com/backbone/">Backbone.js</a>, as it makes breaking up the code into Models (for us Player and Game), Collections (of Players) and Views (the animated Player avatars on the screen) easy.</p>
+
+<p>The event driven architecture was really useful again on the game-server. We wanted to add a &quot;news-feed&quot; down the side of the display, with things like &quot;@philip_roberts threw a tomato&quot;. This was in the end trivial, as we just had another little bit of JavaScript, completely independent from the rest of the game, listening for &quot;player:hurl&quot; events only, and updating a list when it did so.</p>
+
+<h2>Building out the clients</h2>
+
+<p>We left Jim to build out the game-clients that would be running on people&#39;s phones. It&#39;s role was pretty much the inverse of the server:</p>
+
+<ul>
+<li>Register a user by sending &quot;player:register&quot; events</li>
+<li>Wait to find out which (&quot;player:assignRole&quot;) role it had been assigned</li>
+<li>If it was a cast member, wait till it received &quot;player:deliver&quot; events and display the lines to the player, and wait for the player to press &quot;done&quot;, thus triggering &quot;player:exuent&quot;</li>
+<li>If it was an audience member, display &quot;throw flowers&quot;, &quot;throw a tomato&quot; buttons, and trigger &quot;player:hurl&quot; events when clicked.</li>
+</ul>
+
+<p>The game-clients were also built in Backbone.</p>
+
+<h2>Done [4pm Saturday]</h2>
+
+<p>Apart from some awesome visual polish, that was pretty much it. I&#39;ve neglected to show much real code here, as it&#39;s pretty hideous, but you can <a href="https://github.com/froots/scottish-play/tree/master/app/assets/javascripts">dig into the repo</a>.</p>
+
+<h2>Caveats, lessons learned</h2>
+
+<p>A few things tripped us up using Pusher that are good to know if you are doing something similar.</p>
+
+<ul>
+<li>First, the presence channel and client setup isn&#39;t that hard, but takes a minute to get your head around.</li>
+<li>When using a presence channel, all clients receive all events. You can&#39;t just send an event directly to a single client. In our case that meant we always sent the &quot;username&quot; of the intended client along with the data, and the client on the other end filtered out messages that weren&#39;t intended for them. We could have set up separate channels for each player, but decided this was simpler to manage.</li>
+<li>The exception to the above is that the client that sends a pusher event, doesn&#39;t receive the event itself. We tried to listen to events published by the game-server (which is a client remember!) within a different part of the game-server, and it doesn&#39;t work. It&#39;s easy fixed by using non-pusher events, but confusing when you bump into it.</li>
+<li>Because Pusher is hosted in the cloud, all your development/testing/production servers will be using the same pusher account (unless you setup different pusher accounts (we didn&#39;t)). This gets pretty mind boggling when 3 people are testing code on three separate machines, but they are still all interacting. We could have fixed this by setting up different channel names on each machine, but we didn&#39;t figure that out at the time.</li>
+<li>3G providers really like to screw with your internet. Before the demos everyone was asked to not use WiFi on their phones - which was less than ideal as companies like O2 like to smush websocket traffic not sent over encrypted connections. Pusher will fallback to an encrypted connection if unsecured doesn&#39;t work, but to ensure that it worked first time, Phil Leggetter from Pusher suggested we force encrypted connections: First <a href="http://blog.pusher.com/2010/11/5/end-to-end-encryption">encrypt the Pusher socket</a> and then serve all the assets over ssl (easy done with heroku, just stick https in front of the urls).</li>
+</ul>
+
+<h2>And finally</h2>
+
+<p>If you have any questions about what we did, (or if you want the four of us to make you an ace multiplayer game!), just get in touch <a href="https://twitter.com/philip_roberts">on twitter</a>. </p>
+
+</div>
+
+
+</div>
+
+<nav>
+  <a href="self-defeating">←</a>
+  <a href="/">⚑</a>
+  <a href="sonicrouter">→</a>
+</nav>
+
+    </main>
+  </body>
+</html>
