@@ -1,6 +1,7 @@
 ---
 date: 2012-08-20
 layout: text
+alias: /post/29820876915/rejection
 title: Rejection
 ---
 

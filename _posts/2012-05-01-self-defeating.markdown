@@ -1,6 +1,7 @@
 ---
 date: 2012-05-01
 layout: text
+alias: /post/22185478819/self-defeating
 title: Giving up on self-defeating self-talk
 ---
 

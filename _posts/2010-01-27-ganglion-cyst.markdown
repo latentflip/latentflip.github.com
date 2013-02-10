@@ -1,6 +1,7 @@
 ---
 date: 2010-01-27
 layout: quote
+alias: /post/356833038/ganglion-cyst
 source: "Anonymous GP &lt;span class=&quot;addendum&quot;&gt;Referring to the screw working it's way out of my knee&lt;/span&gt;"
 ---
 

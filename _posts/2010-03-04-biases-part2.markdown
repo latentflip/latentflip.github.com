@@ -1,6 +1,7 @@
 ---
 date: 2010-03-04
 layout: text
+alias: /post/426759868/biases-part2
 title: Biases, part 2
 ---
 

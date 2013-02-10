@@ -1,6 +1,7 @@
 ---
 date: 2010-05-16
 layout: quote
+alias: /post/603296226/creation-why
 source: "_why"
 ---
 

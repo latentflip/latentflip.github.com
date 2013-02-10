@@ -1,6 +1,7 @@
 ---
 date: 2009-04-21
 layout: text
+alias: /post/344052044/helloworld
 title: Hello World!
 ---
 

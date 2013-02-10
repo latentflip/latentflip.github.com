@@ -1,6 +1,7 @@
 ---
 date: 2011-02-20
 layout: text
+alias: /post/3409125475/reading-rails
 title: Reading Rails
 ---
 

@@ -1,6 +1,7 @@
 ---
 date: 2012-04-29
 layout: text
+alias: /post/22047287999/chscot2012
 title: A Shakey Victory&#58; Culture Hack Scotland 2012
 ---
 

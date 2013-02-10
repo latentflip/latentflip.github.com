@@ -1,6 +1,7 @@
 ---
 date: 2012-02-17
 layout: text
+alias: /post/17761189113/live-coding-backbone
 title: A few live coding tips
 ---
 

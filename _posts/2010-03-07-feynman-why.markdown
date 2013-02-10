@@ -1,6 +1,7 @@
 ---
 date: 2010-03-07
 layout: text
+alias: /post/433344513/feynman-why
 title: The difficulty of &quot;why?&quot;
 ---
 

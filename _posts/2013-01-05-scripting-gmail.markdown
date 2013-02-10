@@ -1,6 +1,7 @@
 ---
 date: 2013-01-05
 layout: text
+alias: /post/39755076457/scripting-gmail
 title: Scripting Gmail
 ---
 

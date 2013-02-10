@@ -1,6 +1,7 @@
 ---
 date: 2012-05-03
 layout: text
+alias: /post/22315558856/sonicrouter
 title: Fresh, free music with Sonic Router
 ---
 

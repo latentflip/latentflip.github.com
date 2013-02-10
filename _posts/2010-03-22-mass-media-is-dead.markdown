@@ -1,6 +1,7 @@
 ---
 date: 2010-03-22
 layout: text
+alias: /post/466368819/mass-media-is-dead
 title: Mass Media is Dead (to me)
 ---
 

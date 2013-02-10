@@ -1,6 +1,7 @@
 ---
 date: 2012-11-02
 layout: quote
+alias: /post/34821187029/achieving-perfect-work-life-balance-is-impossible
 source: "From a [great little post](http&#58;//davidcancel.com/a-startup-founders-priorities/) by [David Cancel](http&#58;//davidcancel.com/)."
 ---
 

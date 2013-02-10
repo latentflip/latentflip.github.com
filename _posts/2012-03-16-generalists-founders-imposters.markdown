@@ -1,6 +1,7 @@
 ---
 date: 2012-03-16
 layout: text
+alias: /post/19403885675/generalists-founders-imposters
 title: Generalists, Founders and the Impostor Syndrome
 ---
 

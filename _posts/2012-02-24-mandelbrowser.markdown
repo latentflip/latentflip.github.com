@@ -1,6 +1,7 @@
 ---
 date: 2012-02-24
 layout: text
+alias: /post/18198517292/mandelbrowser
 title: Mandelbrowser - Google Maps for fractals
 ---
 

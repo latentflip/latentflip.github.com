@@ -1,6 +1,7 @@
 ---
 date: 2012-10-03
 layout: text
+alias: /post/32795505153/where-is-truth
 title: Where is truth?
 ---
 

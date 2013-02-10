@@ -1,6 +1,7 @@
 ---
 date: 2012-11-20
 layout: text
+alias: /post/36165848162/stop-looking-for-a-cofounder
 title: Stop looking for a co-founder
 ---
 

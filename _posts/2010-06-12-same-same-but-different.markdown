@@ -1,6 +1,7 @@
 ---
 date: 2010-06-12
 layout: text
+alias: /post/691101513/same-same-but-different
 title: Same-same, but different
 ---
 

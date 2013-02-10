@@ -1,6 +1,7 @@
 ---
 date: 2012-04-20
 layout: text
+alias: /post/21429531320/founder-support-group
 title: Founder depression, and a meetup proposal.
 ---
 

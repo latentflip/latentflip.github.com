@@ -1,6 +1,7 @@
 ---
 date: 2012-02-17
 layout: video
+alias: /post/17774186132/float-and-backbone
 video_url: http://vimeo.com/36975603
 caption: "Float and backbone."
 ---

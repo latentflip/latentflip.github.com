@@ -1,6 +1,7 @@
 ---
 date: 2010-06-03
 layout: text
+alias: /post/660025417/i-need-to-see-your-id
 title: Sorry Sir, I need to see your Id.
 ---
 

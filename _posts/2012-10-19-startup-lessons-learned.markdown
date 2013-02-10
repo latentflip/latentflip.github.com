@@ -1,6 +1,7 @@
 ---
 date: 2012-10-19
 layout: text
+alias: /post/33902095607/startup-lessons-learned
 title: Startup lessons learned after two and a half years
 ---
 

@@ -1,6 +1,7 @@
 ---
 date: 2009-04-26
 layout: text
+alias: /post/344061483/sicamp-scot-09-idea-adopt-a-gran
 title: SiCamp Scotland '09 Idea
 ---
 

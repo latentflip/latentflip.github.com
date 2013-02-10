@@ -1,6 +1,7 @@
 ---
 date: 2010-05-08
 layout: text
+alias: /post/581296320/freaking-out-is-not-constructive
 title: Freaking Out is Not Constructive
 ---
 

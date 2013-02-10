@@ -1,6 +1,7 @@
 ---
 date: 2012-07-04
 layout: text
+alias: /post/26513367897/ridiculous
 title: I'm just going to leave this here&#58;
 ---
 

@@ -1,6 +1,7 @@
 ---
 date: 2012-08-30
 layout: text
+alias: /post/30513619794/a-logo-for-introverts
 title: A logo for introverts
 ---
 

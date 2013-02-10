@@ -1,6 +1,7 @@
 ---
 date: 2012-10-10
 layout: text
+alias: /post/33305495644/live-as-if-youll-die-in-ten-years
 title: Live as if you'll die in ten years 
 ---
 

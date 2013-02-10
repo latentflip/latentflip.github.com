@@ -1,6 +1,7 @@
 ---
 date: 2012-11-30
 layout: text
+alias: /post/36886646122/leadership-and-communities
 title: Leadership and Communities
 ---
 

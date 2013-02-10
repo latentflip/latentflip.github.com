@@ -1,6 +1,7 @@
 ---
 date: 2009-04-28
 layout: text
+alias: /post/353187201/irrationality-design
 title: Irrationality &amp; Design
 ---
 

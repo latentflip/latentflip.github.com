@@ -1,6 +1,7 @@
 ---
 date: 2012-05-01
 layout: text
+alias: /post/22215449880/shakey-technical
 title: The making of Shakey&#58; a Realtime, Massively Multiplayer, Shakespearean parlour game
 ---
 

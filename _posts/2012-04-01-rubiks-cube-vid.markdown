@@ -1,6 +1,7 @@
 ---
 date: 2012-04-01
 layout: video
+alias: /post/20296375204/rubiks-cube-vid
 video_url: http://www.youtube.com/watch?v=DnGWXlBpSpY
 caption: "We recently had a Rubik's Cube themed party for everyone who has been helping out at [TechCube](http&#58;//techcube-ed.tumblr.com/).
 

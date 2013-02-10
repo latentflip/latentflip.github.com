@@ -1,6 +1,7 @@
 ---
 date: 2011-12-21
 layout: quote
+alias: /post/14559786209/finally-a-top-technical-dating-tip-youve-no
 source: "Great post on finding tech co-founders by @andyy&#58; http&#58;//www.kernelmag.com/scene/2011/12/desperately-seeking-sysadmins/"
 ---
 

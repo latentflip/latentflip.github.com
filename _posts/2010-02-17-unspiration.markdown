@@ -1,6 +1,7 @@
 ---
 date: 2010-02-17
 layout: text
+alias: /post/395378518/unspiration
 title: Unspiration
 ---
 

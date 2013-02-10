@@ -1,6 +1,7 @@
 ---
 date: 2012-01-10
 layout: text
+alias: /post/15622557834/faster-rails-rake-tasks
 title: Faster rake tasks in Rails
 ---
 

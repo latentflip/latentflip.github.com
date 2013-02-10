@@ -1,6 +1,7 @@
 ---
 date: 2012-07-01
 layout: text
+alias: /post/26299916282/lightning
 title: Lightning
 ---
 

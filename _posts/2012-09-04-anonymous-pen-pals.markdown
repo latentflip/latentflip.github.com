@@ -1,6 +1,7 @@
 ---
 date: 2012-09-04
 layout: text
+alias: /post/30860253360/anonymous-pen-pals
 title: Anonymous Pen Pals
 ---
 

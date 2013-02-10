@@ -1,6 +1,7 @@
 ---
 date: 2012-06-07
 layout: quote
+alias: /post/24603428386/coolest-thing-in-the-world
 source: "From a great post by Paul DeJoe, [What it's like to be the CEO of a startup](http&#58;//onstartups.com/tabid/3339/bid/85060/What-It-s-Like-To-Be-The-CEO-Revelations-and-Reflections.aspx)."
 ---
 

@@ -1,6 +1,7 @@
 ---
 date: 2012-08-21
 layout: text
+alias: /post/29895405731/reflections-on-rejection
 title: Reflections on &quot;Rejection&quot;
 ---
 

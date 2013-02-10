@@ -1,6 +1,7 @@
 ---
 date: 2010-04-07
 layout: text
+alias: /post/503636921/digital-britain-letter
 title: My Digital Britain Letter
 ---
 

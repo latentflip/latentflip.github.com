@@ -1,6 +1,7 @@
 ---
 date: 2012-06-12
 layout: text
+alias: /post/24973990622/vows
 title: Vows
 ---
 
