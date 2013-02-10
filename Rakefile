@@ -16,5 +16,4 @@ end
 desc "Deploy"
 task :deploy do
   puts `ls -l _deploy/ | grep -v '.git' | xargs rm -rf`
-  `cp -r _site/* _deploy/`
 end
