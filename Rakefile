@@ -12,3 +12,9 @@ task :reload do
     end
   end
 end
+
+desc "Deploy"
+task :deploy do
+  `ls _deploy -l | grep -v '.git' | xargs rm -rf`
+  `cp -r _site/* _deploy/`
+end
