@@ -1334,6 +1334,23 @@ main {
   width: 100%;
   margin: 0 auto; }
 
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden; }
+
+nav {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: large; }
+  nav a {
+    text-decoration: none; }
+
 @media screen and (min-width: 500px) {
   main {
     width: 500px; } }
