@@ -44,6 +44,7 @@ blog.directive('code', function() {
   function runTheCode(code, output) {
     var console = {}
     console.log = function() {
+      output.show();
       var args = Array.prototype.slice.call(arguments);
       window.console.log("Displaying", args);
       
@@ -59,8 +60,9 @@ blog.directive('code', function() {
   return {
     restrict: 'E',
     link: function(scope, element) {
-            var output = $('<pre class="code-output">');
+            var output = $('<pre class="code-output">').hide();
             var button = $('<button>Run me</button>');
+
             if( element.parent().is('pre') ) {
               output.insertAfter( element.closest('.highlight') );
               element.closest('.highlight').append(button);
