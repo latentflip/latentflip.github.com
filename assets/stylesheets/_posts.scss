@@ -1,0 +1,40 @@
+.post {
+  h2, h3, h4, h5, h6 {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+  }
+  
+  p {
+    margin-top: 0.5em;
+  }
+
+  img {
+    width: 90%;
+    display: block;
+    margin: 30px auto;
+    background: #F5F5F5;
+    border: 1px #DDD solid;
+    padding: 1%;
+  }
+}
+
+h1 {
+  margin-bottom: 1em;
+}
+
+h1 + .post-date {
+  margin-top: -1.5em;
+  margin-bottom: 1.5em;
+}
+
+
+
+.post-quote .source p:before {
+  content: "— ";
+}
+
+.post-date {
+  color: #999;
+}
+
+
