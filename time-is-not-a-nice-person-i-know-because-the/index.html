@@ -11,6 +11,18 @@
     <script src='/assets/javascripts/app.js'></script>
   </head>
   <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="logo">
+          <h1><a href="/">Philip Roberts</a></h1>
+        </div>
+        <nav>
+          <a href="/">Blog</a>
+          <!--<a href="/hacks">Hacks</a>-->
+        </nav>
+      </div>
+    </header>
+
     <main ng-app='blog'>
       <div ng-controller='PostCtrl'>
   <div class="post post-quote">
@@ -31,7 +43,7 @@ So what will you do? What will we do . .?</p>
 
 </div>
 
-<nav>
+<nav class="posts">
   
     <a href="/over-the-blue-moon">
       <span class="icon icon-arrow-left"></span>

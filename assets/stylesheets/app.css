@@ -1,6 +1,7 @@
 @charset "UTF-8";
 body,
-blockquote {
+blockquote,
+ul {
   margin: 0;
   padding: 0; }
 
@@ -18,7 +19,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
-  font-weight: 400; }
+  font-weight: 200; }
 
 blockquote {
   margin-left: 0.5em;
@@ -1327,33 +1328,6 @@ ul.icons {
   color: #ae81ff; }
 
 /* Literal.Number.Integer.Long */
-main {
-  display: block;
-  padding: 1em;
-  max-width: 500px;
-  width: 100%;
-  margin: 0 auto; }
-
-.hidden {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden; }
-
-nav {
-  display: block;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  text-align: center;
-  font-size: large; }
-  nav a {
-    text-decoration: none; }
-
-@media screen and (min-width: 500px) {
-  main {
-    width: 500px; } }
 .post h2, .post h3, .post h4, .post h5, .post h6 {
   margin-top: 2em;
   margin-bottom: 0.5em; }
@@ -1367,12 +1341,78 @@ nav {
   border: 1px #dddddd solid;
   padding: 1%; }
 
+h1 {
+  margin-bottom: 1em; }
+
+h1 + .post-date {
+  margin-top: -1.5em;
+  margin-bottom: 1.5em; }
+
 .post-quote .source p:before {
   content: "— "; }
 
 .post-date {
   color: #999; }
 
+main, .topbar-inner {
+  max-width: 500px;
+  width: 100%;
+  display: block;
+  padding: 1em;
+  margin: 0 auto; }
+
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden; }
+
+.topbar {
+  background: #D0002A;
+  color: white;
+  line-height: 1; }
+  .topbar .topbar-inner {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    overflow: hidden; }
+  .topbar h1, .topbar a {
+    font-size: medium;
+    display: inline;
+    margin: 0;
+    padding: 0; }
+  .topbar .logo, .topbar nav {
+    padding: 0;
+    margin: 0; }
+  .topbar .logo {
+    float: left;
+    width: 50%; }
+  .topbar nav {
+    width: 50%;
+    float: right;
+    text-align: right; }
+  .topbar a {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2); }
+    .topbar a, .topbar a:visited {
+      color: white; }
+  .topbar nav a {
+    padding-left: 1em; }
+
+nav.posts {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: large; }
+  nav.posts a {
+    text-decoration: none; }
+
+@media screen and (min-width: 500px) {
+  main, nav {
+    width: 500px; } }
 .posts-list h1 {
   text-align: center;
   font-weight: 200;
@@ -1381,7 +1421,9 @@ nav {
   margin-bottom: 1em; }
 
 ul.posts {
-  list-style-type: none; }
+  list-style-type: none;
+  margin-left: 1em;
+  margin-right: 1em; }
   ul.posts li {
     margin-bottom: 0.25em; }
   ul.posts li:before {

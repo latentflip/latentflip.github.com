@@ -3,13 +3,13 @@
 @import 'font-awesome';
 @import 'droid';
 @import 'pygments-monokai';
+@import 'posts';
 
-
-main {
-  display: block;
-  padding: 1em;
+main, .topbar-inner {
   max-width: 500px;
   width: 100%;
+  display: block;
+  padding: 1em;
   margin: 0 auto;
 }
 
@@ -22,8 +22,57 @@ main {
   overflow:hidden;
 }
 
+.topbar {
+  background: #D0002A;
+  color: white;
+  .topbar-inner {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    overflow: hidden;
+  }
 
-nav {
+  line-height: 1;
+
+  h1, a {
+    font-size: medium;
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo, nav {
+    padding: 0;
+    margin: 0;
+  }
+
+  .logo {
+    float: left;
+    width: 50%;
+  }
+
+  nav {
+    width: 50%;
+    float: right;
+    text-align: right;
+  }
+
+  a {
+    &, &:visited {
+      color: white;
+    }
+
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0 0 1px rgba(0,0,0,0.2);
+  }
+
+  nav a {
+    padding-left: 1em;
+  }
+}
+
+
+nav.posts {
   display: block;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -35,40 +84,15 @@ nav {
 }
 
 @media screen and (min-width: 500px) {
-  main {
+  main, nav {
     width: 500px;
   }
 }
 
 
 
-.post {
-  h2, h3, h4, h5, h6 {
-    margin-top: 2em;
-    margin-bottom: 0.5em;
-  }
-  
-  p {
-    margin-top: 0.5em;
-  }
 
-  img {
-    width: 90%;
-    display: block;
-    margin: 30px auto;
-    background: #F5F5F5;
-    border: 1px #DDD solid;
-    padding: 1%;
-  }
-}
 
-.post-quote .source p:before {
-  content: "— ";
-}
-
-.post-date {
-  color: #999;
-}
 
 
 .posts-list {
@@ -83,6 +107,8 @@ nav {
 
 ul.posts {
   list-style-type: none;
+  margin-left: 1em;
+  margin-right: 1em;
 
   li {
     margin-bottom: 0.25em;
@@ -121,4 +147,3 @@ ul.posts {
     text-decoration: none;
   }
 }
-
