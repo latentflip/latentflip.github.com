@@ -1370,6 +1370,9 @@ nav {
 .post-quote .source p:before {
   content: "— "; }
 
+.post-date {
+  color: #999; }
+
 .posts-list h1 {
   text-align: center;
   font-weight: 200;
