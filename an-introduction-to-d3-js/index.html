@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>This Feels Like A Momentous Step First Startup</title>
+    <title>An Introduction To D3 Js</title>
     <link rel='stylesheet' href='/assets/stylesheets/app.css'>
 
     <script src='/assets/javascripts/jquery.js'></script>
@@ -18,6 +18,7 @@
         </div>
         <nav>
           <a href="/">Blog</a>
+          <a href="/about">About</a>
           <!--<a href="/hacks">Hacks</a>-->
         </nav>
       </div>
@@ -25,14 +26,13 @@
 
     <main ng-app='blog'>
       <div ng-controller='PostCtrl'>
-  <div class="post post-photo">
-  <h1>This Feels Like A Momentous Step First Startup</h1>
+  <div class="post post-video">
 
-  <img src="/images/tumblr_mbzbq9IC321qzmkoso1_1280.jpg" />
-  
-  <div class="caption">
-    <p>This feels like a momentous step. First startup Tshirt!  (Taken with <a href="http://instagram.com">Instagram</a>)</p>
+  <iframe src="http://player.vimeo.com/video/53588708" width="500" height="281" frameborder="0"></iframe>
 
+
+  <div class="source">
+    An introduction to d3.js by yours truly. You can view the original &quot;slides&quot; here&#58; http&#58;//latentflip.github.com/d3/techmeetup/
   </div>
 </div>
 
@@ -40,7 +40,7 @@
 
 <nav class="posts">
   
-    <a href="/live-as-if-youll-die-in-ten-years">
+    <a href="/achieving-perfect-work-life-balance-is-impossible">
       <span class="icon icon-arrow-left"></span>
       <span class=hidden>older</span>
     </a>
@@ -52,7 +52,7 @@
   </a>
 
   
-    <a href="/startup-lessons-learned">
+    <a href="/stop-looking-for-a-cofounder">
       <span class=hidden>newer</span>
       <span class="icon icon-arrow-right"></span>
     </a>
@@ -60,5 +60,19 @@
 </nav>
 
     </main>
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-29284372-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
   </body>
 </html>
