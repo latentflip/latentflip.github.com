@@ -5,13 +5,32 @@
 
     <script src="http://192.168.0.2:35729/livereload.js?snipver=1"></script>
     <script src="jquery.min.js"></script>
+    <script src="d3.min.js"></script>
     <script src="underscore-min.js"></script>
     <script src="Bacon.js"></script>
+
+    <style>
+      .screen {
+        position: relative;
+        width: 500px;
+        background: #EEEEFF;
+      }
+      .screen h1 {
+        position: absolute;
+      }
+    </style>
   </head>
   <body>
     <h1>Locate</h1>
     <p>Smooth: <span class='bearing-smooth'></span></p>
     <p>Live: <span class='bearing'></span></p>
+
+    <div class="screen">
+      <h1 data-deg=0>North</h1>
+      <h1 data-deg=90>East</h1>
+      <h1 data-deg=180>South</h1>
+      <h1 data-deg=270>West</h1>
+    </div>
 
     <script src="app.js"></script>
   </body>
