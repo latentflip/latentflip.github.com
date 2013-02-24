@@ -1,0 +1,21 @@
+---
+layout: default
+title: Hacks
+---
+
+<div class="posts-list hacks-list">
+  <h1>{{ page.title }}</h1>
+
+  <ul class='posts hacks'>
+    {% for post in site.posts %}
+      {% if post.layout == 'hack' %}
+        <li class="{{ post.layout }}">
+          <a href="{{ post.hackurl || post.url }}">
+            <img src="/images/{{post.image}}">
+            <span class='title'>{{ post.title || post.slug }}</span>
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
