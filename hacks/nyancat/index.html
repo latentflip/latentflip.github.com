@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <style>
+      #canvases {
+        width: 320;
+        height: 240;
+        position: relative;
+      }
+      canvas { position: absolute; left: 0; right: 0; }
+    </style>
+  </head>
+
+  <body>
+    <div id='canvases'>
+      <canvas id="inputCanvas" width="320" height="240"></canvas>
+      <canvas id="effectCanvas" width="320" height="240"></canvas>
+    </div>
+    <video id="inputVideo" autoplay loop></video>
+
+    <script src='bundle.js'></script>
+  </body>
+</html>
