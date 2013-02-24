@@ -8,7 +8,9 @@ title: Philip Roberts
 
   <ul class='posts'>
     {% for post in site.posts %}
-    <li class="{{ post.layout }}"><a href="{{post.url}}">{{ post.title || post.slug }}</a></li>
+      {% if post.layout != 'hack' %}
+        <li class="{{ post.layout }}"><a href="{{post.url}}">{{ post.title || post.slug }}</a></li>
+      {% endif %}
     {% endfor %}
   </ul>
 </div>

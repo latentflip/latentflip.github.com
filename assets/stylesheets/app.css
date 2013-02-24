@@ -1433,7 +1433,21 @@ ul.posts {
     font-family: FontAwesome; }
   ul.posts a {
     text-decoration: none; }
-    
-p img {
+
+.hacks-list li {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  left: 0; }
+.hacks-list img {
   width: 100%;
-}
+  padding: 0;
+  margin: 0; }
+.hacks-list span.title {
+  display: block;
+  padding: 0.75em;
+  position: absolute;
+  top: 1em;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  color: white; }

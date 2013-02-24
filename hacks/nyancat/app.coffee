@@ -30,7 +30,7 @@ navigator.webkitGetUserMedia {audio:true}, (stream) ->
     analyser.getFloatFrequencyData(fftBins)
     max = _.chain(fftBins).filter((v) -> v < 0).max().value()
 
-    max = (80 + max)/3
+    max = (80 + max)/2
     max = Math.max(0, max)
     nyan.jawOffset = max
   , 100

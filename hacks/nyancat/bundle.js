@@ -41,7 +41,7 @@
       max = _.chain(fftBins).filter(function(v) {
         return v < 0;
       }).max().value();
-      max = (80 + max) / 3;
+      max = (80 + max) / 2;
       max = Math.max(0, max);
       return nyan.jawOffset = max;
     }, 100);
