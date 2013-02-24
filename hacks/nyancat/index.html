@@ -2,18 +2,19 @@
   <head>
     <style>
       #canvases {
-        width: 320;
-        height: 240;
+        width: 640;
+        height: 480;
         position: relative;
       }
       canvas { position: absolute; left: 0; right: 0; }
+      video { display: none; }
     </style>
   </head>
 
   <body>
     <div id='canvases'>
-      <canvas id="inputCanvas" width="320" height="240"></canvas>
-      <canvas id="effectCanvas" width="320" height="240"></canvas>
+      <canvas id="inputCanvas" width="640" height="480"></canvas>
+      <canvas id="effectCanvas" width="640" height="480"></canvas>
     </div>
     <video id="inputVideo" autoplay loop></video>
 
