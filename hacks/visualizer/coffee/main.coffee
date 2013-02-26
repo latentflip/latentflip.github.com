@@ -6,11 +6,11 @@ $ = require 'jquery-browserify'
 
 showingHelp = false
 showEnableAudioMessage = _.once(->
-  $('h1').show()
+  $('.instructions').show()
   showingHelp = true
 )
 hideEnableAudioMessage = _.once(->
-  $('h1').hide()
+  $('.instructions').hide()
   showingHelp = false
 )
 

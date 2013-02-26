@@ -14,12 +14,12 @@
   showingHelp = false;
 
   showEnableAudioMessage = _.once(function() {
-    $('h1').show();
+    $('.instructions').show();
     return showingHelp = true;
   });
 
   hideEnableAudioMessage = _.once(function() {
-    $('h1').hide();
+    $('.instructions').hide();
     return showingHelp = false;
   });
 
