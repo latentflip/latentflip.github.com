@@ -1,28 +1,7 @@
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>{{ page.title }}</title>
-    <link rel='stylesheet' href='/assets/stylesheets/app.css'>
-  </head>
-  <body>
-    <header class="topbar">
-      <div class="topbar-inner">
-        <div class="logo">
-          <h1><a href="/">Philip Roberts</a></h1>
-        </div>
-        <nav>
-          <a href="/">Blog</a>
-          <a href="/about">About</a>
-          <!--<a href="/hacks">Hacks</a>-->
-        </nav>
-      </div>
-    </header>
+---
+layout: base
+---
 
-    <main class='hack'>
-      {{ content }}
-    </main>
-
-    <script src="/assets/javascripts/analytics.js"></script>
-  </body>
-</html>
+<main class='hack'>
+  {{ content }}
+</main>

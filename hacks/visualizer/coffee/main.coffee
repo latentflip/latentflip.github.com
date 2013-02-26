@@ -34,8 +34,7 @@ setupStream = (stream) ->
 
   a = analyser.setup(context, micNode)
   
-  timedOut = false
-  startupTimeout = setTimeout (-> timedOut=true), 3000
+  startupTimeout = setTimeout showEnableAudioMessage, 3000
 
   a.on 'time', (timeData) ->
     ctx.translate(canvas.width/2, canvas.height/2)
@@ -53,8 +52,8 @@ setupStream = (stream) ->
 
     max = _.max(timeData) - 127
 
-    showEnableAudioMessage() if (max == 1 && timedOut)
-
+    if (max != 1 && startupTimeout)
+      clearTimeout startupTimeout
 
     fill = "rgb(#{max},#{Math.floor(Math.random()*255)},255)"
     ctx.fillStyle = fill

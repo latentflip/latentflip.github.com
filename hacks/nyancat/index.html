@@ -1,31 +1,43 @@
-<html>
-  <head>
-    <style>
-      #canvases {
-        width: 640;
-        height: 480;
-        position: relative;
-      }
-      canvas { position: absolute; left: 0; right: 0; }
-      video { display: none; }
-      canvas {
-        -o-transform : scaleX(-1);
-        -moz-transform : scaleX(-1);
-        -webkit-transform : scaleX(-1);
-        -ms-transform: scaleX(-1);
-        transform : scaleX(-1);
-      }
-    </style>
-  </head>
+---
+layout: hack
+title: WebRTC NyanCat
+---
+<style>
+  #canvases {
+    width: 640;
+    height: 480;
+    position: relative;
+    margin: 40px auto;
+  }
+  canvas { position: absolute; left: 0; right: 0; }
+  video { display: none; }
+  canvas {
+    -o-transform : scaleX(-1);
+    -moz-transform : scaleX(-1);
+    -webkit-transform : scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform : scaleX(-1);
+  }
+  .description {
+    width: 640;
+    margin: 40px auto;
+  }
+</style>
+<div class='description'>
+  <p>
+    An experiment with WebRTC and Web Audio. Currently will only
+    work in Chrome.
+  </p>
+  <p>
+    To make Nyancat's mouth move enable "Web Audio Input" in
+    chrome://flags.
+  </p>
+</div>
+<div id='canvases'>
+  <canvas id="inputCanvas" width="640" height="480"></canvas>
+  <canvas id="effectCanvas" width="640" height="480"></canvas>
+</div>
+<video id="inputVideo" autoplay loop></video>
 
-  <body>
-    <div id='canvases'>
-      <canvas id="inputCanvas" width="640" height="480"></canvas>
-      <canvas id="effectCanvas" width="640" height="480"></canvas>
-    </div>
-    <video id="inputVideo" autoplay loop></video>
 
-    <script src='bundle.js'></script>
-    <script src="/assets/javascripts/analytics.js"></script>
-  </body>
-</html>
+<script src='bundle.js'></script>

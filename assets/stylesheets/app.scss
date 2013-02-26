@@ -8,6 +8,7 @@
 main {
   display: block;
 }
+
 main.blog, .topbar-inner {
   max-width: 500px;
   width: 100%;
@@ -87,7 +88,7 @@ nav.posts {
 }
 
 @media screen and (min-width: 500px) {
-  main, nav {
+  main.blog, nav {
     width: 500px;
   }
 }
@@ -151,12 +152,13 @@ ul.posts {
   }
 }
 
-.hacks-list {
+ul.posts.hacks {
   li {
     height: 250px;
     overflow: hidden;
     position: relative;
     left: 0;
+    margin-bottom: 1em;
   }
   img {
     width: 100%;

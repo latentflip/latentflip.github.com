@@ -1414,7 +1414,7 @@ nav.posts {
     text-decoration: none; }
 
 @media screen and (min-width: 500px) {
-  main, nav {
+  main.blog, nav {
     width: 500px; } }
 .posts-list h1 {
   text-align: center;
@@ -1437,16 +1437,17 @@ ul.posts {
   ul.posts a {
     text-decoration: none; }
 
-.hacks-list li {
+ul.posts.hacks li {
   height: 250px;
   overflow: hidden;
   position: relative;
-  left: 0; }
-.hacks-list img {
+  left: 0;
+  margin-bottom: 1em; }
+ul.posts.hacks img {
   width: 100%;
   padding: 0;
   margin: 0; }
-.hacks-list span.title {
+ul.posts.hacks span.title {
   display: block;
   padding: 0.75em;
   position: absolute;

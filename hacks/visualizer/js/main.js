@@ -44,14 +44,11 @@
   rainbow = color.genRainbow();
 
   setupStream = function(stream) {
-    var a, context, micNode, startupTimeout, timedOut;
+    var a, context, micNode, startupTimeout;
     context = new webkitAudioContext();
     micNode = context.createMediaStreamSource(stream);
     a = analyser.setup(context, micNode);
-    timedOut = false;
-    startupTimeout = setTimeout((function() {
-      return timedOut = true;
-    }), 5000);
+    startupTimeout = setTimeout(showEnableAudioMessage, 3000);
     return a.on('time', function(timeData) {
       var fill, max;
       ctx.translate(canvas.width / 2, canvas.height / 2);
@@ -67,9 +64,8 @@
       });
       ctx.stroke();
       max = _.max(timeData) - 127;
-      console.log(max, timedOut);
-      if (max === 1 && timedOut) {
-        showEnableAudioMessage();
+      if (max !== 1 && startupTimeout) {
+        clearTimeout(startupTimeout);
       }
       fill = "rgb(" + max + "," + (Math.floor(Math.random() * 255)) + ",255)";
       ctx.fillStyle = fill;
