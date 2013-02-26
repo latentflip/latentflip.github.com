@@ -1,0 +1,60 @@
+---
+layout: hack
+title: "Violin: visualizing JavaScript"
+---
+
+
+<script src='js/d3.js'></script>
+<link rel='stylesheet' type='text/css' href='css/style.css'>
+<div class='narrower'>
+  <h1>Violin <small>Instrumenting JavaScript</small></h1>
+
+  <p class='p-first'> This is an experiment in instrumenting JavaScript applications.  </p>
+  
+  <p> On the right is the Object and Function graph for a simple Backbone app.  </p>
+  <p> The app's code has been instrumented to draw and animate the graph as the JavaScript runs without having to modify the app's original code at all (by hand anyway).  </p> 
+  <p>Hit the button to start the backbone app and interact with it.</p>
+  <p><i>Metaprogramming rocks :)</i>.</p>
+  <p>
+    This experiment is by <a href='http://blog.latentflip.com'>Philip Roberts</a>. You can follow me on twitter <a href='http://twitter.com/philip_roberts'>@philip_roberts</a>.
+  </p>
+
+  <p>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://latentflip.github.com/violin" data-counturl="http://latentflip.github.com/violin" data-text="Visualizing and instrumenting Javascript apps" data-via="philip_roberts">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </p>
+</div>
+
+<div class="split">
+  <div class="left">
+    <div class='the-app'>
+      <h3>The App</h3>
+      <a href='#' rel='startApp' class='btn btn-primary'>Start the backbone app</a>
+      <div id='content'></div>
+    </div>
+  </div>
+
+  <div class="right">
+    <div id='chart' class='span5p5'></div>
+  </div>
+</div>
+
+<div>
+  <h2>Discussion</h2>
+
+  <p class='p-first'>This is a first attempt at instrumenting a JavaScript application.</p>
+
+  <p>
+    Instrumenting is performed by recursively iterating over the application's namespace to build the graph, and decorating any functions to trigger events when they are called.
+  </p>
+
+  <p>
+    Currently the graph shows the Object heirarchy, rather than the prototype hierarchy or all the instantiations of the object, and function nodes on the graph will be triggered when any instantiation of that object calls the function.
+  </p>
+
+  <h2>The code</h2>
+  <script src="https://gist.github.com/3964466.js"> </script>
+</div>
+
+<script src='bundle.js'></script>
+

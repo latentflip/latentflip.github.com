@@ -1,0 +1,7 @@
+---
+date: 2012-11-02
+layout: hack
+title: "Violin: Visualizing JS"
+image: "hacks/violin.jpg"
+hackurl: "/hacks/violin"
+---
