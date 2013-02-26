@@ -4,8 +4,14 @@ _ = require 'underscore'
 analyser = require './analyser'
 $ = require 'jquery-browserify'
 
+showingHelp = false
 showEnableAudioMessage = _.once(->
   $('h1').show()
+  showingHelp = true
+)
+hideEnableAudioMessage = _.once(->
+  $('h1').hide()
+  showingHelp = false
 )
 
 
@@ -51,6 +57,9 @@ setupStream = (stream) ->
     ctx.stroke()
 
     max = _.max(timeData) - 127
+
+    if showingHelp && max > 1
+      hideEnableAudioMessage()
 
     if (max != 1 && startupTimeout)
       clearTimeout startupTimeout

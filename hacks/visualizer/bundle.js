@@ -1,5 +1,5 @@
 ;(function(p,c,e){function r(n){if(!c[n]){if(!p[n])return;c[n]={exports:{}};p[n][0](function(x){return r(p[n][1][x])},c[n],c[n].exports);}return c[n].exports}for(var i=0;i<e.length;i++)r(e[i]);return r})({0:[function(require,module,exports){(function() {
-  var $, analyser, canvas, color, ctx, rainbow, scale, screenSize, setupStream, showEnableAudioMessage, xScale, yScale, _;
+  var $, analyser, canvas, color, ctx, hideEnableAudioMessage, rainbow, scale, screenSize, setupStream, showEnableAudioMessage, showingHelp, xScale, yScale, _;
 
   color = require('./color');
 
@@ -11,8 +11,16 @@
 
   $ = require('jquery-browserify');
 
+  showingHelp = false;
+
   showEnableAudioMessage = _.once(function() {
-    return $('h1').show();
+    $('h1').show();
+    return showingHelp = true;
+  });
+
+  hideEnableAudioMessage = _.once(function() {
+    $('h1').hide();
+    return showingHelp = false;
   });
 
   screenSize = (function() {
@@ -64,6 +72,9 @@
       });
       ctx.stroke();
       max = _.max(timeData) - 127;
+      if (showingHelp && max > 1) {
+        hideEnableAudioMessage();
+      }
       if (max !== 1 && startupTimeout) {
         clearTimeout(startupTimeout);
       }
