@@ -2,7 +2,7 @@
 date: 2011-05-12
 layout: video
 alias: /post/5427156628/an-awesome-audio-visual-feast-there-are-more-at
-video_url: http://vimeo.com/11768205
+video_url: "http://vimeo.com/11768205"
 caption: "An awesome audio-visual feast. There are more at&#58; http&#58;//www.quayola.com/index.php?/soundvisualisation/pta/"
 ---
 

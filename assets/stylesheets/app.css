@@ -1354,7 +1354,10 @@ h1 + .post-date {
 .post-date {
   color: #999; }
 
-main, .topbar-inner {
+main {
+  display: block; }
+
+main.blog, .topbar-inner {
   max-width: 500px;
   width: 100%;
   display: block;

@@ -28,6 +28,9 @@ rdiscount:
 redcarpet:
   extensions: []
 
+exclude: ['node_modules']
+  
+
 kramdown:
   auto_ids: true,
   footnote_nr: 1

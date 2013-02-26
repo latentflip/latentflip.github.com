@@ -2,7 +2,7 @@
 date: 2012-02-17
 layout: video
 alias: /post/17774146529/live-coding-a-simple-backbone-js-app
-video_url: http://vimeo.com/36975604
+video_url: "http://vimeo.com/36975604"
 caption: "Live-coding a simple backbone.js app"
 ---
 
