@@ -89,6 +89,10 @@ blog.directive('h2', function() {
       var slug = slugify(element.text());
       var anchor = $('<a name="'+slug+'" href="#'+slug+'" class="permalink""> Link to this section</a>')
       element.append(anchor);
+      if(window.location.hash === '#'+slug) {
+        window.location.hash = '';
+        window.location.hash = '#'+slug;
+      }
     }
   }
 });

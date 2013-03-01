@@ -71,11 +71,11 @@ h2 {
   position: relative; }
   h2 .permalink {
     color: #ccc;
-    display: none;
+    visibility: hidden;
     text-decoration: none;
     font-size: small; }
   h2:hover .permalink {
-    display: inline; }
+    visibility: visible; }
 
 /*
  *  Font Awesome 3.0.2

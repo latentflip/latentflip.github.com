@@ -68,14 +68,14 @@ h2 {
   position: relative;
   .permalink {
     color: #ccc;
-    display: none;
+    visibility: hidden;
     text-decoration: none;
     font-size: small;
   }
 
   &:hover {
     .permalink {
-      display: inline;
+      visibility: visible;
     }
   }
 }
