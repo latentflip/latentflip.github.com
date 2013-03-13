@@ -3,7 +3,6 @@ date: 2013-03-13
 layout: text
 title: Cutting Code
 ---
-
 ## Woodwork
 Sometimes I craft. Embracing the experience and process of breaking a problem down into code that can be committed to "paper". When I am crafting code I care about how the code reads, how the pieces fit together, whether the pieces are rigorous and tested well. When I am crafting code I think, analyse, think, analyse, think, take two steps forward and three steps back. 
 
