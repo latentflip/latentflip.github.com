@@ -32,3 +32,6 @@ Sometimes I fix. Debugging software is simultaneously the most frustrating and d
 On the face of it, debugging is an incredibly slow process. One hour, two hours, half a day, two days. To write what? One line of code? One character event? But that doesn't do justice at all to the act of debugging. For me debugging goes in bursts. From long slow periods of reading and thinking about a piece of code. To bursts of activity: lots of tweaks, and small changes, adding lines that will be removed later, to help prove or disprove assumptions and theories. It's like trying to find your way out of a forest, where some paths are more obvious than others, and the right one might be the least obvious of all.
 
 
+## The right choice
+
+So which is right? How should we cut code? For me there is no _best_ way. But what is important is to think about what we are giving up when we write code in a certain way, or follow a certain process. And also what we gain.
