@@ -28,7 +28,7 @@ Hacking is generally fast, but very linear. I know exactly where I need to get t
 ## Mending
 Sometimes I fix. Debugging software is simultaneously the most frustrating and deeply satisfying part of cutting code for me. Knowing that there is a bug somewhere in a huge amount of code that I am the owner of is deeply unsettling to a perfectionist, but the process of hunting and finding that bug requires understanding, insight, and surprising leaps of ingenuity--which is very satisfying.
 
-On the face of it, debugging is an incredibly slow process. One hour, two hours, half a day, two days. To write what? One line of code? One character event? But that doesn't do justice at all to the act of debugging. For me debugging goes in bursts. From long slow periods of reading and thinking about a piece of code. To bursts of activity: lots of tweaks, and small changes, adding lines that will be removed later, to help prove or disprove assumptions and theories. It's like trying to find your way out of a forest, where some paths are more obvious than others, and the right one might be the least obvious of all.
+On the face of it, debugging is an incredibly slow process. One hour, two hours, half a day, two days. To write what? One line of code? One character even? But that doesn't do justice at all to the act of debugging. For me debugging goes in bursts. From long slow periods of reading and thinking about a piece of code. To bursts of activity: lots of tweaks, and small changes, adding lines that will be removed later, to help prove or disprove assumptions and theories. It's like trying to find your way out of a forest, where some paths are more obvious than others, and the right one might be the least obvious of all.
 
 
 ## The right choice
