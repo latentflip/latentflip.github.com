@@ -14,7 +14,7 @@ Sometimes I create. To say it's an art perhaps doesn't give real artists enough 
 
 From the outside the process probably appears chaotic, and that's because I don't care about the process, I don't even think about it. When I am creating I have no goals, no endpoint, no desire, just a drive to experiment. I don't think about the code I am writing. I don't care if it's "good" or "bad" or "ugly", I almost don't consider it _my_ code. It's like I am taking a random walk through a scrapheap of code fragments, picking up the interesting pieces and smushing them together until the result interests me in someway.
 
-For me, creation is a fast process. An hour, an evening, maybe the best part of a day. Not fast in terms of "how long does it take to get to a specific goal", but fast in terms of change. New code is written quickly, without thought, code is thrown away just as quickly, the direction I am pointing changes constantly. It has to be a fast process, because if it is slow, or interrupted all pieces I have collected fall apart and get lost amongst the scrapheap, and I have to start over.
+For me, creation is a fast process. An hour, an evening, maybe the best part of a day. Not fast in terms of "how long does it take to get to a specific goal", but fast in terms of change. New code is written quickly, without thought, code is thrown away just as quickly, the direction I am pointing changes constantly. It has to be a fast process, because if it is slow, or interrupted, all the pieces I have collected fall apart and get lost amongst the scrapheap, and I have to start over.
 
 
 ## Felling
