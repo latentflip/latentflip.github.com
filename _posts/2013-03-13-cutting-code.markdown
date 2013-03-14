@@ -20,7 +20,7 @@ For me, creation is a fast process. An hour, an evening, maybe the best part of 
 ## Felling
 Sometimes I hack. I hack when I have a very specific goal, and I just need to get there quickly. It's like I am standing in front of a tree in a quiet forest, with a sharp axe, and my only goal is to get the tree to the forest floor as quickly as possible so I can head home again.
 
-This desire to be fast, rather than to take my time and craft a good solution, can be caused by different factors. How much do I care about this problem? How much energy do I have? Is somebody waiting on it? How likely is it that this hacking is going to come back and bite me? Am I going to need to look at this again in the future
+This desire to be fast, rather than to take my time and craft a good solution, can be caused by different factors. How much do I care about this problem? How much energy do I have? Is somebody waiting on it? How likely is it that this hacking is going to come back and bite me? Am I going to need to look at this again in the future?
 
 Hacking is generally fast, but very linear. I know exactly where I need to get to, and I'll hack and hack and hack until I get there. Sometimes there will be a big boulder that I have to work around, but I'll immediately head back to the shortest possible path to the goal line.
 
