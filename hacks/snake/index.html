@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <style>
+      body { 
+        font-family: monospace;
+      }
+
+      #game div, #game span {
+        margin: 0;
+        padding: 0;
+        line-height: 10px;
+      }
+
+      #game span {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: #A1D0B2;
+      }
+
+      #game span.snake {
+        background: #212F1C;
+      }
+    </style>
+    <script src='underscore-min.js'></script>
+    <script src='jquery.min.js'></script>
+    <script src='snake.js'></script>
+
+    <script>
+      $(function() {
+        render = function(grid) {
+          if ($('#game div').length == 0) {
+            var output = $('<div>')
+            grid.map(function(row) {
+              var r = $('<div>')
+              row.map( function(cell) {
+                var c = $('<span>');
+                r.append(c);
+              });
+              output.append(r);
+            });
+            $('#game').append(output);
+          }
+
+          var rows = $('#game div > div');
+          grid.map(function(row, ir) {
+            var cells = $(rows[ir]).find('span');
+            row.map(function(cell, ic) {
+              var c = $(cells[ic]);
+              if (cell == 'x') {
+                c.attr('class', 'food')
+                c.text('x')
+              } else if (cell == ' ') {
+                c.attr('class', 'snake')
+                c.text('')
+              } else {
+                c.attr('class', '');
+                c.text('')
+              }
+            });
+          });
+        }
+
+        
+        function onDead(score) {
+          if (confirm('You died, score: '+score+' retry?')) {
+            window.location.reload();
+          } else {
+            window.location.reload();
+          }
+        }
+
+
+        snake = new Head([10,10], [1,0])
+        world = new World([20,20], snake, render, onDead)
+
+        setInterval(function() {
+          world.step()
+          world.render()
+        }, 100)
+
+        $(document).keyup(function(ev) {
+          console.log(ev.which)
+          if (ev.which == 38) snake.updateDirection('up')
+          if (ev.which == 37) snake.updateDirection('left')
+          if (ev.which == 39) snake.updateDirection('right')
+          if (ev.which == 40) snake.updateDirection('down')
+        });
+      })
+
+      var phoneState = '';
+      function handleOrientation(ev) {
+        var angle = ev.beta;
+        
+        if (angle < -45) {
+          if (phoneState != 'inverted') {
+            phoneState = 'inverted';
+            snake.updateDirection('down');
+          }
+        } else if (angle > 45) {
+          if (phoneState != 'normal') {
+            phoneState = 'normal';
+            snake.updateDirection('up');
+          }
+        } else {
+          if (phoneState != 'left') {
+            phoneState = 'left';
+            snake.updateDirection('left');
+          }
+        }
+      }
+      window.addEventListener("deviceorientation", _.throttle(handleOrientation, 10), true);
+
+    </script>
+  </head>
+  <body>
+    <div id='game'>
+    </div>
+    <span id='orient'></span>
+  </body>
+</html>
