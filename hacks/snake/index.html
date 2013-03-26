@@ -32,55 +32,32 @@
     <script>
       $(function() {
         render = function(grid) {
-          if ($('#game div').length == 0) {
-            var output = $('<div>')
-            grid.map(function(row) {
-              var r = $('<div>')
-              row.map( function(cell) {
-                var c = $('<span>');
-                r.append(c);
-              });
-              output.append(r);
-            });
-            $('#game').append(output);
-          }
-
-          var rows = $('#game div > div');
-          grid.map(function(row, ir) {
-            var cells = $(rows[ir]).find('span');
-            row.map(function(cell, ic) {
-              var c = $(cells[ic]);
+          var output = $('<div>')
+          grid.map(function(row) {
+            var r = $('<div>')
+            row.map( function(cell) {
+              var c = $('<span>');
               if (cell == 'x') {
-                c.attr('class', 'food')
+                c.addClass('food')
                 c.text('x')
               } else if (cell == ' ') {
-                c.attr('class', 'snake')
-                c.text('')
-              } else {
-                c.attr('class', '');
-                c.text('')
+                c.addClass('snake')
               }
+              r.append(c);
             });
+            output.append(r);
           });
+          $('#game').empty()
+          $('#game').append(output);
         }
-
-        
-        function onDead(score) {
-          if (confirm('You died, score: '+score+' retry?')) {
-            window.location.reload();
-          } else {
-            window.location.reload();
-          }
-        }
-
 
         snake = new Head([10,10], [1,0])
-        world = new World([20,20], snake, render, onDead)
+        world = new World([20,20], snake, render)
 
         setInterval(function() {
           world.step()
           world.render()
-        }, 100)
+        }, 50)
 
         $(document).keyup(function(ev) {
           console.log(ev.which)
@@ -111,6 +88,8 @@
             snake.updateDirection('left');
           }
         }
+
+        $('#orient').text( Math.floor(angle) + '')
       }
       window.addEventListener("deviceorientation", _.throttle(handleOrientation, 10), true);
 
