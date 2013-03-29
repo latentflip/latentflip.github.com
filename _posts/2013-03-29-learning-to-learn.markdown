@@ -12,7 +12,7 @@ As an (almost) adult, learning two new skills from scratch has been hugely rewar
 
 ## 10,000 hours is a red herring
 
-There's a fairly well known belief that mastering something takes around 10,000 hours. This was popularised by Malcolm Gladwell in his book [Outliers](http://en.wikipedia.org/wiki/Outliers_(book)).
+There's a fairly well known belief that mastering something takes around 10,000 hours. This was popularised by Malcolm Gladwell in his book [Outliers](http://en.wikipedia.org/wiki/Outliers_(book\)).
 
 I am not going to refute this claim, but I don't think that it's a particularly useful metric. The first time I heard this claim, I immediately found a calculator and determined that racking up 10,000 hours would take about 30 years at an hour a day; or 7 years if you could average four hours a day. That is an incredibly daunting thought (particularly to a perfectionist like myself), but in reality we don't need to _master_ a task to benefit from learning it.
 
