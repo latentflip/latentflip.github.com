@@ -1459,8 +1459,23 @@ nav.posts {
     text-decoration: none; }
 
 @media screen and (min-width: 500px) {
-  main.blog, nav {
+  main.blog {
     width: 500px; } }
+.about {
+  border-top: 1px #eeeeee solid;
+  margin-top: 2em;
+  padding-top: 1em;
+  text-align: center; }
+
+.about a {
+  display: inline-block;
+  padding: 5px;
+  font-size: 200%;
+  text-decoration: none; }
+  .about a:hover {
+    position: relative;
+    top: 1px; }
+
 .posts-list h1 {
   text-align: center;
   font-weight: 200;
