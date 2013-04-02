@@ -5,11 +5,13 @@
 @import 'pygments-github';
 @import 'posts';
 
-pre, p > code {
-  padding: 0.5em;
+.highlight > pre {
+  margin: 0;
 }
 
 p > code {
+  background-color: #f8f8f8;
+  border: 1px solid #eee;
   padding: 2px;
   color: #D0002A;
   border-radius: 1px;
