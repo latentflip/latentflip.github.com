@@ -2,8 +2,20 @@
 @import 'typography';
 @import 'font-awesome';
 @import 'droid';
-@import 'pygments-monokai';
+@import 'pygments-github';
 @import 'posts';
+
+pre, p > code {
+  padding: 0.5em;
+}
+
+p > code {
+  padding: 2px;
+  color: #D0002A;
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+}
 
 main {
   display: block;
@@ -174,4 +186,12 @@ ul.posts.hacks {
     background: rgba(0,0,0,0.75);
     color: white;
   }
+}
+
+p.acknowledgements {
+  font-size: 90%;
+  background: #f8f8f8;
+  font-style: italic;
+  margin-top: 2em;
+  padding: 1em;
 }
