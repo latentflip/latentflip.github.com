@@ -8,7 +8,7 @@ task :reload do
       `sass assets/stylesheets/app.scss assets/stylesheets/app.css`
     else
       puts "Jekylling"
-      `jekyll`
+      puts `jekyll`
     end
   end
 end

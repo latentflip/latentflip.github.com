@@ -1,6 +1,13 @@
 var blog = angular.module('blog', []);
 
-blog.controller('PostCtrl', function() { });
+blog.controller('PostCtrl', function($scope) {
+  $scope.executable = true;
+  $scope.init = function(opts) {
+    if (opts.executable !== undefined) {
+      $scope.executable = opts.executable
+    }
+  };
+});
 
 function getName(obj) { 
    var funcNameRegex = /function (.{1,})\(/;
@@ -9,9 +16,10 @@ function getName(obj) {
 };
 
 function stringifySomething(something, nest) {
-  window.console.log("Trying to stringify", something);
   if (typeof something === "function") {
     return something.toString();
+  } else if (Object.prototype.toString.call( something ) === '[object Array]') {
+    return stringifyArray(something);
   } else if (typeof something == "object") {
     return stringifyObject(something, nest);
   } else if (typeof something == "string") {
@@ -19,6 +27,10 @@ function stringifySomething(something, nest) {
   } else {
     return something.toString();
   }
+}
+
+function stringifyArray(array) {
+  return '['+array.toString()+']';
 }
 
 function stringifyObject(obj, nest) {
@@ -60,17 +72,19 @@ blog.directive('code', function() {
   return {
     restrict: 'E',
     link: function(scope, element) {
-            var output = $('<pre class="code-output">').hide();
-            var button = $('<button>Run me</button>');
+      if (scope.$parent.executable) {
+        var output = $('<pre class="code-output">').hide();
+        var button = $('<button>Run me</button>');
 
-            if( element.parent().is('pre') ) {
-              output.insertAfter( element.closest('.highlight') );
-              element.closest('.highlight').append(button);
-              button.on('click', function() {
-                runTheCode(element.text(), output);
-              });
-            }
-          }
+        if( element.parent().is('pre') ) {
+          output.insertAfter( element.closest('.highlight') );
+          element.closest('.highlight').append(button);
+          button.on('click', function() {
+            runTheCode(element.text(), output);
+          });
+        }
+      }
+    }
   }
 });
 
@@ -84,6 +98,7 @@ function slugify(text) {
 
 blog.directive('h2', function() {
   return {
+    scope: true,
     restrict: 'E',
     link: function(scope, element) {
       var slug = slugify(element.text());

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div ng-controller='PostCtrl'>
+<div ng-controller='PostCtrl' ng-init='init({executable: {{ page.executable}} })' >
   {{ content }}
 </div>
 
