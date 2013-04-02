@@ -3,6 +3,7 @@ date: 2012-10-03
 layout: text
 alias: /post/32795505153/where-is-truth
 title: Where is truth?
+categories: [essay]
 ---
 
 Over time, I have been lead to believe, or I have led myself to believe, that truth lies within our own heads, in our minds.

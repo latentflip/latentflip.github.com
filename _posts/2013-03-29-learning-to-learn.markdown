@@ -2,6 +2,7 @@
 date: 2013-03-29
 layout: text
 title: Learning To Learn
+categories: [essay]
 ---
 
 Last September I started learning to dive (as in at a swimming pool off of a diving board). Since then I have been at the pool for an hour every week in a coached lesson, and for another hour without a coach most weeks. My previous experience was basically nil, although I am very comfortable in the water.

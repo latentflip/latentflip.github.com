@@ -3,6 +3,7 @@ date: 2012-09-04
 layout: text
 alias: /post/30860253360/anonymous-pen-pals
 title: Anonymous Pen Pals
+categories: [essay]
 ---
 
 I've recently been thinking a lot about [Tech Support](http://tchspprt.co.uk/) and how exactly to get that ball rolling.

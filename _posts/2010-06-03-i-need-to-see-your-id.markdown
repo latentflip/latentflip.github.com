@@ -3,6 +3,7 @@ date: 2010-06-03
 layout: text
 alias: /post/660025417/i-need-to-see-your-id
 title: Sorry Sir, I need to see your Id.
+categories: [thought]
 ---
 
 I just bumped into the following little "bug" in my rails app. I was getting the id of a related object to use to fill a newly added column in a migration, and suddenly far too many of the objects were linked to id=4. (Take particular note of the final line).

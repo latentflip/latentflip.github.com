@@ -3,6 +3,7 @@ title: Imperative vs Declarative
 date: 2013-04-02
 layout: text
 executable: false
+categories: [essay]
 ---
 
 Let's generalize and say that there are two ways in which we can write code: imperative and declarative.

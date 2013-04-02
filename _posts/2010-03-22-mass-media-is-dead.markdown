@@ -3,6 +3,7 @@ date: 2010-03-22
 layout: text
 alias: /post/466368819/mass-media-is-dead
 title: Mass Media is Dead (to me)
+categories: [essay]
 ---
 
 It has been a long time since I've had a television. Apart from perhaps the odd occasion at other people's houses, I haven't really watched television since I lived at home 6 years ago.

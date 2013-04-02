@@ -3,6 +3,7 @@ date: 2012-07-01
 layout: text
 alias: /post/26299916282/lightning
 title: Lightning
+categories: [essay]
 ---
 
 I researched and talked about lightning today, here is what I learned. Caveat, [I am not a meteorologist](http://en.wikipedia.org/wiki/Lightning). I have embedded the slides, and I've roughly transcribed some notes to go along with them.

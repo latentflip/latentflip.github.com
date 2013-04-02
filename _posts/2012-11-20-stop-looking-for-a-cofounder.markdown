@@ -3,6 +3,7 @@ date: 2012-11-20
 layout: text
 alias: /post/36165848162/stop-looking-for-a-cofounder
 title: Stop looking for a co-founder
+categories: [essay]
 ---
 
 A question I am frequently asked by almost every new or aspiring entrepreneur is "How can I find a (technical) co-founder". It's frequently, though not always, asked by somebody who is non technical who has an idea for some kind of web startup, but doesn't know how to build it.

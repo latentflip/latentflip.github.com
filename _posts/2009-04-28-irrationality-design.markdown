@@ -3,6 +3,7 @@ date: 2009-04-28
 layout: text
 alias: /post/353187201/irrationality-design
 title: Irrationality &amp; Design
+categories: [essay]
 ---
 
 <p>I am often derided for being too logical. Indeed, a recent personality test I took at work identified me as an <a href="http://en.wikipedia.org/wiki/INTP">INTP</a>, the hallmark of which is apparently <em>logic</em>. On the other hand, the following personal anecdote would seem to be anything but logical:</p>

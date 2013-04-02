@@ -3,6 +3,7 @@ date: 2010-08-04
 layout: text
 alias: /post/902965714/upper-bounds
 title: Upper Bounds
+categories: [essay]
 ---
 
 One of my favorite lecturers from university was Dr Iain Lindsay, who taught 4th year Digital System Design. 

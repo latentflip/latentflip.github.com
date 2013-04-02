@@ -3,6 +3,7 @@ date: 2012-05-03
 layout: text
 alias: /post/22315558856/sonicrouter
 title: Fresh, free music with Sonic Router
+categories: [thought]
 ---
 
 I recently came across [Sonic Router](http://www.sonicrouter.com/category/sonic-router-mixes/) which have a nice collection of dubstep/electronic/hip-hop mixes from various artists. One of my favourites so far is by [Lapalux](http://official.fm/tracks/236466).

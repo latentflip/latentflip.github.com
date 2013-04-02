@@ -3,6 +3,7 @@ date: 2012-05-01
 layout: text
 alias: /post/22215449880/shakey-technical
 title: The making of Shakey&#58; a Realtime, Massively Multiplayer, Shakespearean parlour game
+categories: [essay]
 ---
 
 At Culture Hack Scotland (#chscot) last weekend, we won _most playful_ and _the grand prize_ for a real-time game we made using Rails, JavaScript and Pusher. For a bit of background [read this post](http://blog.latentflip.com/post/22047287999/chscot2012).

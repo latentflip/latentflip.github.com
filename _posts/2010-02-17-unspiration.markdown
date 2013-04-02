@@ -3,6 +3,7 @@ date: 2010-02-17
 layout: text
 alias: /post/395378518/unspiration
 title: Unspiration
+categories: [thought]
 ---
 
 When you are working through something difficult, it's often useful to look for a source of inspiration. Something you would love to have created yourself, something to aspire to.

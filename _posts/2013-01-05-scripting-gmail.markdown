@@ -3,6 +3,7 @@ date: 2013-01-05
 layout: text
 alias: /post/39755076457/scripting-gmail
 title: Scripting Gmail
+categories: [thought]
 ---
 
 <p>In an attempt to get on top of my email this year, I thought about writing an app to auto cleanup my inbox based on various rules. I love the idea of inbox zero, but would rather a lot of the heavy lifting was done for me - hitting archive is just too much work.</p>

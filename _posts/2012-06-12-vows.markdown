@@ -3,6 +3,7 @@ date: 2012-06-12
 layout: text
 alias: /post/24973990622/vows
 title: Vows
+categories: [essay]
 ---
 
 In case you missed it, Hilary and I got married recently, on what was easily the best day of my life.

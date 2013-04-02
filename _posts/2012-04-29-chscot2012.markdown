@@ -3,6 +3,7 @@ date: 2012-04-29
 layout: text
 alias: /post/22047287999/chscot2012
 title: A Shakey Victory&#58; Culture Hack Scotland 2012
+categories: [essay]
 ---
 
 Having just returned home from Culture Hack Scotland 2012, I can safely say that it is one of my favourite tech events of the year. Since anyone who wasn't there will have seen all my tweets without knowing what I was up to, I thought I should give a run down of what I've been up to for the last 24 hours.

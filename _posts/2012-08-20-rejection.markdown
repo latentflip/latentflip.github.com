@@ -3,6 +3,7 @@ date: 2012-08-20
 layout: text
 alias: /post/29820876915/rejection
 title: Rejection
+categories: [essay]
 ---
 
 I was at the pool, waiting to dive, behind maybe 6 or 7 others, all younger than me, mostly female.

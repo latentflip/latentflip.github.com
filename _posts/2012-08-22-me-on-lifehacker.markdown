@@ -3,6 +3,7 @@ date: 2012-08-22
 layout: photo
 alias: /post/29965714246/me-on-lifehacker
 image: images/tumblr_m95un6Ko4z1qzmkoso1_1280.jpg
+categories: [thought]
 ---
 
 Current lifehacker homepage.

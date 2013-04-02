@@ -3,6 +3,7 @@ date: 2012-11-30
 layout: text
 alias: /post/36886646122/leadership-and-communities
 title: Leadership and Communities
+categories: [essay]
 ---
 
 > _I was honoured to be invited by [Alan Gardner](http://twitter.com/mr_urf) to speak at [Northern Lights, an amazing little conference he organised](http://www.northernlightsconf.co.uk/) in Aberdeen last week._  

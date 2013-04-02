@@ -3,6 +3,7 @@ date: 2012-01-10
 layout: text
 alias: /post/15622557834/faster-rails-rake-tasks
 title: Faster rake tasks in Rails
+categories: [thought]
 ---
 
 Rake tasks are awesome for project specific scripts among other things, but in rails projects they suck for short tasks that don't depend on rails. Here's why:

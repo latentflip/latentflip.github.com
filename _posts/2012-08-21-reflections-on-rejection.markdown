@@ -3,6 +3,7 @@ date: 2012-08-21
 layout: text
 alias: /post/29895405731/reflections-on-rejection
 title: Reflections on &quot;Rejection&quot;
+categories: [thought]
 ---
 
 Yesterday (Monday) morning, I was on my way to work with a pretty heavy case of the Mondays. Call it laziness, depression, apprehension, whatever, but most of the fibres in my body were screaming "go back to bed".

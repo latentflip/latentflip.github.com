@@ -3,6 +3,7 @@ date: 2011-02-20
 layout: text
 alias: /post/3409125475/reading-rails
 title: Reading Rails
+categories: [thought]
 ---
 
 I have been reading through the Rails source code today to spot bits of ruby/conventions/etc I haven't seen before. Here are the ones I have got so far. 

@@ -3,6 +3,7 @@ date: 2012-08-30
 layout: text
 alias: /post/30513619794/a-logo-for-introverts
 title: A logo for introverts
+categories: [thought]
 ---
 
 I love the idea of a logo for us introverts. I'm not sure why, perhaps as a way of legitimising us.

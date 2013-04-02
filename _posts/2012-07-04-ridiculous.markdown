@@ -3,6 +3,7 @@ date: 2012-07-04
 layout: text
 alias: /post/26513367897/ridiculous
 title: I'm just going to leave this here&#58;
+categories: [thought]
 ---
 
 If you aren't interested in Ruby, metaprogramming, or ridiculous things, move swiftly on ;)

@@ -3,6 +3,7 @@ date: 2010-06-12
 layout: text
 alias: /post/691101513/same-same-but-different
 title: Same-same, but different
+categories: [thought]
 ---
 
 Whenever I have a merge conflict after merging from a branch into another with git, I get confused which bits came from where:

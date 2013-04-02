@@ -3,6 +3,7 @@ date: 2012-11-30
 layout: text
 alias: /post/36873527940/dev-team-one-accountability
 title: The dev team of one&#58; accountability
+categories: [essay]
 ---
 
 Being in a technical team of one can really suck sometimes.
