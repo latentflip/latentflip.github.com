@@ -30,7 +30,7 @@ Diving has a very interesting feedback loop. Some parts are obvious (and painful
 
 There are two things that help improve the feedback loop in diving: the first is a good coach, who can help explain where you went wrong, and how you should correct. The second is instant replay: on the higher diving boards at my pool there is a camera and tv which record your dive and play it back with a 30 second delay. This is incredibly useful for learning where you've gone wrong!
 
-There is a pretty tight feedback loop when playing the piano. If you know what the song should sound like, it's fairly obvious if you've hit the wrong key (although as a very beginner I found even that to be less obvious than I would have expected at times). Knowing how to diagnose what's causing you to make mistakes, and correcting for them is much harder though. Sometimes it's as simple as my wife saying "if you play that note with your ring finger instead of your middle finger, it will be much easier" and that's the problem instantly fixed.
+There is a pretty tight feedback loop when playing the piano. If you know what the song should sound like, it's fairly obvious if you've hit the wrong key (although as a very beginner I found even that to be less obvious than I would have expected at times). Knowing how to diagnose what's causing you to make mistakes, and correcting for them is much harder though. Sometimes it's as simple as my wife saying "if you play that note with your ring finger instead of your middle finger, it will be much easier" and the problem is instantly fixed.
 
 ## Knowing when to think
 
