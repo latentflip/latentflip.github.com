@@ -4,6 +4,7 @@ layout: default
 
 <div ng-controller='PostCtrl' ng-init='init({executable: {{ page.executable}} })' >
   {{ content }}
+  <div id='hi5'></div>
 </div>
 
 <nav class="posts">
@@ -33,3 +34,11 @@ layout: default
   <a href='http://github.com/latentflip'><i class='icon-github'></i></a>
   <a href='/essays.xml'><i class='icon-rss'></i></a>
 </div>
+
+<script src='/assets/hi5/hi5.bundle.js'></script>
+<script>
+  Hi5({
+    placement: 'right',
+    assetPath: '/assets/hi5/'
+  })
+</script>
