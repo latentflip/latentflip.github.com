@@ -578,7 +578,7 @@
                    "      <img src='"+assetPath+"hand.png' id='hi5-hand'>" +
                    "    </div>" +
                    "  </div>" +
-                   "  <audio src='slap.mp3' id='hi5-sound'></audio>" +
+                   "  <audio src='"+assetPath+"slap.mp3' id='hi5-sound'></audio>" +
                    "  <p id='hi5-count'><span class='count'>_</span> ^5s</p>" +
                    "  <img src='"+assetPath+"handred.png' id='hi5-cursor'>" +
                    " </div>";
