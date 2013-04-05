@@ -643,7 +643,7 @@
         var url = window.location.host + '/' + window.location.pathname;
         url = url.toLowerCase();
         if(url[url.length - 1] == '/') {
-          url = url.slice(0, url.length-2);
+          url = url.slice(0, url.length-1);
         } 
         return url
       };
