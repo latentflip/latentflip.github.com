@@ -723,6 +723,9 @@
             $('#hi5-outer').unbind('mousemove', mousemove);
             $('#hi5-outer').unbind('click', click);
 
+            $('#hi5-count .count').text(
+              parseInt($('#hi5-count .count').text(), 10) + 1
+            );
             hi5();
             playSound();
             $(this).animate(from, 50, function() {
