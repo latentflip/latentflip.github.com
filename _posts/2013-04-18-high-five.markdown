@@ -1,6 +1,6 @@
 ---
 date: 2013-04-18
-title: National high five day
+title: It's national high five day!
 layout: text
 ---
 
