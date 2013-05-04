@@ -3,7 +3,7 @@ date: 2013-05-04
 title: Patterns of creation
 layout: video
 video_url: "http://vimeo.com/65303586"
-caption: "Some thoughts on patterns of creation".
+caption: "Some thoughts on patterns of creation"
 categories: [talk]
 ---
 
