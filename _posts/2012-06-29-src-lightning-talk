@@ -1,0 +1,10 @@
+---
+date: 2012-06-29
+title: Livecoding Websockets Lightning Talk
+layout: video
+video_url: "http://vimeo.com/65500265"
+caption: "A fun lightning talk I gave at Scottish Ruby Conference 2012: livecoding with websockets"
+categories: [talk]
+---
+
+<iframe src="http://player.vimeo.com/video/65500265" width="500" height="281" frameborder="0"></iframe>
