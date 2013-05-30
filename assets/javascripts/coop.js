@@ -529,8 +529,8 @@ function exporter_load(url, callback) {
 }
 
 // Download other dependencies and then start
-exporter_load('http://uncoop.me/js/downloadify.min.js', function () {
-    exporter_load('http://uncoop.me/js/swfobject.js', function() {
+exporter_load('js/downloadify.min.js', function () {
+    exporter_load('js/swfobject.js', function() {
         $(function() {
             if ($('#exporter-container').size() <= 0) {
                 exporter_init();
