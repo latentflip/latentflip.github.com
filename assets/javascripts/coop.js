@@ -17,11 +17,11 @@ function exporter_clean(n) {
 }
 
 function exporter_csv_line(date, desc, amount) {
-    return date+','+desc+','+amount+'\n';
+    return date+','+amount+','+desc+'\n';
 }
 
 function exporter_generate_csv(lines) {
-    var output = 'Date,Description,Amount\n';
+    var output = '';
     $.each(lines, function(i, item) {
         output += exporter_csv_line(item.date, item.description, item.amount);
     });
