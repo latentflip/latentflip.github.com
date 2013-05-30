@@ -23,7 +23,9 @@ function exporter_csv_line(date, desc, amount) {
 function exporter_generate_csv(lines) {
     var output = '';
     $.each(lines, function(i, item) {
-        output += exporter_csv_line(item.date, item.description, item.amount);
+        if (!item.description.match(/brought forward/i)) {
+          output += exporter_csv_line(item.date, item.description, item.amount);
+        }
     });
     return output;
 }
