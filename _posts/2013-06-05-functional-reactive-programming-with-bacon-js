@@ -1,0 +1,10 @@
+---
+date: 2013-05-04
+title: Enemy of the State: An introduction to functional reactive programming with Bacon.js
+layout: video
+video_url: "http://www.youtube.com/watch?v=jIsxcXBWthI"
+caption: "An introduction to Functional Reactive Programming at RealtimeConfEu in April 2013."
+categories: [talk]
+---
+
+<iframe width="640" height="360" src="http://www.youtube.com/embed/jIsxcXBWthI" frameborder="0" allowfullscreen></iframe>
