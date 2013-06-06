@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <link href='viz.css' type='text/css' rel='stylesheet'>
+    <script src='leo.js'></script>
+    <script src='jquery.min.js'></script>
+  </head>
+  <body>
+    <div id='controls'>
+      <div>
+        Setup:
+      </div>
+      <textarea id='setup'>
+factorial = function(n) {
+  if (n==0) {
+    return 1;
+  } else {
+    return n*factorial(n-1);
+  }
+}
+      </textarea>
+      <div>Run:</div>
+      <div>
+        <input id='run' value='factorial(10)'</input>
+      </div>
+      <div>
+      <a href="instrument.html">⌘-click/ctrl-click me to run</a>
+      </div>
+    </div>
+
+    <div id='outer-wrapper'>
+      <div id='wrapper'>
+        <ul>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      var leo = new Leo()
+
+      leo.on( 'function:call', function(data) {
+        var str = [data.name, 'called with', data.args].join(' ');
+        var $el = $('<li class=running>'+str+'</li>');
+        $('ul').prepend($el);
+      });
+
+      leo.on( 'function:return', function(data) {
+        var $el = $('ul li.running').first();
+        console.log($el);
+        var text = ['Returned', data.result].join(' ');
+
+        $el.text( text )
+           .removeClass('running')
+           .css({position: 'relative'})
+           .animate({left: 200}, function() {
+             $(this).fadeOut('slow', function() {
+               $(this).remove();
+             })
+           });
+      });
+    </script>
+
+    <script>
+      $('a').click(function() {
+        setTimeout(function() {
+          var code = $('#setup').text();
+          var run = $('#run').val();
+          leo.emit('code', { code: code, run: run })
+        }, 500);
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<script src="comm.js"></script>
+<script>
+  controller = new WindowController()
+
+  log = function(string) { controller.broadcast('logMessage', string) }
+</script>
+<script>
+   var delay = function(n) {
+         var a = 0;
+             for(var i=0; i<n*900000; i++) {
+                     a++;
+                         }
+                           }
+
+  function a() {
+    log('a');
+    delay(1000)
+    log('after a')
+  }
+  function b(cb) {
+    log('b')
+    delay(1000)
+    cb()
+    delay(200)
+    log('after b')
+  }
+
+  setTimeout(function() {
+    console.log('Running')
+    b(a)
+  }, 2000)
+</script>
+
+<iframe src="index2.html"></iframe>

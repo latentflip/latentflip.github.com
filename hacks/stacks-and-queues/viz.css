@@ -1,0 +1,29 @@
+#outer-wrapper {
+  padding-left: 250px;
+}
+#wrapper {
+  display:table-cell;
+  vertical-align:bottom;
+  height:500px;
+}
+
+ul { 
+  list-style-type: none;
+}
+
+li {
+  padding:10px;
+  border-top: 1px solid #D1D1D1;
+  font-size: 114%;
+}
+
+textarea {
+  width: 200px;
+  height: 300px;
+  display: block;
+}
+#controls {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}

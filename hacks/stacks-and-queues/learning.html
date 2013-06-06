@@ -1,0 +1,94 @@
+<script src='jquery.min.js'></script>
+<script src='utils.js'></script>
+<style>
+  body {
+    background: #eee;
+  }
+  div {
+    padding: 20px;
+    margin: 20px;
+    background: white;
+  }
+  .timer {
+    float: right;
+    width: 100px;
+    display: none;
+  }
+</style>
+
+<div>
+  
+  <pre>
+    setTimeout(function() {
+      log("Zero timeout")
+    }, 0)
+
+    setTimeout(function() {
+      log("Ten timeout")
+    }, 10)
+    delay(0)
+  </pre>
+</div>
+
+<div>
+  <pre>
+    setTimeout(function() {
+      log("Zero timeout 1")
+    }, 0)
+
+    setTimeout(function() {
+      log("Zero timeout 2")
+    }, 0)
+    delay(0)
+  </pre>
+</div>
+
+<div>
+  <pre>
+    $container.click(function() {
+      log("Processed click")
+    });
+    setTimeout(function() {
+      log("Zero timeout")
+    }, 0)
+    setTimeout(function() {
+      log("Ten timeout")
+    }, 10)
+    setTimeout(function() {
+      log("2500 timeout")
+    }, 2000)
+    delay(100)
+  </pre>
+</div>
+
+<div>
+  <pre>
+    $container.click(function() {
+      log("Processed click")
+      setTimeout(function() {
+        log("Zero timeout")
+      }, 0)
+    });
+    delay(3000)
+  </pre>
+</div>
+
+
+
+<script>
+  $(function() {
+    $("div").append("<button>Go</button><br/>")
+
+    $("div pre").each(function() {
+      var $this = $(this);
+      var $container = $this.closest('div');
+      $container.find('button').click(function() {
+        var log = function(msg) {
+          $this.closest('div').append( msg + "<br>")
+        }
+        eval($this.text())
+        return false;
+      });
+    });
+  });
+</script>

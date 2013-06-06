@@ -1,0 +1,63 @@
+<style>
+  .foo { background: red; }
+</style>
+
+<script src='jquery.min.js'></script>
+<script src='utils.js'></script>
+
+<script>
+  $(function() {
+    $('h1').click(function() {
+      $('body').css({background: 'red'})
+      console.log('clicked')
+    });
+    delay(3000)
+  });
+
+  function PushOp(name) { this.name = name; }
+  function PopOp() {}
+
+  var stackOps = [];
+  var instrument = function(name, fn) {
+    return function() {
+
+      stackOps.push( new PushOp(name + "(" + Array.prototype.slice.call(arguments, 0).join(', ') + ")") )
+      
+      console.log("Running function " + name)
+      
+      var result = fn.apply(fn, Array.prototype.slice.call(arguments, 0));
+      //delay(1000)
+      stackOps.push(new PopOp)
+      console.log("Ran function " + name)
+      return result
+    }
+  }
+
+  var dbl = instrument('double', function(n) { return 2*n })
+  var add = instrument('add', function(n) { return 1 + n })
+  
+  var log = instrument('log', function(n) { console.log("The number is ", n) })
+
+  $(function() {
+    log(add(dbl(5)))
+    console.log('Done log')
+
+    setInterval(function() {
+      var op = stackOps.shift(),
+          el;
+
+      if (op instanceof PushOp) {
+        el = $('<li>').text(op.name)
+        el.prependTo('ul')
+      } else {
+        $('ul li').first().remove()
+      }
+    }, 2000);
+  })
+
+</script>
+<canvas id='canvas'></canvas>
+
+<h1>Hiya</h1>
+<h2>Hiya</h2>
+<ul></ul>
