@@ -42,13 +42,3 @@ var Leo = (function() {
 
   return Leo;
 })()
-
-leo = new Leo()
-
-setInterval(function() {
-  leo.emit( 'message', {date: new Date().valueOf().toString() } )
-}, 500)
-
-leo.on( 'message', function(data) {
-  console.log(data)
-});
