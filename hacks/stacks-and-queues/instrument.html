@@ -1,19 +1,27 @@
-Ooops, you clicked the link, <a href='index.html'>go back</a> and ctrl/⌘-click it instead.
-<script src='utils.js'></script>
-<script src='leo.js'></script>
-<script src='instrumentor.js'></script>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <script src='utils.js'></script>
+    <script src='leo.js'></script>
+    <script src='instrumentor.js'></script>
+  </head>
+  <body>
 
-<script>
-  var leo = new Leo();
-  var context = window;
-  var i = new Instrumentor(context, leo);
-  leo.on('code', function(data) {
-    console.log('Got Code', data.code);
-    i.start()
-    eval(data.code, window);
-    console.log(context);
-    i.run();
-    eval(data.run, window);
-  });
+    Ooops, you clicked the link, <a href='index.html'>go back</a> and ctrl/⌘-click it instead.
 
-</script>
+    <script>
+      var leo = new Leo();
+      var context = window;
+      var i = new Instrumentor(context, leo);
+      leo.on('code', function(data) {
+        console.log('Got Code', data.code);
+        i.start()
+        eval(data.code, window);
+        console.log(context);
+        i.run();
+        eval(data.run, window);
+      });
+
+    </script>
+  </body>
+</html>

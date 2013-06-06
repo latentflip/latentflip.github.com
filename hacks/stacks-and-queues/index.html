@@ -3,6 +3,7 @@
     <link href='viz.css' type='text/css' rel='stylesheet'>
     <script src='leo.js'></script>
     <script src='jquery.min.js'></script>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
   </head>
   <body>
     <div id='controls'>
@@ -52,7 +53,7 @@ factorial = function(n) {
            .removeClass('running')
            .css({position: 'relative'})
            .animate({left: 200}, function() {
-             $(this).fadeOut('slow', function() {
+             $(this).fadeOut(1000, function() {
                $(this).remove();
              })
            });
