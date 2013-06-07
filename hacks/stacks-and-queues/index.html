@@ -67,7 +67,7 @@ factorial = function(n) {
 <script>
   $('a').click(function() {
     setTimeout(function() {
-      var code = $('#setup').text();
+      var code = $('#setup').val();
       var run = $('#run').val();
       leo.emit('code', { code: code, run: run })
     }, 500);
