@@ -9,13 +9,14 @@ title: Hacks
   <ul class='posts hacks'>
     {% for post in site.pages %}
       {% if post.layout == 'hack' %}
-        <li class="{{ post.layout }}">
-          <a href="{{ post.hackurl || post.url }}">
-            <img src="/images/{{post.image}}">
-            <span>{{post.hats}}</span>
-            <span class='title'>{{ post.title || post.slug }}</span>
-          </a>
-        </li>
+        {% unless post.hide %}
+          <li class="{{ post.layout }}">
+            <a href="{{ post.hackurl || post.url }}">
+              <img src="/images/{{post.image}}">
+              <span class='title'>{{post.hide}}{{ post.title || post.slug }}</span>
+            </a>
+          </li>
+        {% endunless %}
       {% endif %}
     {% endfor %}
   </ul>
