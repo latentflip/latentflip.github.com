@@ -5,14 +5,13 @@
   display:table-cell;
   vertical-align:bottom;
   height:500px;
-  margin-top: 50px;
 }
 
-ul { 
+ul#stack { 
   list-style-type: none;
 }
 
-li {
+ul#stack li {
   padding:10px;
   border-top: 1px solid #D1D1D1;
   font-size: 114%;
@@ -25,6 +24,6 @@ textarea {
 }
 #controls {
   position: absolute;
-  top: 50px;
+  top: 10px;
   left: 10px;
 }

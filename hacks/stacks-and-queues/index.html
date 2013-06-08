@@ -22,54 +22,45 @@ factorial = function(n) {
     return n*factorial(n-1);
   }
 }
-  </textarea>
-  <div>Run:</div>
-  <div>
-    <input id='run' value='factorial(10)'</input>
-  </div>
-  <div>
-  <a href="instrument.html">⌘-click/ctrl-click me to run</a>
-  </div>
-</div>
+      </textarea>
+      <div>Run:</div>
+      <div>
+        <input id='run' value='factorial(10)'</input>
+      </div>
+      <div>
+      <a href="/instrument.html">⌘-click/ctrl-click me to run</a>
+      </div>
+    </div>
 
-<div id='outer-wrapper'>
-  <div id='wrapper'>
-    <ul>
-    </ul>
-  </div>
-</div>
+    <div id='outer-wrapper'>
+      <div id='wrapper'>
+        <ul id='stack'>
+        </ul>
+      </div>
+    </div>
+    <!--
+    <div>Callbacks: 
+      <ul id='callbacks'></ul>
+    <div>
 
-<script>
-  var leo = new Leo()
+    <button>Queue Callback</button>-->
 
-  leo.on( 'function:call', function(data) {
-    var str = [data.name, 'called with', data.args].join(' ');
-    var $el = $('<li class=running>'+str+'</li>');
-    $('ul').prepend($el);
-  });
+    <script src='index.js'></script>
 
-  leo.on( 'function:return', function(data) {
-    var $el = $('ul li.running').first();
-    console.log($el);
-    var text = ['Returned', data.result].join(' ');
+    <script>
+      $('a').click(function() {
+        setTimeout(function() {
+          var code = $('#setup').val();
+          var run = $('#run').val();
+          leo.emit('code', { code: code, run: run })
+        }, 500);
+        return false;
+      })
 
-    $el.text( text )
-       .removeClass('running')
-       .css({position: 'relative'})
-       .animate({left: 200}, function() {
-         $(this).fadeOut(1000, function() {
-           $(this).remove();
-         })
-       });
-  });
-</script>
-
-<script>
-  $('a').click(function() {
-    setTimeout(function() {
-      var code = $('#setup').text();
-      var run = $('#run').val();
-      leo.emit('code', { code: code, run: run })
-    }, 500);
-  })
-</script>
+      $('button').click(function() {
+        $('#callbacks').append($('<li>Queued</li>'))
+        leo.emit('callback', { foo: 'bar' })
+      });
+    </script>
+  </body>
+</html>

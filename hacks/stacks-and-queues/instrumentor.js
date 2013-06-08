@@ -12,7 +12,6 @@ var Instrumentor = (function() {
 
     self.scope[name] = function() {
       var args = Array.prototype.slice.call(arguments);
-      console.log(arguments);
       self.msgbus.emit( 'function:call', { name: name, args: args } )
       delay(150);
       var result = fn.apply(null, arguments);
