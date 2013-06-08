@@ -29,13 +29,13 @@ leo.on( 'function:call', function(data) {
 
 leo.on( 'function:return', function(data) {
   var $el = $('ul li.running').first();
-  var text = ['Returned', data.result].join(' ');
+  var text = ['returned', data.result].join(' ');
 
   $el.text( text )
      .removeClass('running')
      .css({position: 'relative'})
      .animate({left: 200}, function() {
-       $(this).fadeOut('slow', function() {
+       $(this).fadeOut(2000, function() {
          $(this).remove();
        })
      });

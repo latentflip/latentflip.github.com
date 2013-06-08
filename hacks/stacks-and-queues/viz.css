@@ -1,5 +1,6 @@
 #outer-wrapper {
-  padding-left: 250px;
+  padding-left: 300px;
+  margin-top: 80px;
 }
 #wrapper {
   display:table-cell;
@@ -24,6 +25,6 @@ textarea {
 }
 #controls {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 50px;
+  left: 25px;
 }
