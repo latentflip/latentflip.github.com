@@ -1,7 +1,14 @@
-#outer-wrapper {
-  padding-left: 300px;
-  margin-top: 80px;
+#viz {
+  width: 800px;
+  height: 500px;
+  background: #eee;
+  margin-left: 300px;
+  margin-top: 50px;
+  position: relative;
 }
+#outer-wrapper {
+}
+
 #wrapper {
   display:table-cell;
   vertical-align:bottom;
@@ -10,12 +17,34 @@
 
 ul#stack { 
   list-style-type: none;
+  width: 150px;
 }
 
 ul#stack li {
-  padding:10px;
-  border-top: 1px solid #D1D1D1;
-  font-size: 114%;
+  padding:5px;
+  margin: 2px;
+
+  border: 1px #d35400 solid;
+  background: #e67e22;
+}
+
+#callbacks-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 155px;
+}
+
+ul#callbacks {
+  list-style-type: none;
+}
+ul#callbacks li {
+  padding:5px;
+  margin: 2px;
+  width: 100px;
+  display: inline-block;
+
+  border: 1px #27ae60 solid;
+  background: #2ecc71;
 }
 
 textarea {

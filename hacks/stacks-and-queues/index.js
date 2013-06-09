@@ -19,10 +19,9 @@ worker.onmessage = function(ev) {
     });
   }
 }
-//worker.postMessage('')
 
 leo.on( 'function:call', function(data) {
-  var str = [data.name, 'called with', data.args].join(' ');
+  var str = [data.name, '(', data.args.join(','),')'].join('');
   var $el = $('<li class=running>'+str+'</li>');
   $('ul#stack').prepend($el);
 });
@@ -34,13 +33,13 @@ leo.on( 'function:return', function(data) {
   $el.text( text )
      .removeClass('running')
      .css({position: 'relative'})
-     .animate({left: 200}, function() {
-       $(this).fadeOut(2000, function() {
+     .animate({left: 0}, function() {
+       $(this).fadeOut(100, function() {
          $(this).remove();
        })
      });
 });
 
-leo.on( 'callback:ran', function(data) {
+leo.on( 'callback:started', function(data) {
   $('#callbacks li').first().remove()
 });

@@ -20,6 +20,8 @@ onmessage = function(event) {
     msgbus.emit('instrumentor:ran', { ran: true })
   }
   if (event.type == 'callback') {
+    msgbus.emit('callback:started', {})
+    delay(500)
     factorial(5)
     msgbus.emit('callback:ran', {})
   }
