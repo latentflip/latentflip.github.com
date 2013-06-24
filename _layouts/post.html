@@ -9,7 +9,7 @@ layout: default
 
 <nav class="posts">
   {% if page.previous %}
-    <a href="/{{ page.previous.url }}">
+    <a href="{{ page.previous.url }}">
       <span class="icon icon-arrow-left"></span>
       <span class=hidden>older</span>
     </a>
@@ -21,7 +21,7 @@ layout: default
   </a>
 
   {% if page.next %}
-    <a href="/{{ page.next.url }}">
+    <a href="{{ page.next.url }}">
       <span class=hidden>newer</span>
       <span class="icon icon-arrow-right"></span>
     </a>
