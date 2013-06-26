@@ -1435,9 +1435,9 @@ main.blog, .topbar-inner {
     margin: 0; }
   .topbar .logo {
     float: left;
-    width: 50%; }
+    width: 30%; }
   .topbar nav {
-    width: 50%;
+    width: 70%;
     float: right;
     text-align: right; }
   .topbar a {
