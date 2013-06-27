@@ -6,7 +6,7 @@ executable: false
 categories: [essay]
 ---
 
-I just received an email informing me that I need to renew [tchspprt.co.uk](http://tchspprt.co.uk), which means it's nearly a year since I bought the domain. So I've been doing some thinking.
+I just received an email informing me that I need to renew [tchspprt.co.uk](http://tchspprt.co.uk), which means it's nearly a year since I bought the domain. I've been doing some thinking, and I have realised that Tech Support isn't the best way that I can help raise awareness of mental health, and to help sufferers in my community.
 
 The last 3 years have been... an experience. I can now confidently call myself a barely competent web developer. Our startup still hasn't crashed and burned. I have spoken at some amazing conferences. I have met some even more amazing people. And I married the love of my life. 
 
