@@ -36,5 +36,5 @@ On reflection this cycle seems to be fuelled by a number of things:
 
 * **A lack of an avoidance strategy:** Often I can see the peak coming, but it feels inevitable. I have said to my wife more than once over the last few weeks that I can feel myself compelled to _keep working_. It feels like I have no option, like it's not my decision.
 
-
+## Next steps
 Having spoken to a few people about this, I seem to be not the only person who goes through these cycles, which is oddly comforting. How much it is just me, how _bad_ it is, and how much it feeds quote-unquote _depression_ is hard to say, but I know that those crashing lows can't be healthy. How to avoid it, I don't know, but I hope that becoming more mindful of when it's happening will help.
