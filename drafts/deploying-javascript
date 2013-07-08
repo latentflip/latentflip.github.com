@@ -1,3 +1,5 @@
+# Grunt + Browserify + s3 Heaven
+
 ## Rough outline of asset deployment strategy
 
 ### Goals
@@ -42,7 +44,7 @@ Below are the scoutfile, gruntfile, and rails application layout.
   * I even have a custom `scout-dev.js` file which will point the production backend to a server running on localhost which is serving up the current dev build. Really nice for testing bugfixes/styles etc with live data.
 
 
-```
+```javascript
 (function() {
   var firstScriptTag = document.getElementsByTagName('script')[0],
       baseUrl = '//mydomain.cloudfront.net/envs/<%= deployEnv %>/b<%= buildNumber %>/',
@@ -115,7 +117,7 @@ Below are the scoutfile, gruntfile, and rails application layout.
     * We run a server on localhost, which serves the assets for either the development backend, or the production backend with `?scout=dev` set.
     * We use grunt's watch plugin, to watch for file changes and recompile appropriately.
 
-```
+```javascript
 module.exports = (grunt) ->
 
   for dep, ver of require('./package.json').devDependencies
@@ -349,7 +351,7 @@ module.exports = (grunt) ->
     * But if `?scout=dev` load the special scoutfile which loads js files from localhost.
   * In development load the scoutfile from the local server running from grunt.
 
-```
+```javascript
 <% if params[:scout] and current_user.admin? %>
   <% if params[:scout] == 'dev' %>
     <script src='https://dlyc0fg6gcuom.cloudfront.net/scout-dev.js'></script>
