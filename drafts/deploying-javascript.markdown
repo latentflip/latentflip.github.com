@@ -1,8 +1,7 @@
 ---
-layout: text
+layout: code
 title: Depoying JavaScript
 ---
-
 
 ## Rough outline of asset deployment strategy
 
