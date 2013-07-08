@@ -1,3 +1,7 @@
+---
+layout: text
+---
+
 # Grunt + Browserify + s3 
 
 ## Rough outline of asset deployment strategy
