@@ -1,8 +1,8 @@
 ---
 layout: text
+title: Depoying JavaScript
 ---
 
-# Grunt + Browserify + s3 
 
 ## Rough outline of asset deployment strategy
 
