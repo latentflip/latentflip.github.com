@@ -1,4 +1,4 @@
-# Grunt + Browserify + s3 Heaven
+# Grunt + Browserify + s3 
 
 ## Rough outline of asset deployment strategy
 
