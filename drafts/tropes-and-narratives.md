@@ -1,5 +1,6 @@
 ---
 title: Tropes and narratives
+layout: text
 ---
 
 Tropes are an essential part of storytelling. A trope is something of a framework storyline that is commonly used to structure a story. A trope may apply to the whole plot, a character, character trait or an individual scene.
