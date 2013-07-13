@@ -1,6 +1,6 @@
 ---
-layout: text
-title: "Tropes and narratives"
+layout: post
+title: Tropes and narratives
 date: 2013-07-13
 ---
 
