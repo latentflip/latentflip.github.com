@@ -9,13 +9,10 @@ Tropes are an essential part of storytelling. An author uses tropes as a startin
 
 Some classic tropes are:
 
-* The damsel in distress: There is a damsel, she has been captured by some evil character, and the hero must rescue her to save the day (this is an often overused trope in video games in particular).
-
-* The superhero: A seemingly normal human character has been bestowed superhuman powers, and must save mankind from some evil force, who often has their own superpowers. Mankind is initially distrustful of the superhero, but comes to appreciate them once they save the day.
-
-* The superhero fight scene at the end of the movie: our superhero movie always ends with a final battle between good and evil. The fight goes back and forth, with it looking like a close call, but good wins in the end (see happy ending trope).
-
-* The kiss between superhero and love interest at the end of the superhero movie after the fight: tropes can cover just a single encounter.
+* _The damsel in distress_: There is a damsel, she has been captured by some evil character, and the hero must rescue her to save the day (this is an often overused trope in video games in particular).
+* _The superhero_: A seemingly normal human character has been bestowed superhuman powers, and must save mankind from some evil force, who often has their own superpowers. Mankind is initially distrustful of the superhero, but comes to appreciate them once they save the day.
+* _The superhero fight scene at the end of the movie_: our superhero movie always ends with a final battle between good and evil. The fight goes back and forth, with it looking like a close call, but good wins in the end (see happy ending trope).
+* _The kiss between superhero and love interest at the end of the superhero movie after the fight scene_: tropes can cover just a single encounter.
 
 While they may sound formulaic or cliched, tropes are very useful literary devices. By relying on concepts and narratives the viewer already knows they help the viewer settle in to a story. The viewer can feel comfortable with the story as they understand the basic storyline already - for we all know roughly how a rom-com plays out. This allows the reader to focus on the events elements and characters which make this story unique.
 
