@@ -1,5 +1,5 @@
 ---
-title: Meds
+title: My brain on Citalopram
 date: 2013-09-06
 layout: text
 categories: [essay]
@@ -7,13 +7,14 @@ categories: [essay]
 
 Nearly four months ago, I started taking antidepressants, 20mg of Citalopram to be precise.
 
+Citalopram is an [SSRI](http://en.wikipedia.org/wiki/Selective_serotonin_reuptake_inhibitor) which is a common type of antidepressant medication (Prozac is also an SSRI). They are believed to work by modifying how your brain reacts to the neurotransmitter serotonin, effectively increasing it's potency in the brain, a shortage of which we _think_ may be the cause of major depression. Now the jury still seems to be out as to _how_ effective SSRIs are for treating depression, and I am not a doctor, but I can share my experiences with medication.
+
 The first time I went to my doctor about my depression, the idea of taking medication was terrifying. First there was the shame. Then the fear of taking something that would alter my brain, which is absolutely essential to my career: "what if the bit of my brain which makes me depressed is the bit that makes me intelligent?"
 
 After over a year of battling depression without medication, I was in an even worse place, and went back to my doctor. I had recently watched [Greg Bauges' excellent talk at Scottish Ruby Conference](http://programme2013.scottishrubyconference.com/proposals/86/video) and was more prepared for the idea of medication. The doctor and I agreed that it was worth a try, as well as starting counselling.
 
-Citalopram is an [SSRI](http://en.wikipedia.org/wiki/Selective_serotonin_reuptake_inhibitor) which is a common type of antidepressant medication (Prozac is also an SSRI). They are believed to work by modifying how your brain reacts to the neurotransmitter serotonin, effectively increasing it's potency in the brain, a shortage of which we _think_ may be the cause of major depression. Now the jury still seems to be out as to _how_ effective SSRIs are for treating depression, and I am not a doctor, but I can share my experiences with medication.
+Here are some of the things I have experienced, good and bad, over the last four months.
 
-## My experiences with Citalopram
 
 ### Nausea and tiredness
 
