@@ -187,7 +187,7 @@ The problem is, as programmers we are very used to describing the _how_. It make
 
 Sometimes it's okay to hold on to the _how_. If we need to fine tune code for high performance we might need to specify the _what_ in more detail. Or for business logic, where there isn't anything that a generic declarative library could abstract over, we're left writing imperative code.
 
-But frequently we can, and I'd argue should, look for declarative approaches to writing code, nd if we can't find them, we should be building them. Will it be hard at first? Yes, almost certainly! But as we've seen with SQL and D3.js the long term benefits can be huge!
+But frequently we can, and I'd argue should, look for declarative approaches to writing code, and if we can't find them, we should be building them. Will it be hard at first? Yes, almost certainly! But as we've seen with SQL and D3.js the long term benefits can be huge!
 
 <p class='acknowledgements'>
 Huge thanks to <a href='http://twitter.com/srbaker'>@srbaker</a>, <a href='http://twitter.com/maniacyak'>@maniacyak</a> and <a href='http://twitter.com/jcoglan'>@jcoglan</a> for their thoughts, encouragement and editing of this post.
