@@ -8,7 +8,7 @@ layout: default
 
 I am the CTO and co-founder of [Float](http://floatapp.com), a web-app that helps small business owners understand, monitor and forecast their cash-flow.
 
-I live in “sunny” Edinburgh with my wonderful wife, [@hilcsr](http://twitter.com/hilcsr).
+I live in “sunny” Edinburgh with my fabulous wife, [@hilcsr](http://twitter.com/hilcsr).
 
 You can find me on [twitter](http://twitter.com/philip_roberts), [github](http://github.com/latentflip), or email, phil at latentflip dot com.
 
