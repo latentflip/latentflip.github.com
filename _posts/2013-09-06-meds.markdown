@@ -1,0 +1,71 @@
+---
+title: Meds
+date: 2013-09-06
+layout: text
+categories: [essay]
+---
+
+Nearly four months ago, I started taking antidepressants, 20mg of Citalopram to be precise.
+
+The first time I went to my doctor about my depression, the idea of taking medication was terrifying. First there was the shame. Then the fear of taking something that would alter my brain, which is absolutely essential to my career: "what if the bit of my brain which makes me depressed is the bit that makes me intelligent?"
+
+After over a year of battling depression without medication, I was in an even worse place, and went back to my doctor. I had recently watched [Greg Bauges' excellent talk at Scottish Ruby Conference](http://programme2013.scottishrubyconference.com/proposals/86/video) and was more prepared for the idea of medication. The doctor and I agreed that it was worth a try, as well as starting counselling.
+
+Citalopram is an [SSRI](http://en.wikipedia.org/wiki/Selective_serotonin_reuptake_inhibitor) which is a common type of antidepressant medication (Prozac is also an SSRI). They are believed to work by modifying how your brain reacts to the neurotransmitter serotonin, effectively increasing it's potency in the brain, a shortage of which we _think_ may be the cause of major depression. Now the jury still seems to be out as to _how_ effective SSRIs are for treating depression, and I am not a doctor, but I can share my experiences with medication.
+
+## My experiences with Citalopram
+
+### Nausea and tiredness
+
+Serotonin affects a lot more than just your mood (90% of the serotonin in your body is found in the gut where it regulates intestinal movements), so changing the serotonin levels in your system can have a lot of [side effects](http://en.wikipedia.org/wiki/Selective_serotonin_reuptake_inhibitor#Adverse_effects) but thankfully for most people these only last as long as it takes for your body to readjust to the serotonin changes (about 2 to 4 weeks).
+
+Within 6 hours of taking my first pill, I felt noticeably nauseous. I was never sick, but I felt like I could be at any moment. It wasn't crippling (I could still go to work) but I definitely felt grim.
+
+By the second day I was also yawning, a lot. The biggest, longest yawns I've ever had. I was a little tired, but nowhere near as tired as my huge yawns might have implied.
+
+The nausea and yawning continued throughout the first week and a half, but got better over time - coming and going in waves, until it was unnoticeable after about two to three weeks.
+
+
+### In the bedroom
+
+If you read anything about SSRIs, you will probably notice discussion about their effect on libido and general sexual function. I definitely felt the effects of this for the first few weeks, however, I suspect that my reading things about it and worrying about how much of an issue it would be probably had a more detrimental effect than the medication actually did.
+
+Whatever the cause, it definitely sucked for the first month or so, but I feel back to normal now, which is a relief.
+
+
+### Dreams
+
+I often have vivid dreams - particularly if I'm stressed - but they were nothing compared to some of the dreams I had in the first few weeks of medication.
+
+Fortunately the dreams weren't particularly disturbing in and of themselves, but there's something a little unnerving about having a very vivid memory of having done something, and then finding out you are remembering a dream. More than once I found myself looking for some food (cereal, crackers) that I was convinced I had bought the day before. 
+
+It was a little disorienting a feeling at times, but the dreams seem to have settled down recently - at least I don't remember them particularly.
+
+
+### Radio Silence
+
+About 3 weeks in, I noticed short periods of total silence. Even when I am relaxed, my brain has always had a buzz to it. A sort of nagging feeling that there's something I have to do, but have forgotten about. But these periods were different.
+
+If you want a sense of it, find a quiet room, put some headphones on and listen to some low volume [white noise](http://simplynoise.com/) for about 20 minutes - long enough for your brain to have become accustomed to it, so you've almost forgotten it's on. Then mute your headphones. It feels like you've found something quieter than quiet. Like you have re-found true silence. For someone who's spent his whole life with a brain buzzing away, those periods were refreshing and exciting - if frustratingly short lived.
+
+
+### Time and Space
+
+Probably the biggest positive effect medication has had, is it feels like I have been given a little more time and space inside my head to work with. In depressive periods, I was never far off from being in a total funk. 
+
+It would only take something small - a slightly bad day, seeing or hearing something upsetting, being low on energy for not having eaten enough - to end up feeling really down. These reactions were unavoidable. But the medication gives me a little time and space when things happen to consider how I want to react. It's not always enough, sometimes a funk is unavoidable, but it feels like I now have a bit of a choice, just enough capacity to say - "you know what, I am not going to let this affect me" - and move on.
+
+This has been really helpful alongside counselling. Cognitive therapy is _hard work_. Between sessions I typically have homework: to try and notice certain thinking patterns, or to change the way I respond or behave in certain situations to challenge how I approach the world. I don't think I could be as effective at this as I am with the space that the medication provides in my head.
+
+## Summary
+
+This is not advice, just my story so far. I am a sufferer, not a doctor, so please go talk to a professional if you feel like you may be suffering from depression or any mental health problem. I just hope that sharing these stories helps take the fear and stigma out of mental health problems.
+
+Good luck! And if you ever want to talk, [email me](mailto:phil@latentflip.com).
+
+
+
+
+
+
+
