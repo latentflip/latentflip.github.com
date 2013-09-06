@@ -1,5 +1,5 @@
 ---
-title: My brain on Citalopram
+title: My brain on SSRIs
 date: 2013-09-06
 layout: text
 categories: [essay]
