@@ -6,6 +6,7 @@ categories: [essay]
 ---
 
 > I was invited to speak at a careers event run by the Edinburgh Hoppers, a group at the University of Edinburgh for female computer science students, to talk about my tech career so far. 
+>
 > The slides are embedded below, as well as a _rough_ transcript of the talk I gave.
 
 ~
