@@ -21,7 +21,7 @@ In the startup community, you'd be forgiven for thinking that raising money is b
 
 Over the last three and a half years I have grown more as a person than I have doing anything else in my life, but I have also struggled. No matter how easy you try to take it, founding a company takes a lot out of you, and couple that with being the only technical person on a team which has real, paying customers, and you've a recipe for pain. The thought of feeling locked in by my commitment to an investor, given my known struggles with mental health didn't seem like a good idea.
 
-## Plataeus
+## Plateaus
 
 As the sole developer at Float, I learnt a _lot_. All my Rails knowledge, all my JavaScript and Backbone knowledge, and a lot more besides was learnt, the hard way at Float. But I could feel it beginning to plateau. I had nobody pushing me to improve, only myself. I felt I needed some different kinds of projects to force me to learn new things, some people around me to push me to be better, and some time to focus by not having to do _everything_ on a big project.
 
