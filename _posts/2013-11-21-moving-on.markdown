@@ -5,7 +5,7 @@ layout: text
 categories: [essay]
 ---
 
-Three weeks ago I shut down my computer at [Float](http://floatapp.com) for the last time, headed to a nice little party organised by my, now ex, colleagues, and ended my tenure as "CTO" of the company I co-founded over 3 and half years ago.
+Three weeks ago I shut down my computer at [Float](http://floatapp.com) for the last time, headed to a fab party organised by my, now ex, colleagues, and ended my tenure as "CTO" of the company I co-founded over 3 and half years ago.
 
 In the same meeting that I resigned, our company raised £110k from a private investor and I dissolved the majority of my shares.
 
