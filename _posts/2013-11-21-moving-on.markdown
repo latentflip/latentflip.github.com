@@ -1,0 +1,42 @@
+---
+title: Moving On
+date: 2013-11-21
+layout: text
+categories: [essay]
+---
+
+Three weeks ago I shut down my computer at [Float](http://floatapp.com) for the last time, headed to a nice little party organised by my, now ex, colleagues, and ended my tenure as "CTO" of the company I co-founded over 3 and half years ago.
+
+In the same meeting that I resigned, our company raised £110k from a private investor and I dissolved the majority of my shares.
+
+Many of the people I know were, perhaps rightly-so, a little confused. Why did I leave when it seemed we were doing pretty well? Had I been pushed out? Definitely not. Had I fallen out with my co-founder? Nope, we're great friends. Did I dislike the investor? Nope, I think he's pretty great actually.
+
+So, wtf was I doing?
+
+## Motivation and Investment
+
+In the startup community, you'd be forgiven for thinking that raising money is basically the _most important thing_. I won't go out and say that raising money is necessarily wrong, and I think in our case it was the right thing to do, but it definitely changes the game and the stakes. The success criteria for a startup that's raised significant funding are somewhat different from one that hasn't, and that didn't fit for me personally. As much as I love Float, and what it's trying to do,   the strength of my conviction and motivation was probably not such that I would be prepared to create a return on investment _at all costs_. As such, it didn't seem fair for me to sit as the CTO of a company which was promising to do all it could to increase the value of somebody's _actual, real_ money.
+
+## Mental Health
+
+Over the last three and a half years I have grown more as a person than I have doing anything else in my life, but I have also struggled. No matter how easy you try to take it, founding a company takes a lot out of you, and couple that with being the only technical person on a team which has real, paying customers, and you've a recipe for pain. The thought of feeling locked in by my commitment to an investor, given my known struggles with mental health didn't seem like a good idea.
+
+## Plataeus
+
+As the sole developer at Float, I learnt a _lot_. All my Rails knowledge, all my JavaScript and Backbone knowledge, and a lot more besides was learnt, the hard way at Float. But I could feel it beginning to plateau. I had nobody pushing me to improve, only myself. I felt I needed some different kinds of projects to force me to learn new things, some people around me to push me to be better, and some time to focus by not having to do _everything_ on a big project.
+
+## &yet
+
+By far the biggest reason for leaving, was meeting Adam, and Henrik from &yet. &yet was a company I came across back when we'd just started Float, and I remember thinking to myself: "if I learn enough doing this that they would even talk to me about giving me a job, that'd be enough for this to feel like a success". Within two days of hanging out with Henrik in person he said something like "well, if you're ever looking for a job, we'd totally hire you".
+
+Over time, it became clear that &yet was the perfect company for me. They care about people above all else. They are completely bootstrapped and self directed. They care about the future of the web, and are actively working to drive it. They are all _really_ smart, but none of them really know what they are doing (in a good way!). Within a day of meeting the whole team I had never felt as comfortable, happy, or like I "fit in", as much as I did with them, and that held for every single one of them.
+
+## Moving on
+
+Moving on was one of the hardest decisions of my life. Float is my baby, I have a huge amount of respect for my co-founder there, [Colin Hewitt](http://twitter.com/colinhewitt), and he has helped me grow an enormous amount as a person. The decision was like coming to a fork in a road, and down one path led piles of delicious donuts, and the other, all the steaks I could eat; and when it came to it, Float and I had to choose a different path.
+
+## Thanks
+
+Thank you to everyone who has supported Float, and me personally over the last few years. Each and every one of you deserves more thanks than I've possibly ever shown you in person.
+
+<3 Phil
