@@ -100,7 +100,7 @@ Almost everyone I know suffers from impostor syndrome to some degree. Please don
 
 ### Github and Twitter
 
-The web industry runs on github and twitter. Or at least, the really fun but that I am involved with is. You should really be trying to get a bunch of activity on twitter and github so that people can get an idea of who the heck you are.
+The web industry runs on github and twitter. Or at least, the really fun bit that I am involved with is. You should really be trying to get a bunch of activity on twitter and github so that people can get an idea of who the heck you are.
 
 And please don't be precious about the code you put on github. Mine is full of crap, but it shows I care, and I am passionate, and I am trying. Besides, if you put some stuff up there that's not great, it will encourage you to publish more code to put that crap further down the list ;)
 
