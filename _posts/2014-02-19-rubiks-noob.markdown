@@ -1,6 +1,6 @@
 ---
 title: Rubik's Noob
-date: 2014-12-19
+date: 2014-02-19
 layout: text
 categories: [essay]
 ---
