@@ -1409,6 +1409,10 @@ main.blog, .topbar-inner {
   padding: 1em;
   margin: 0 auto; }
 
+main.blog.blog-wide {
+  max-width: 2000px;
+}
+
 .hidden {
   position: absolute;
   left: -10000px;
