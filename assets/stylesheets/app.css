@@ -1464,7 +1464,13 @@ nav.posts {
 
 @media screen and (min-width: 500px) {
   main.blog {
-    width: 500px; } }
+    width: 500px; } 
+  
+  main.blog-wide {
+    width: 100%;
+  }
+
+}
 .about {
   border-top: 1px #eeeeee solid;
   margin-top: 2em;
