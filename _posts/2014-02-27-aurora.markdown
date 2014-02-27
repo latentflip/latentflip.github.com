@@ -2,6 +2,7 @@
 date: 2014-02-27
 layout: photo
 image: images/aurora1.jpg
+width: wide
 categories: [thought]
 ---
 
