@@ -1,0 +1,8 @@
+---
+date: 2014-02-27
+layout: photo
+image: images/aurora1.jpg
+categories: [thought]
+---
+
+Aurora Borealis over Northern Edinburgh
