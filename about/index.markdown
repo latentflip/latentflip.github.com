@@ -6,7 +6,7 @@ layout: default
 ![Moi](https://pbs.twimg.com/profile_images/454635214833074176/2Iz_vfcI.png)
 
 
-I am the CTO and co-founder of [Float](http://floatapp.com), a web-app that helps small business owners understand, monitor and forecast their cash-flow.
+Hi! I'm a freelance web (predominantly JavaScript) developer, currently working for [&yet](http://andyet.com)
 
 I live in “sunny” Edinburgh with my fantastic wife, [@hilcsr](http://twitter.com/hilcsr), and our hedgehog, Hogs Boson.
 
