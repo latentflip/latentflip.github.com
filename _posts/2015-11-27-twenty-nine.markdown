@@ -1,3 +1,10 @@
+---
+title: Twenty-Nine
+date: 2015-11-27
+layout: text
+categories: [essay]
+---
+
 # Twenty-Nine
 
 
