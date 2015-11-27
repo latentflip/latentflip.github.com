@@ -10,7 +10,7 @@ categories: [essay]
 
 So I guess that's the end of <sub>28</sub>Si and the start of <sub>29</sub>Cu.
 
-I neglected to do a write up covering 27-28, but that was a year of firsts: first year at &yet, buying our first home together, the first major addition to the family 👋🏻🐕. Twenty-eight feels like it's been a year of contrasts - adventure and recovery, expansion and consolidation. 
+I neglected to do a write up covering 27-28, but that was a year of firsts: first year at &yet, buying our first home together, the first major addition to the family 👋🐕. Twenty-eight feels like it's been a year of contrasts - adventure and recovery, expansion and consolidation. 
 
 
 ## &yet
@@ -52,8 +52,6 @@ I couln't be more thankful for my parents for encouraging us to actually book a 
 
 
 ## Hilary
-
-♥️
 
 ![3rd anniversary](/assets/photos/instagram/2015-05-26_1432634363.jpg)
 
