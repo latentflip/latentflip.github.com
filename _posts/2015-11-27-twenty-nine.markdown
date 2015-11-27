@@ -37,7 +37,7 @@ It was also a _huge_ honour to keynote ScotlandJS this year (thanks Pete!) My mu
 
 It's hard to write this and believe it in the dead of winter (winter messes with my brain, big time), but this year has been a consistent slog forwards for my mental health. I tapered off my counselling appointments, and haven't been for ~6 months now. I'm probably due another booster set soon; but the efforts and effects of the time I spent in counselling continue to pay off for me daily. It's still a battle (depression is a persistent fucker), but I feel like I can at least bring my sword to battle it most days.
 
-Looking out, I've seen a lot of people I know and love fight their own mental health battles. Some real lows which scare the bejeesus out of me, and some massive improvements too, which make me want to cry with happiness and scream from the rooftops how proud I am of them. To everyone who has fought their own fight, confided in me, and helped me this year: 💛Thank You💜. And to anyone fighting battles I don't know about it, keep fighting, and if you need an ear, I have two (and Jasper has two very large ones).
+Looking out, I've seen a lot of people I know and love fight their own mental health battles. Some real lows which scare the bejeesus out of me, and some massive improvements too, which make me want to cry with happiness and scream from the rooftops how proud I am of them. To everyone who has fought their own fight, confided in me, and helped me this year: 💛Thank You 💜. And to anyone fighting battles I don't know about it, keep fighting, and if you need an ear, I have two (and Jasper has two very large ones).
 
 
 ## Japan
@@ -53,7 +53,7 @@ I couln't be more thankful for my parents for encouraging us to actually book a 
 
 ## Hilary
 
-❤️
+♥️
 
 ![3rd anniversary](/assets/photos/instagram/2015-05-26_1432634363.jpg)
 
