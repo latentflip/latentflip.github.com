@@ -39,7 +39,7 @@ Looking out, I've seen a lot of people I know and love fight their own mental he
 
 ## Japan
 
-I couln't be more thankful for my parents for encouraging us to actually book a holiday this year, and to Hilary for planning and booking most of it <3 <3 <3. It was a relief and a privilege and a blessing to step away from a computer for more than a couple of days (I honestly can't remember the last time that happened), and explore the cities and countryside of such an incredible country.
+I couldn't be more thankful for my parents for encouraging us to actually book a holiday this year, and to Hilary for planning and booking most of it <3 <3 <3. It was a relief and a privilege and a blessing to step away from a computer for more than a couple of days (I honestly can't remember the last time that happened), and explore the cities and countryside of such an incredible country.
 
 ![Gundam](/assets/photos/instagram/2015-09-12_1442099976.jpg)
 ![Ramen](/assets/photos/instagram/2015-09-15_1442297154.jpg)
