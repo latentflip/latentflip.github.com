@@ -50,6 +50,8 @@ I couldn't be more thankful for my parents for encouraging us to actually book a
 
 ## Hilary
 
+We made it to three! 😍 (word count here is inversely proportional to my appreciation for H).
+
 ![3rd anniversary](/assets/photos/instagram/2015-05-26_1432634363.jpg)
 
 
