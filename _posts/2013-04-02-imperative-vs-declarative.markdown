@@ -68,7 +68,7 @@ var numbers = [1,2,3,4,5]
 
 var total = numbers.reduce(function(sum, n) {
   return sum + n
-});
+}, 0);
 console.log(total) //=> 15
 {% endhighlight %}
 
