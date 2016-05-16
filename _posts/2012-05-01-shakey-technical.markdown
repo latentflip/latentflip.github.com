@@ -32,7 +32,7 @@ Since we wanted a game that worked in real-time, with multiple devices communica
 
 The rest of the app (serving assets etc) was served from a rails app running on heroku. Here's a very rough diagram detailing the architecture.
 
-![Shakey Architecture](https://img.skitch.com/20120501-ghbcrnnwdt9x7tk84ck4snj9p9.jpg) [see bigger](https://img.skitch.com/20120501-ghbcrnnwdt9x7tk84ck4snj9p9.jpg)
+![Shakey Architecture](/images/shakeyarch.jpg) [see bigger](/images/shakeyarch.jpg)
 
 I'll explain what's going on a bit better below.
 
