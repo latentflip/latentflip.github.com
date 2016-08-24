@@ -13,7 +13,7 @@ ul {
 body {
   font-family: "Droid Sans", "Helvetica Neue", Helvetica, sans;
   font-size: medium;
-  line-height: 1.4;
+  line-height: 1.5;
   font-weight: 200;
   color: #333; }
 
@@ -1386,6 +1386,10 @@ h1 + .post-date {
 
 .post-date {
   color: #999; }
+
+hr {
+  margin-top: 40px;
+  margin-bottom: 40px; }
 
 .highlight > pre {
   margin: 0; }
