@@ -1,5 +1,5 @@
 ---
-title: @mathie
+title: mathie
 date: 2016-08-24
 layout: text
 categories: [essay]
@@ -17,11 +17,11 @@ As a rubyist writing accounting software, Graeme was probably _the_ best person 
 
 Over time, we did interact, mostly via twitter, and at the odd ScotRUG meetup. But in my head, I was still an acquaintance of his, in a sea of closer friends.
 
----
+* * *
 
 Over time, I became somewhat aware of his struggles. We sat next to each other in a coworking space, but he wasn't there very often, just an empty desk of _stuff_. And then I helped his wife move his stuff out to her car. Graeme was in hospital.
 
----
+* * *
 
 Not long after that I saw this tweet from Graeme in my timeline.
 
@@ -38,7 +38,7 @@ And so, I guess, our true friendship began.
 
 ![](https://s3.amazonaws.com/static.latentflip.com/friends.png)
 
----
+* * *
 
 When Graeme was in "hospital" (the nicest way I can describe any of the mental health wards I've visited), I brought him his aeropress and a fresh bag of coffee - we talked about coffee, and software, and depression.
 
@@ -46,7 +46,7 @@ When he was out, we met up for a coffee. We talked about the fact that I was goi
 
 He sent me a long detailed description of his depression, his alcoholism, his attempted suicide. Not in search of pity, but because he wanted to share, and to help other people. In the end, we decided it was just a little to much to share. But it showed me just how much he had to fight, just to survive, and gave me the strength to fight for myself, and for others.
 
----
+* * *
 
 Graeme's death is a tragedy. There is some solace in knowing that he is finally free of his demons, but as someone with experience with depression, it's foundation shaking - "he didn't make it, will I make it?", "who else is fighting?".
 
@@ -58,7 +58,7 @@ To be fighting so hard against your demons, and still find love and friendship a
 
 To suffer, and still want to help others as you do, is an inspiration.
 
----
+* * *
 
 But the biggest lesson that I'll take from Graeme comes from his proclamation of having "no friends". Two words that I think about almost daily.
 
