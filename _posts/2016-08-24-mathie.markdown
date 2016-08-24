@@ -9,7 +9,7 @@ _Trigger warning: discussion of suicide, depression_
 
 Graeme was a gentle, but ubiquitous, force in Scotland's development community.
 
-For a long time, I didn't really know him very well. I knew of him, of course, and our circles overlapped so much that I really should have known him better. He was a key Ruby developer at [FreeAgent](http://engineering.freeagent.com/2016/08/22/rest-in-peace-@mathie/) at the same time as I was co-founding Float, which integrated directly with FreeAgent. he started ScotRUG and the Scottish Ruby Conference, both of which I've spoken at. A lot of my friends in the industry, were friends with him.
+For a long time, I didn't really know him very well. I knew of him, of course, and our circles overlapped so much that I really should have known him better. He was a key Ruby developer at [FreeAgent](http://engineering.freeagent.com/2016/08/22/rest-in-peace-@mathie/) at the same time as I was co-founding Float, which integrated directly with FreeAgent. He started ScotRUG and the Scottish Ruby Conference, both of which I've spoken at. A lot of my friends in the industry, were friends with him.
 
 And yet, somehow, for a long time I didn't really know him. I think I was simply daunted by him. Clearly smart, experienced and influential, but quiet. What time would he have for a newbie like me? Did he even recognise me this time? Do I have anything interesting to add to his life?
 
