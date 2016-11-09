@@ -11,13 +11,13 @@ I love everyone on the team to bits, but over time the distribution of our remot
 
 I don't have anything lined up yet, and I'd love to hear from teams who think I would be a good fit.
 
-### What I'm looking for:
+### What I'm looking for
 
-* A position either in Edinburgh, or remotely where there a good number of people in UK/European timezones
+* A permanent position either in Edinburgh, or remotely where there a good number of people in UK/European timezones
 * A senior frontend javascript position, or something a bit different that might fit my skill-set
 * A team who care about each other as well as the work they do
 
-### What I'm good at:
+### What I'm good at
 
 * I've been building complex javascript web applications like [float](http://floatapp.com) and [talky.io](https://talky.io) for 7 years.
 * I have considerable experience with [backbone](http://backbonejs.org/), [ampersand](https://ampersandjs.com) (I was a core contributor) and react & redux (which I love working with).
