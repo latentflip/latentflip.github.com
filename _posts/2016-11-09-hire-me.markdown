@@ -6,7 +6,9 @@ categories: [essay]
 ---
 
 <p class="image" style="float:right; width: 40%; height: auto; margin-top: 0"><img src="/assets/images/me.png" style="margin-top:0; margin-right: 0"></p>
-I build javascript web applications, and I'm good at it. If you're looking for someone to lead; to help you build quality frontend applications, and to be just darn _nice_ while doing it, you should get in touch: [phil@latentflip.com](phil@latentflip.com).
+I build javascript web applications, and I'm good at it.
+
+If you're looking for someone to lead; to help you build quality frontend applications, and to be just darn _nice_ while doing it, you should get in touch: [phil@latentflip.com](phil@latentflip.com).
 
 
 ### What I'm good at
