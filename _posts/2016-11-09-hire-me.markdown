@@ -1,5 +1,5 @@
 ---
-title: Hire me?
+title: Hire me
 date: 2016-11-09
 layout: text
 categories: [essay]
