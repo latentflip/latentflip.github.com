@@ -5,11 +5,22 @@ layout: text
 categories: [essay]
 ---
 
-After 3 years at the wonderful [&yet](https://andyet.com), I've decided to move on.
+<p class="image" style="float:right; width: 40%; height: auto; margin-top: 0"><img src="/assets/images/me.png" style="margin-top:0; margin-right: 0"></p>
+I build javascript web applications, and I'm good at it. If you're looking for someone to lead; to help you build quality frontend applications, and to be just darn _nice_ while doing it, you should get in touch: [phil@latentflip.com](phil@latentflip.com).
 
-I love everyone on the team to bits, but over time the distribution of our remote team has shifted significantly to the West Coast - and working 8 timezones away from a team I love is hard work.
 
-I don't have anything lined up yet, and I'd love to hear from teams who think I would be a good fit.
+### What I'm good at
+
+* I've been building complex javascript web applications like [float](http://floatapp.com) and [talky.io](https://talky.io) for 7 years.
+* For the last 18 months I've been frontend lead at &yet - directing frontend strategy for us and our clients, and educating other developers.
+* I have considerable experience with [backbone](http://backbonejs.org/), [ampersand](https://ampersandjs.com) (I was a core contributor) and [react](https://facebook.github.io/react/) & [redux](http://redux.js.org/) (which I love working with). I have written large apis and backends for applications in both rails and node.js.
+* I am an excellent communicator and educator. I [write](http://latentflip.com) and speak well on a range of topics: my [event loop](https://www.youtube.com/watch?v=8aGhZQkoFbQ) talk has been watched over 200,000 times. In my time at &yet I have made _many_ of our clients very happy both with the quality of my work as well as my ability to communicate clearly with them and anticipate and understand their needs.
+* I co-founded and built [float](http://floatapp.com) for 3 years. As the sole developer I built the entirety of the initial platform - taking it from the first line of code to revenue; as well as working with my co-founder to do customer & product development, design, ux, customer support & sales.
+* I've built a number of realtime applications using webrtc and xmpp, including talky, and client applications for &yet.
+* I am not a _designer_, but I care deeply about UI, UX and design, and the impact they have on products and customers. I've worked closely with &yet's design team over many projects to implement, question, stress-test, break and improve designs.
+* I am an exceptionally fast learner and _great_ at tracking down bugs (seriously, try me). Which means I'm very comfortable jumping into existing codebases and becoming productive quickly.
+
+You can also check my [github](https://github.com/latentflip) and full [cv](http://latentflip.com/cv).
 
 ### What I'm looking for
 
@@ -17,26 +28,26 @@ I don't have anything lined up yet, and I'd love to hear from teams who think I 
 * A senior frontend javascript position, or something a bit different that might fit my skill-set
 * A team who care about each other as well as the work they do
 
-### What I'm good at
+### Why now?
 
-* I've been building complex javascript web applications like [float](http://floatapp.com) and [talky.io](https://talky.io) for 7 years.
-* I have considerable experience with [backbone](http://backbonejs.org/), [ampersand](https://ampersandjs.com) (I was a core contributor) and [react](https://facebook.github.io/react/) & [redux](http://redux.js.org/) (which I love working with).
-* I am an exceptionally fast learner and _great_ at tracking down bugs (seriously, try me).
-* I've built a number of realtime applications using webrtc and xmpp, including talky, and client applications for &yet.
-* I have written large apis and backends for applications in both rails and node.js.
-* I am an excellent communicator and educator. I [write](http://latentflip.com) and speak well on a range of topics: my [event loop](https://www.youtube.com/watch?v=8aGhZQkoFbQ) talk has been watched over 200,000 times. In my time at &yet I have made _many_ of our clients very happy both with the quality of my work as well as my ability to communicate clearly with them and anticipate and understand their needs.
-* I am not a _designer_, but I care deeply about UI, UX and design, and the impact they have on products and customers. I've worked closely with &yet's design team over many projects to implement, question, stress-test, break and improve designs.
-* I co-founded and built [float](http://floatapp.com) for 3 years. As the sole developer I built the entirety of the initial platform - taking it from the first line of code to revenue; as well as working with my co-founder to do customer & product development, design, ux, customer support & sales.
+After 3 years at the wonderful [&yet](https://andyet.com), I've decided to move on.
 
-You can also check my [github](https://github.com/latentflip) and full [cv](http://latentflip.com/cv).
+I love everyone on the team to bits, but over time the distribution of our remote team has shifted significantly to the West Coast - and working 8 timezones away from a team I love is hard work.
 
-If you think I might be a good fit, please get in touch, either on [twitter](https://twitter.com/philip_roberts) or [email](mailto:phil@latentflip.com).
+I don't have anything lined up yet, and I'd love to hear from teams who think I would be a good fit.
+
+### Contact Me
+
+If you think I might be a good fit, please get in touch, either on [twitter](https://twitter.com/philip_roberts) or [email phil@latentflip.com](mailto:phil@latentflip.com).
+
 
 ## Some nice tweets about me
 
 <blockquote class="twitter-tweet" data-lang="en" data-cards="hidden"><p lang="en" dir="ltr">The person who held the most successful talk of any JSConf is looking for a job. Your move: <a href="https://t.co/Or9KRf33Ey">https://t.co/Or9KRf33Ey</a><a href="https://t.co/kNpJt2fJpO">https://t.co/kNpJt2fJpO</a></p>&mdash; Jan Lehnardt (@janl) <a href="https://twitter.com/janl/status/796090266952278016">November 8, 2016</a></blockquote>
 
 <blockquote class="twitter-tweet" data-lang="en" data-conversation="none"><p lang="en" dir="ltr">We love <a href="https://twitter.com/philip_roberts">@philip_roberts</a>! If you’re in Europe and have a team who puts people first who needs a truly amazing human, you should hire him ASAP <a href="https://t.co/kaBS0rSWhw">https://t.co/kaBS0rSWhw</a></p>&mdash; &amp;yet (@andyet) <a href="https://twitter.com/andyet/status/796054731068014593">November 8, 2016</a></blockquote>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">If I could, I would hire Phil to write *all* the JavaScripts. Don&#39;t miss out. <a href="https://t.co/QWsgq0fuUF">https://t.co/QWsgq0fuUF</a></p>&mdash; Jim Newbery (@froots101) <a href="https://twitter.com/froots101/status/796330145707474944">November 9, 2016</a></blockquote>
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">you should extremely hire phil whom is ace <a href="https://t.co/dfzbIyXwfb">https://t.co/dfzbIyXwfb</a></p>&mdash; no (@mountain_ghosts) <a href="https://twitter.com/mountain_ghosts/status/796092149628538880">November 8, 2016</a></blockquote>
 
