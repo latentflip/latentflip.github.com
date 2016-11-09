@@ -19,10 +19,11 @@ I don't have anything lined up yet, and I'd love to hear from teams who think I 
 
 ### What I'm good at:
 
-* I've been building complex javascript web applications like [float](https://floatapp.com) and [talky.io](https://talky.io) for 7 years
+* I've been building complex javascript web applications like [float](https://floatapp.com) and [talky.io](https://talky.io) for 7 years.
 * I have considerable experience with [backbone](http://backbonejs.org/), [ampersand](ampersandjs.com) (I was a core contributor) and react & redux (which I love working with).
-* I've built a number of realtime applications using webrtc and xmpp, including talky, and client applications for &yet
-* I have written large apis and backends for applications in both rails and node.js
+* I am an exceptionally fast learner and _great_ at tracking down bugs (seriously, try me).
+* I've built a number of realtime applications using webrtc and xmpp, including talky, and client applications for &yet.
+* I have written large apis and backends for applications in both rails and node.js.
 * I am an excellent communicator and educator. I [write](https://latentflip.com) and speak well on a range of topics: my [event loop](https://www.youtube.com/watch?v=8aGhZQkoFbQ) talk has been watched over 200,000 times. In my time at &yet I have made _many_ of our clients very happy both with the quality of my work as well as my ability to communicate clearly with them and anticipate and understand their needs.
 * I am not a _designer_, but I care deeply about UI, UX and design, and the impact they have on products and customers. I've worked closely with &yet's design team over many projects to implement, question, stress-test, break and improve designs.
 * I co-founded and built [float](https://floatapp.com) for 3 years. As the sole developer I built the entirety of the initial platform - taking it from the first line of code to revenue; as well as working with my co-founder to do customer & product development, design, ux, customer support & sales.
