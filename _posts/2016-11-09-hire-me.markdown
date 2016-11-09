@@ -20,7 +20,7 @@ I don't have anything lined up yet, and I'd love to hear from teams who think I 
 ### What I'm good at
 
 * I've been building complex javascript web applications like [float](http://floatapp.com) and [talky.io](https://talky.io) for 7 years.
-* I have considerable experience with [backbone](http://backbonejs.org/), [ampersand](https://ampersandjs.com) (I was a core contributor) and react & redux (which I love working with).
+* I have considerable experience with [backbone](http://backbonejs.org/), [ampersand](https://ampersandjs.com) (I was a core contributor) and [react](https://facebook.github.io/react/) & [redux](http://redux.js.org/) (which I love working with).
 * I am an exceptionally fast learner and _great_ at tracking down bugs (seriously, try me).
 * I've built a number of realtime applications using webrtc and xmpp, including talky, and client applications for &yet.
 * I have written large apis and backends for applications in both rails and node.js.
