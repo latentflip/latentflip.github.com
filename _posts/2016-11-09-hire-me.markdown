@@ -8,13 +8,13 @@ categories: [essay]
 <p class="image" style="float:right; width: 40%; height: auto; margin-top: 0"><img src="/assets/images/me.png" style="margin-top:0; margin-right: 0"></p>
 I build javascript web applications, and I'm good at it.
 
-If you're looking for someone to lead; to help you build quality frontend applications, and to be just darn _nice_ while doing it, you should get in touch: [phil@latentflip.com](phil@latentflip.com).
+If you're looking for someone to lead; to help you build quality frontend applications, and to be just darn _nice_ while doing it, you should get in touch: [phil@latentflip.com](mailto:phil@latentflip.com).
 
 
 ### What I'm good at
 
 * I've been building complex javascript web applications like [float](http://floatapp.com) and [talky.io](https://talky.io) for 7 years.
-* For the last 18 months I've been frontend lead at &yet - directing frontend strategy for us and our clients; and coaching and mentoring other developers.
+* For the last 18 months I've been frontend lead at [&yet](https://andyet.com) - directing frontend strategy for us and our clients; and coaching and mentoring other developers.
 * I have considerable experience with [backbone](http://backbonejs.org/), [ampersand](https://ampersandjs.com) (I was a core contributor) and [react](https://facebook.github.io/react/) & [redux](http://redux.js.org/) (which I love working with). I have written large apis and backends for applications in both rails and node.js.
 * I am an excellent communicator and educator. I [write](http://latentflip.com) and speak well on a range of topics: my [event loop](https://www.youtube.com/watch?v=8aGhZQkoFbQ) talk has been watched over 200,000 times. In my time at &yet I have made _many_ of our clients very happy both with the quality of my work as well as my ability to communicate clearly with them and anticipate and understand their needs.
 * I co-founded and built [float](http://floatapp.com) for 3 years. As the sole developer I built the entirety of the initial platform - taking it from the first line of code to revenue; as well as working with my co-founder to do customer & product development, design, ux, customer support & sales.
