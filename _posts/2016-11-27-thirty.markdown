@@ -39,15 +39,11 @@ This is a bittersweet situation to be in. &yet and the team there have been an a
 
 ![&yet pumpkin](/assets/photos/instagram/2016-11-01_1373811028780952826.jpg)
 
----
-
 ### Hilary
 
 I've of course, had a great time with the love of my life this year. But on top of that, it's been an privilege to see her continue to grow and excel in her work. The icing on the cake was watching her present at Canvas Conference in Birmingham, and totally own a huge stage in front of a big and receptive crowd.
 
 ![Hilary at Canvas Conference 2016](/assets/photos/instagram/2016-10-21_1365547854537500654.jpg)
-
----
 
 ### Madeira
 
@@ -55,16 +51,12 @@ I've of course, had a great time with the love of my life this year. But on top 
 ![Madeira](/assets/photos/instagram/2016-10-07_1355669937074672818.jpg)
 ![Madeira](/assets/photos/instagram/2016-10-01_1351538015863997043.jpg)
 
----
-
 ### Eilean Shona
 
 <video data-playonscroll src='/assets/photos/instagram/2016-07-02_1285684357062789825.mp4' loop style='display: block; width: 90%; margin: 30px auto'></video>
 
 ![Eilean Shona](/assets/photos/instagram/2016-07-02_1285679254759275744.jpg)
 ![Eilean Shona](/assets/photos/instagram/2016-06-27_1281978712186729988.jpg)
-
----
 
 ### Touch
 
@@ -75,8 +67,6 @@ As someone who'd never really played team sport until joining a touch rugby team
 It was also a real privilege to play for Edinburgh at the national championships. And to get to try out for the Scotland squad for 2017.
 
 ![Touch Boots](/assets/photos/instagram/2016-06-04_1265223490800302551.jpg)
-
----
 
 ### Anchorage
 
@@ -97,7 +87,6 @@ It was also a real privilege to play for Edinburgh at the national championships
 
 <style>
 .post h3 {
-    font-weight: bold;
     margin-top: 4em;
 }
 </style>
