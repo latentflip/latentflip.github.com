@@ -5,8 +5,6 @@ layout: text
 categories: [essay]
 ---
 
-# Thirty
-
 It is with slight apprehension that I must admit that yes, I am now thirty. But I'm not sure exactly where that apprehension comes from?
 
 Is it that round numbers encourage us to reflect on our entire lives up until this point, and make us hyper-aware of the unstoppable march of time?
