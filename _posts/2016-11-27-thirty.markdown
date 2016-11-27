@@ -54,7 +54,7 @@ I've of course, had a great time with the love of my life this year. But on top 
 
 ### Eilean Shona
 
-<video src='/assets/photos/instagram/2016-07-02_1285684357062789825.mp4' autoplay loop></video>
+<video data-playonscroll src='/assets/photos/instagram/2016-07-02_1285684357062789825.mp4' loop style='width: 90%; margin: 30px auto'></video>
 
 ![Eilean Shona](/assets/photos/instagram/2016-07-02_1285679254759275744.jpg)
 ![Eilean Shona](/assets/photos/instagram/2016-06-27_1281978712186729988.jpg)
@@ -77,3 +77,11 @@ It was also a real privilege to play for Edinburgh at the national championships
 
 
 
+<script>
+  var video = document.querySelector('[data-playonscroll]');
+  window.addEventListener('scroll', function () {
+    if (document.body.scrollTop + document.body.clientHeight > video.scrollTop) {
+      video.play();
+    }
+  });
+</script>
