@@ -87,6 +87,6 @@ It was also a real privilege to play for Edinburgh at the national championships
 
 <style>
 .post h3 {
-    margin-top: 4em;
+    margin-top: 3em;
 }
 </style>
