@@ -24,8 +24,8 @@ I care deeply about building usable, performant and maintainable web application
 * Frontend lead for development of a new product in the security communications space for governments and large organisations.
 * Responsible for all aspects of the front-end architecture (React.js + redux + xmpp) and it's development, including architectural/technology decisions, balancing speed/quality and cost, and ultimately shipping working software for demos and product trials.
 * Responsible for documenting the system as we built it, and bringing less experienced developers on to the team to successfully ship features.
-* Worked directly with the product manager, sales team, and potential customers to validate customer problems, gather feedback, and prioritise features.
-* Defined and build functionality in our backend stack (Openfire, an established java xmpp server).
+* Worked directly with the product manager, sales team, and potential customers to validate customer problems, gather feedback, prioritise and develop user-focussed features.
+* Defined and built functionality in our open-source backend stack (Openfire, an established java xmpp server) to support product features.
 * Implemented and managed CI and deployment workflows using GitLab pipelines, docker containers, and AWS.
 
 
@@ -71,6 +71,10 @@ I care deeply about building usable, performant and maintainable web application
 **An introduction to Functional Reactive Programming and Bacon.js** (2013)
 
 * A well received talk on the basics of FRP, and a specific FRP library for JavaScript, given at [ScotlandJS 2013](https://vimeo.com/68987289)
+
+**Back to Front: One man's journey from server to client side** (2013)
+
+* A talk given at [Scottish Ruby Conference 2013](https://vimeo.com/66857759) discussing my journey moving much of the complex logic of Float (cashflow forecasting application) into the browser.
 
 **Building a multiplayer, realtime game, with pusher** (2012)
 
