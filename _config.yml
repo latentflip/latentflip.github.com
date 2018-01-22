@@ -12,7 +12,6 @@ plugins:     ./_plugins
 future:      true
 lsi:         false
 pygments:    true
-markdown:    redcarpet
 permalink:   ":title"
 
 maruku:
@@ -25,12 +24,8 @@ maruku:
 rdiscount:
   extensions: []
 
-redcarpet:
-  extensions: []
-
 exclude: ['node_modules']
   
-
 kramdown:
   auto_ids: true,
   footnote_nr: 1
