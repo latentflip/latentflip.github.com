@@ -1,6 +1,6 @@
 ---
 date: 2013-05-09
-title: Enemy of the state: An introduction to Functional Reactive Programming and Bacon.js
+title: "Enemy of the state: An introduction to Functional Reactive Programming and Bacon.js"
 layout: video
 video_url: "http://vimeo.com/65500265"
 caption: "A fun talk I gave at ScotlandJS 2013 about bacon.js"
