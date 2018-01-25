@@ -50,7 +50,7 @@ I am an experienced frontend JavaScript developer, but am not afraid to work any
 
 * Cofounded and built [Float (floatapp.com)](https://floatapp.com), taking it from the first line of code, to customers and revenue. 
 * Responsible for all aspects of architecture, deployment, test strategy and development of the full application.
-* Hired and trained a number of interns/junior developers
+* Hired and trained a number of interns and junior developers
 * Communicated directly with customers and my co-founder to understand requirements, and design and develop product features that solved real user problems.
 * Worked on all aspects of the startup: pitching and fundraising, product development and marketing, customer development, sales and support
 
