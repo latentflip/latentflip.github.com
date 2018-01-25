@@ -61,8 +61,7 @@ I am an experienced frontend JavaScript developer, but am not afraid to work any
 ## Conference Talks
 
 * **[What the heck is the event loop anyway?](https://www.youtube.com/watch?v=8aGhZQkoFbQ)** JSConf EU 2014, ScotlandJS 2014, jQuery UK 2015    
-Explaining how the event-loop works in browsers and node.js [with an accompanying runtime visualisation](http://latentflip.com/loupe/).    
-The second most watched talk from any JSConf conference.
+Explaining how the event-loop works in browsers and node.js [with an accompanying runtime visualisation](http://latentflip.com/loupe/). The second most watched talk from any JSConf conference.
 * **[Opening Keynote on learning and vulnerability](https://www.youtube.com/watch?v=43BdvIDdZA4)** ScotlandJS 2015
 * **[An introduction to Functional Reactive Programming and Bacon.js](https://vimeo.com/68987289)** ScotlandJS 2013
 * **[Back to Front: One man's journey from server to client side](https://vimeo.com/66857759)** Scottish Ruby Conference 2013   
