@@ -54,7 +54,7 @@ I am an experienced frontend JavaScript developer, but am not afraid to work any
 * Communicated directly with customers and my co-founder to understand requirements, and design and develop product features that solved real user problems.
 * Worked on all aspects of the startup: pitching and fundraising, product development and marketing, customer development, sales and support
 
-**Design Engineer**, Wolfson Microelectronics, (Oct 2008—Dec 2010)
+### **Design Engineer**, Wolfson Microelectronics, (Oct 2008—Dec 2010)
 
 * Hardware debugging and design of audio microchips for consumer electronics applications.
 
