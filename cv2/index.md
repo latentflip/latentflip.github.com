@@ -22,7 +22,7 @@ I am an experienced frontend JavaScript developer, but am not afraid to work any
 #### Skills: React/Redux/Redux-Saga, Jest, CSS/CSS modules, XMPP, Java, Docker, AWS
 
 * Led rapid development of a realtime secure communications platform for government and large enterprises from concept to working software and customer trials.
-* Responsible for all aspects of frontend architecture and its development: making business focussed trade-offs around technology decisions, development, features, quality and test strategy.
+* Responsible for all aspects of frontend architecture and development: making business focussed trade-offs around technology decisions, development, features, quality and test strategy.
 * Worked effectively with the CEO, customers, product and sales teams to gather feedback, validate customer problems, prioritise and develop user-focussed features.
 * Delegated work to other developers: documenting, reviewing, and mentoring to help them successfully ship features.
 * Expanded my responsibilities as required to help a small team ship: built backend functionality, and implemented development and continuous-integration workflows to review, test and deploy code into AWS.
@@ -31,11 +31,11 @@ I am an experienced frontend JavaScript developer, but am not afraid to work any
 ### **Frontend Lead (in addition to dev role)**,  &yet, (May 2015—Present)    
 #### Skills: React/Redux/Redux-Saga, Jest, CSS/CSS Modules, XMPP, WebRTC
 
-* Oversaw an organisational change in our frontend stack (to React.js + Redux). Requiring understanding and managing business, team, and client expectations and needs, as well as planning, communicating and architecting the change.
-* Successfully lobbied for and introduced this approach into a major client (a US government department).
+* Oversaw organisational change of our frontend stack (to React.js + Redux). Requiring understanding and managing business, team, and client expectations and needs, as well as planning, communicating and architecting the change.
+* Successfully introduced this approach into a major client (US government department).
 * Mentoring, pairing and reviewing work across the frontend and design teams, particularly as part of the transition to a new tech stack.
-* Co-designed and built [talky core](https://about.talky.io/core/), out of our experiences with talky.io, to help ship video chat projects for clients more quickly, and enable new business partnerships.
-* Refactored talky.io to use talky core, improving both the user, and developer, experience of talky.io.
+* Co-designed and built [Talky Core](https://about.talky.io/core/), out of our experiences with talky. Helping ship video chat projects for clients more quickly, and enable new business partnerships.
+* Refactored talky.io to use Talky Core, improving both the user, and developer, experience of talky.io.
 
 ### **Frontend/node.js Developer**, &yet, (Nov 2013—May 2015)    
 #### Skills: Backbone.js, Ampersand.js, XMPP, WebRTC, Node.js, Hapi.js, Postgres
@@ -60,17 +60,13 @@ I am an experienced frontend JavaScript developer, but am not afraid to work any
 
 ## Conference Talks
 
-**What the heck is the event loop anyway?** JSConf EU 2014, ScotlandJS 2014, jQuery UK 2015    
-Explaining [how the event-loop works in browsers and node.js, with an accompanying runtime visualisation](http://latentflip.com/loupe/). The second most watched talk form any JSConf conference.
+* **[What the heck is the event loop anyway?](https://www.youtube.com/watch?v=8aGhZQkoFbQ)** JSConf EU 2014, ScotlandJS 2014, jQuery UK 2015    
+Explaining how the event-loop works in browsers and node.js [with an accompanying runtime visualisation](http://latentflip.com/loupe/).    
+The second most watched talk from any JSConf conference.
+* **[Opening Keynote on learning and vulnerability](https://www.youtube.com/watch?v=43BdvIDdZA4)** ScotlandJS 2015
+* **[An introduction to Functional Reactive Programming and Bacon.js](https://vimeo.com/68987289)** ScotlandJS 2013
+* **[Back to Front: One man's journey from server to client side](https://vimeo.com/66857759)** Scottish Ruby Conference 2013   
 
-**Opening Keynote** Scotland JS (2015)    
-On [learning and vulnerability](https://www.youtube.com/watch?v=43BdvIDdZA4)
-
-**An introduction to Functional Reactive Programming and Bacon.js** ScotlandJS (2013)    
-The [basics of FRP and bacon.js](https://vimeo.com/68987289)
-
-**Back to Front: One man's journey from server to client side** Scottish Ruby Conference (2013)    
-[Discussing](https://vimeo.com/66857759) moving much of the complex logic of Float (cashflow forecasting application) into the browser.
 
 
 ## Education
