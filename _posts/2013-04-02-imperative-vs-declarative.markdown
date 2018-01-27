@@ -21,7 +21,7 @@ Taking a simple example, let's say we wish to double all the numbers in an array
 
 We could do this in an imperative style like so:
 
-{% highlight javascript %}
+```javascript
 var numbers = [1,2,3,4,5]
 var doubled = []
 
@@ -30,20 +30,20 @@ for(var i = 0; i < numbers.length; i++) {
   doubled.push(newNumber)
 }
 console.log(doubled) //=> [2,4,6,8,10]
-{% endhighlight %}
+```
 
 We explicitly iterate over the length of the array, pull each element out of the array, double it, and add the doubled value to the new array, mutating the `doubled` array at each step until we are done.
 
 A more declarative approach might use the `Array.map` function and look like:
 
-{% highlight javascript %}
+```javascript
 var numbers = [1,2,3,4,5]
  
 var doubled = numbers.map(function(n) {
   return n * 2
 })
 console.log(doubled) //=> [2,4,6,8,10]
-{% endhighlight %}
+```
 
 `map` creates a new array from an existing array, where each element in the new array is created by passing the elements of the original array into the function passed to `map` (`function(n) { return n*2 }` in this case).
 
@@ -51,7 +51,7 @@ What the `map` function does is abstract away the process of explicitly iteratin
 
 There are other common declarative abstractions for lists that are available in languages with a functional bent. For example, to add up all the items in a list imperatively we could do this:
 
-{% highlight javascript %}
+```javascript
 var numbers = [1,2,3,4,5]
 var total = 0
 
@@ -59,18 +59,18 @@ for(var i = 0; i < numbers.length; i++) {
   total += numbers[i]
 }
 console.log(total) //=> 15
-{% endhighlight %}
+```
 
 Or we could do it declaratively, using the `reduce` function:
 
-{% highlight javascript %}
+```javascript
 var numbers = [1,2,3,4,5]
 
 var total = numbers.reduce(function(sum, n) {
   return sum + n
 }, 0);
 console.log(total) //=> 15
-{% endhighlight %}
+```
 
 `reduce` boils a list down into a single value using the given function. It takes the function and applies it to all the items in the array. On each invocation, the first argument (`sum` in this case) is the result of calling the function on the previous element, and the second (`n`) is the current element. So in this case, for each element we add `n` to `sum` and return that on each step, leaving us with the sum of the entire array at the end.
 
@@ -93,15 +93,15 @@ You can think of SQL as a declarative query language for working with sets of da
 
 Take a query like:
 
-{% highlight javascript %}
+```javascript
 SELECT * from dogs
 INNER JOIN owners
 WHERE dogs.owner_id = owners.id
-{% endhighlight %}
+```
 
 Imagine trying to write the logic for this yourself imperatively:
 
-{% highlight javascript %}
+```javascript
 //dogs = [{name: 'Fido', owner_id: 1}, {...}, ... ]
 //owners = [{id: 1, name: 'Bob'}, {...}, ...]
 
@@ -121,7 +121,7 @@ for(var di=0; di < dogs.length; di++) {
     }
   }}
 }
-{% endhighlight %}
+```
 
 Yuck! Now, I'm not saying that SQL is always easy to understand, or necessarily obvious when you first see it, but it's a lot clearer than that mess.
 
@@ -144,8 +144,8 @@ The first time (and fifth time, and possibly even the tenth time) you see or try
 Here's an example (I recommend [viewing the demo](http://bl.ocks.org/latentflip/5285027) for some context). This is a d3 visualization that draws a circles for each object in the `data` array. To demonstrate what's going on we add a circle every second.
 
 The interesting bit of code is:
-{% highlight javascript %}
 
+```javascript
 //var data = [{x: 5, y: 10}, {x: 20, y: 5}]
 
 var circles = svg.selectAll('circle')
@@ -157,7 +157,7 @@ circles.enter().append('circle')
            .attr('r', 0)
         .transition().duration(500)
           .attr('r', 5)
-{% endhighlight %}
+```
 
 It's not essential to understand exactly what's going on here (it will take a while to get your head around regardless), but the gist of it is this:
 

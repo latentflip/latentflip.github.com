@@ -8,7 +8,7 @@ destination: ./_site
 
 future:      true
 lsi:         false
-highlighter: pygments
+highlighter: rouge
 permalink:   ":title"
 
 maruku:
