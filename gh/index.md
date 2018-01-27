@@ -22,11 +22,11 @@ Philip Roberts
 
 #### Some logistics:
 
-I am currently taking some time out with my family to travel around France until early March. I am able to attend interviews etc remotely until then, but would not be able to travel until 
+I am currently taking some time out with my family to travel around France until early March. I am able to attend interviews etc remotely until then, but would not be able to travel until 15th March.
 
 * Philip Roberts
 * phil@latentflip.com
 * +447732 432 694
 * Edinburgh, UK
 * GitHub: [@latentflip](https://github.com/latentflip)
-* I am not authorized to work in the United States, however, I have been working from home for the last four years, and am happy to travel when required.
+* I don't have a visa work in the United States. I have been working remotely for the last four years, and am happy to travel when required.
