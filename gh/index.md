@@ -4,7 +4,7 @@ layout: cv
 
 Hi Github!
 
-I'd love to apply for the [Senior Software Engineer](https://boards.greenhouse.io/github/jobs/953424) role at GitHub.
+I'd love to apply for the [Senior Software Engineer](https://boards.greenhouse.io/github/jobs/953424) role.
 
 I have been shipping web applications like [floatapp.com](https://floatapp.com) and [talky.io](https://talky.io) in small teams for the last 8 years. I am driven to understand people's problems and find ways to solve them, and my experience in small teams means I am not afraid to get my hands dirty wherever there is a need, and get stuff done.
 
