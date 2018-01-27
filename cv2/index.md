@@ -9,59 +9,55 @@ layout: cv
 
 ## Web Application Developer
 
-I’ve been building complex web applications like [Float](https://floatapp.com) and [talky.io](https://talky.io) for 8 years. I am committed to empathising with the needs of customers, the business, and developers, to build web applications that people want to use, and developers want to work on.
+I love understanding people's problems, and building web applications that solve them.
 
-I enjoy working with other developers, and love teaching through mentoring and conference talks.
-
-I am an experienced frontend JavaScript developer, but am not afraid to work anywhere in the stack: from the database, through to deployment. I am as comfortable working from a blank slate as I am jumping into existing codebases, and I am not afraid to ship. 
+I strive to bring empathy, communication, learning and teaching to teams, to improve people's lives and make better software
 
 
 ## Experience
 
-### **Frontend Lead**,  Surevine, (Jan 2017—Dec 2017)    
-#### Skills: React/Redux/Redux-Saga, Jest, CSS/CSS modules, XMPP, Java, Docker, AWS
+### **Frontend Lead**,  Surevine, Remote, (Jan 2017—Nov 2017)    
+#### Skills: React/Redux/Redux-Saga, Jest, CSS/CSS modules, XMPP, Java, Docker, Ansible, AWS
 
-* Led rapid development of a realtime secure communications platform for government and large enterprises from concept to working software and customer trials.
-* Responsible for all aspects of frontend architecture and development: making business focussed trade-offs around technology decisions, development, features, quality and test strategy.
-* Worked effectively with the CEO, customers, product and sales teams to gather feedback, validate customer problems, prioritise and develop user-focussed features.
-* Delegated work to other developers: documenting, reviewing, and mentoring to help them successfully ship features.
+* Led rapid development of a secure communications platform for government and large enterprises from concept to working software and customer trials.
+* Responsible for all aspects of frontend architecture and development, including business focussed trade-offs around technology, features, quality and test strategy.
+* Mentored and paired with team members to help them learn new technologies and ship features.
+* Validated customer problems and found user-focussed solutions by working directly with customers, product and sales teams.
 * Expanded my responsibilities as required to help a small team ship: built backend functionality, and implemented development and continuous-integration workflows to review, test and deploy code into AWS.
 
 
-### **Frontend Lead (in addition to dev role)**,  &yet, (May 2015—Present)    
+
+### **Frontend Lead (in addition to dev role)**, &yet, Remote, (May 2015—Nov 2016)    
 #### Skills: React/Redux/Redux-Saga, Jest, CSS/CSS Modules, XMPP, WebRTC
 
-* Oversaw organisational change of our frontend stack (to React.js + Redux). Requiring understanding and managing business, team, and client expectations and needs, as well as planning, communicating and architecting the change.
-* Successfully introduced this approach into a major client (US government department).
-* Mentoring, pairing and reviewing work across the frontend and design teams, particularly as part of the transition to a new tech stack.
-* Co-designed and built [Talky Core](https://about.talky.io/core/), out of our experiences with talky. Helping ship video chat projects for clients more quickly, and enable new business partnerships.
-* Refactored talky.io to use Talky Core, improving both the user, and developer, experience of talky.io.
+* Oversaw organisational change of our frontend stack (to React.js + Redux). This required understanding and managing the needs of the company, developers, and clients, and planning, communicating and architecting the change.
+* Mentored, paired and reviewed work across the frontend and design teams.
+* Co-designed and built [Talky Core](https://about.talky.io/core/) (an internal WebRTC UI library) to help ship video-chat projects for our clients more quickly and enable new business partnerships.
 
-### **Frontend/node.js Developer**, &yet, (Nov 2013—May 2015)    
+### **Frontend/node.js Developer**, &yet, Remote, (Nov 2013—May 2015)    
 #### Skills: Backbone.js, Ampersand.js, XMPP, WebRTC, Node.js, Hapi.js, Postgres
 
-* Delighted clients on a range of realtime web application projects.
-* Client work included: rapid development of new products; adding realtime features to existing products and codebases; code and architecture review of existing products.
-* Communicated effectively with clients to understand their needs and prioritise work, and handed over well documented and clear code to internal teams at the end of projects. 
-* Core member of the open-sourced [Ampersand.js](https://ampersandjs.com) project and [talky.io](https://talky.io). Responsible for decision making, shipping code, release management, and communicating with the community.
+* Delighted clients on a range of realtime web applications projects. Rapid development of new products, adding realtime features to existing products, code and architecture review of existing codebases.
+* Owned technical relationship with clients to understand their needs and prioritise work, and provided well documented clear code to client's internal teams. 
+* Core member of the open-source [Ampersand.js](https://ampersandjs.com) project. Responsible for project roadmaps, shipping features, release management, and communicating with the community.
+* Core developer of [talky.io](https://talky.io) - one of the first major browser-based video chat applications.
 
-### **Cofounder/Developer/CTO**, The Float Yard, (Mar 2010—Nov 2013)    
+### **Co-founder/Developer/CTO**, The Float Yard, Edinburgh (Mar 2010—Nov 2013)    
 #### Skills: Backbone.js, Ruby on Rails, RSpec, Postgres, Heroku
 
-* Cofounded and built [Float (floatapp.com)](https://floatapp.com), taking it from the first line of code, to customers and revenue. 
-* Responsible for all aspects of architecture, deployment, test strategy and development of the full application.
-* Hired and trained a number of interns and junior developers
-* Communicated directly with customers and my co-founder to understand requirements, and design and develop product features that solved real user problems.
-* Worked on all aspects of the startup: pitching and fundraising, product development and marketing, customer development, sales and support
+* Co-founded [Float (floatapp.com)](https://floatapp.com). As the sole developer took it from the first line of code to customers and revenue. The company has since raised over £600k in funding and employs 15 people. 
+* Responsible for all aspects of architecture, development, test strategy and deployment.
+* Hired and mentored interns and junior developers.
+* Also involved in pitching, fundraising, customer development, marketing, sales and support.
 
-### **Design Engineer**, Wolfson Microelectronics, (Oct 2008—Dec 2010)
+### **Design Engineer**, Wolfson Microelectronics, Edinburgh, (Oct 2008—Dec 2010)
 
-* Hardware debugging and design of audio microchips for consumer electronics applications.
+* Design and debugging of audio microchips for consumer electronics applications.
 
 ## Conference Talks
 
 * **[What the heck is the event loop anyway?](https://www.youtube.com/watch?v=8aGhZQkoFbQ)** JSConf EU 2014, ScotlandJS 2014, jQuery UK 2015    
-Explaining how the event-loop works in browsers and node.js [with an accompanying runtime visualisation](http://latentflip.com/loupe/). The second most watched talk from any JSConf conference.
+An explanation of how the JavaScript event-loop works [with an accompanying runtime visualisation](http://latentflip.com/loupe/). The second most watched talk from any JSConf conference.
 * **[Opening Keynote on learning and vulnerability](https://www.youtube.com/watch?v=43BdvIDdZA4)** ScotlandJS 2015
 * **[An introduction to Functional Reactive Programming and Bacon.js](https://vimeo.com/68987289)** ScotlandJS 2013
 * **[Back to Front: One man's journey from server to client side](https://vimeo.com/66857759)** Scottish Ruby Conference 2013   
@@ -71,4 +67,4 @@ Explaining how the event-loop works in browsers and node.js [with an accompanyin
 ## Education
 
 **The University of Edinburgh (2004—2008)**  
-MEng Electronics and Electrical Engineering, First
+MEng (Hons) in Electronics and Electrical Engineering - 1st Class
