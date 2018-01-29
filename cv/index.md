@@ -4,14 +4,15 @@ layout: cv
 
 # Philip Roberts
 
-[phil@latentflip.com](mailto:phil@latentflip.com) · [latentflip.com](http://latentflip.com) · [github.com/latentflip](https://github.com/latentflip) · [twitter.com/philip_roberts](https://twitter.com/philip_roberts)
+ Edinburgh, UK · +44732 432 694 · [phil@latentflip.com](mailto:phil@latentflip.com)    
+[latentflip.com](http://latentflip.com) · [github.com/latentflip](https://github.com/latentflip) · [twitter.com/philip_roberts](https://twitter.com/philip_roberts)
 
 
 ## Web Application Developer
 
 I love understanding people's problems and finding ways to solve them, which is why I’ve been building web applications like [Float](http://floatapp.com) and [talky.io](http://talky.io) for 8 years.
 
-I also care deeply about the people I work with. I bring empathy and strong communication to teams, and strive to learn and teach as much as I can.
+I care deeply about the people I work with. I bring empathy and strong communication to teams, and strive to learn and teach as much as I can.
 
 
 ## Experience
