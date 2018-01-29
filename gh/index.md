@@ -2,8 +2,10 @@
 layout: cv
 ---
 
-
-
+> Philip Roberts    
+> Edinburgh, UK    
+> +447732 432 694    
+> GitHub: [@latentflip](https://github.com/latentflip)    
 
 Hi Github,
 
@@ -18,9 +20,3 @@ I am currently travelling in France with my family until early March, but would 
 Regards,
 
 Philip Roberts
-
----
-* phil@latentflip.com
-* +447732 432 694
-* Edinburgh, UK
-* GitHub: [@latentflip](https://github.com/latentflip)
