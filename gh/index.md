@@ -15,6 +15,6 @@ I am currently travelling in France with my family until early March, but would 
 Regards,
 
 Philip Roberts    
-Edinburgh, UK    
-[phil@latentflip.com](phil@latentflip.com)    
-+447732 432 694
+_Edinburgh, UK_    
+_[phil@latentflip.com](phil@latentflip.com)_    
+_+447732 432 694_
