@@ -33,7 +33,7 @@ I care deeply about the people I work with. I bring empathy and strong communica
 
 * Oversaw organisational change of our frontend stack (to React.js + Redux). This required understanding and managing the needs of the company, developers, and clients, and planning, communicating and architecting the change.
 * Mentored, paired and reviewed work across the frontend and design teams.
-* Co-designed and built [Talky Core](https://about.talky.io/core/) (an internal WebRTC UI library) to help ship video-chat projects for our clients more quickly and enable new business partnerships.
+* Co-designed and built [Talky Core](https://core.talky.io) (an internal WebRTC UI library) to help ship video-chat projects for our clients more quickly and enable new business partnerships.
 
 ### **Frontend/node.js Developer**, &yet, Remote, (Nov 2013—May 2015)    
 #### Skills: Javascript, Backbone.js, Ampersand.js, XMPP, WebRTC, Node.js, Hapi.js, Postgres
