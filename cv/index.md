@@ -10,7 +10,7 @@ layout: cv
 
 ## Web Application Developer
 
-I love understanding people's problems and finding ways to solve them, which is why I’ve been building web applications like [Float](http://floatapp.com) and [talky.io](http://talky.io) for 8 years.
+I love understanding people's problems and finding ways to solve them, which is why I’ve been building web applications like [floatapp.com](http://floatapp.com) and [talky.io](http://talky.io) for 8 years.
 
 I care deeply about the people I work with. I bring empathy and strong communication to teams, and strive to learn and teach as much as I can.
 
