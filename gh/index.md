@@ -2,31 +2,25 @@
 layout: cv
 ---
 
-Hi Github!
 
-I'd love to apply for the [Senior Software Engineer](https://boards.greenhouse.io/github/jobs/953424) role.
 
-I have been shipping web applications like [floatapp.com](https://floatapp.com) and [talky.io](https://talky.io) in small teams for the last 8 years. I am driven to understand people's problems and find ways to solve them, and my experience in small teams means I am not afraid to get my hands dirty wherever there is a need, and get stuff done.
 
-I love learning from the people around me, and teaching and mentoring others, like in this very popular JSConf talk: [youtu.be/8aGhZQkoFbQ](https://youtu.be/8aGhZQkoFbQ).
+Hi Github,
 
-Through my recent roles at &yet and Surevine, I've come to believe that with great people, empathy and solid communication, remote teams can ship world-class software, in a way that is healthy for everyone involved. It is clear that GitHub thinks the same.
+Please find my CV attached for the [Senior Software Engineer](https://boards.greenhouse.io/github/jobs/953424) role.
 
-I am good at what I do, but I want to get better. I am excited by the opportunity to ship software at GitHub's scale, to have more customers to learn from and solve problems for, and to have great people around me to collaborate with, learn from, and mentor.
+I have been a full-stack web developer for the last 8 years, working directly with customers to understand their needs, and leading remote teams to build great products like [floatapp.com](http://floatapp.com) and [talky.io](http://talky.io).
 
-I look forward to hearing from you!
+I am now looking for opportunities to ship software at greater scale, and to further grow my skills as a leader and a mentor. From speaking with Mike McQuaid I've been impressed by how GitHub values communication and empathy within teams.
+
+I am currently travelling in France with my family until early March, but would be glad to setup a phone or video call to see if it's a good fit.
+
+Regards,
 
 Philip Roberts
 
 ---
-
-#### Some logistics:
-
-I am currently taking some time out with my family to travel around France until early March. I am able to attend interviews etc remotely until then, but would not be able to travel until 15th March.
-
-* Philip Roberts
 * phil@latentflip.com
 * +447732 432 694
 * Edinburgh, UK
 * GitHub: [@latentflip](https://github.com/latentflip)
-* I don't have a visa work in the United States. I have been working remotely for the last four years, and am happy to travel when required.
