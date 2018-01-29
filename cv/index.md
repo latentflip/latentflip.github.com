@@ -20,7 +20,7 @@ I care deeply about the people I work with. I bring empathy and strong communica
 ### **Frontend Lead**,  Surevine, Remote, (Jan 2017—Nov 2017)    
 #### Skills: Javascript, React/Redux/Redux-Saga, Jest, CSS/CSS modules, XMPP, Java, Docker, Ansible, AWS
 
-* Led rapid development of a secure communications platform for government and large enterprises from concept to working software and customer trials.
+* Led rapid development of a secure communications platform for government and large enterprises - from concept to working software and customer trials.
 * Responsible for all aspects of frontend architecture and development, including business focussed trade-offs around technology, features, quality and test strategy.
 * Mentored and paired with team members to help them learn new technologies and ship features.
 * Validated customer problems and found user-focussed solutions by working directly with customers, product and sales teams.
@@ -31,7 +31,7 @@ I care deeply about the people I work with. I bring empathy and strong communica
 ### **Frontend Lead (in addition to dev role)**, &yet, Remote, (May 2015—Nov 2016)    
 #### Skills: Javascript, React/Redux/Redux-Saga, Jest, CSS/CSS Modules, XMPP, WebRTC
 
-* Oversaw organisational change of our frontend stack (to React.js + Redux). This required understanding and managing the needs of the company, developers, and clients, and planning, communicating and architecting the change.
+* Oversaw organisational change of our frontend stack (to React.js + Redux). This required understanding and managing the needs of the company, developers and clients, and planning, communicating and architecting the change.
 * Mentored, paired and reviewed work across the frontend and design teams.
 * Co-designed and built [Talky Core](https://core.talky.io) (an internal WebRTC UI library) to help ship video-chat projects for our clients more quickly and enable new business partnerships.
 
@@ -39,7 +39,7 @@ I care deeply about the people I work with. I bring empathy and strong communica
 #### Skills: Javascript, Backbone.js, Ampersand.js, XMPP, WebRTC, Node.js, Hapi.js, Postgres
 
 * Delighted clients on a range of realtime web applications projects. Rapid development of new products, adding realtime features to existing products, code and architecture review of existing codebases.
-* Owned technical relationship with clients to understand their needs and prioritise work, and provided well documented clear code to client's internal teams. 
+* Owned technical relationship with clients to understand their needs and prioritise work, and provided well documented clear code to their internal teams. 
 * Core member of the open-source [Ampersand.js](https://ampersandjs.com) project. Responsible for project roadmaps, shipping features, release management, and communicating with the community.
 * Core developer of [talky.io](https://talky.io) - one of the first major browser-based video chat applications.
 
