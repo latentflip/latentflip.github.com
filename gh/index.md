@@ -4,7 +4,7 @@ layout: cv
 
 Hi Github,
 
-Please find my CV attached for the [Senior Software Engineer](https://boards.greenhouse.io/github/jobs/953424) role.
+Please find my CV attached for the [Senior Software Engineer](http://boards.greenhouse.io/github/jobs/953424) role.
 
 I have been a full-stack web developer for the last 8 years, working directly with customers to understand their needs, and leading remote teams to build great products like [floatapp.com](http://floatapp.com) and [talky.io](http://talky.io).
 
@@ -16,5 +16,5 @@ Regards,
 
 Philip Roberts    
 _Edinburgh, UK_    
-_[phil@latentflip.com](phil@latentflip.com)_    
+_[phil@latentflip.com](mailto:phil@latentflip.com)_    
 _+447732 432 694_
