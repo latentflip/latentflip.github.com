@@ -2,11 +2,6 @@
 layout: cv
 ---
 
-> Philip Roberts    
-> Edinburgh, UK    
-> +447732 432 694    
-> GitHub: [@latentflip](https://github.com/latentflip)    
-
 Hi Github,
 
 Please find my CV attached for the [Senior Software Engineer](https://boards.greenhouse.io/github/jobs/953424) role.
@@ -19,6 +14,7 @@ I am currently travelling in France with my family until early March, but would 
 
 Regards,
 
-Philip Roberts
-Edinburgh, UK
+Philip Roberts    
+Edinburgh, UK    
+[phil@latentflip.com](phil@latentflip.com)    
 +447732 432 694
