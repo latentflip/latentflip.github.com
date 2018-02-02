@@ -3,7 +3,7 @@ date: 2012-10-10
 layout: text
 alias: /post/33305495644/live-as-if-youll-die-in-ten-years
 title: Live as if you'll die in ten years 
-categories: [essay]
+categories: [thought]
 ---
 
 I learned recently that two of my friends are going to die. Not today, hopefully not tomorrow, but in all likelihood they will die before I do.

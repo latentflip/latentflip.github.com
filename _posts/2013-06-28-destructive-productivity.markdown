@@ -3,7 +3,7 @@ title: Destructive Productivity
 date: 2013-06-28
 layout: text
 executable: false
-categories: [essay]
+categories: [thought]
 ---
 
 As a creator, it's easy to forget that creativity is not constant.

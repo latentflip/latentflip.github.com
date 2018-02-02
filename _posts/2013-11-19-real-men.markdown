@@ -2,7 +2,7 @@
 title: Real Men
 date: 2013-11-19
 layout: text
-categories: [essay]
+categories: [thought]
 ---
 
 A "real man":

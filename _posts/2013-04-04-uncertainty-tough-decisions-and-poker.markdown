@@ -3,7 +3,7 @@ title: Uncertainty, Tough Decisions, and Poker
 date: 2013-04-04
 layout: text
 executable: false
-categories: [essay]
+categories: [thought]
 ---
 
 I am a rationalist, probably to a fault, but it is who I am. I like certainty, in a decision making process I will always seek data, knowledge, facts, _truth_. Making decisions based on gut feelings, or hope is generally not my style.

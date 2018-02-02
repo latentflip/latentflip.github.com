@@ -8,7 +8,7 @@ categories: [essay]
 
 One of my favorite lecturers from university was Dr Iain Lindsay, who taught 4th year Digital System Design. 
 
-Judged against most of the other lecturers, who droned along to a set of dry powerpoint slides, his teaching style must have seemed "eccentric" to most of his students. Instead of a projector he scrawled across the blackboard, full academic gown flowing behind him. Where others would stick to a script defined by their slides, Iain's discussions would flow, and loop, and shoot off at seemingly irrelevant tangents, which later turned out to be deeply insightful. 
+Judged against most of the other lecturers, who droned along to a set of dry powerpoint slides, his teaching style must have seemed "eccentric". Instead of a projector he scrawled across the blackboard, full academic gown flowing behind him. Where others would stick to a script defined by their slides, Iain's discussions would flow, and loop, and shoot off at seemingly irrelevant tangents, which later turned out to be deeply insightful. 
 
 But to me, the real gems were the course notes. Each week he would hand out what is best described as a non-fiction novella: pages and pages of witty prose complete with hand-drawn diagrams. Every point he made or figure he quoted would be referenced in the footnotes, such that on some pages the footnotes made up half the content of the page. 
 

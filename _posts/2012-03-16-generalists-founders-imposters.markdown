@@ -3,7 +3,7 @@ date: 2012-03-16
 layout: text
 alias: /post/19403885675/generalists-founders-imposters
 title: Generalists, Founders and the Impostor Syndrome
-categories: [essay]
+categories: [thought]
 ---
 
 As the technical co-founder of a web startup, it's easy to think of yourself as a software engineer first and a founder second. This is patently wrong and potentially dangerous for your mental health.

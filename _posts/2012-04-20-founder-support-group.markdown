@@ -3,7 +3,7 @@ date: 2012-04-20
 layout: text
 alias: /post/21429531320/founder-support-group
 title: Founder depression, and a meetup proposal.
-categories: [essay]
+categories: [thought]
 ---
 
 As both a [capital-F founder](http://blog.latentflip.com/post/19403885675/generalists-founders-imposters) and developer, the last 12 months have been tough. I have personally been stuck in some pretty deep lows, and of the assumption that I was the only one struggling with a lot of questions about who I am, what I am doing, and whether I'm good enough to do it.

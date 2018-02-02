@@ -3,7 +3,7 @@ title: Sharing
 date: 2013-06-27
 layout: text
 executable: false
-categories: [essay]
+categories: [thought]
 ---
 
 I just received an email informing me that I need to renew [tchspprt.co.uk](http://tchspprt.co.uk), which means it's nearly a year since I bought the domain. I've been doing some thinking, and I have realised that Tech Support isn't the best way that I can help raise awareness of mental health, and to help sufferers in my community.

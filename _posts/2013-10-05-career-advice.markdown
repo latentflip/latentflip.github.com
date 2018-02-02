@@ -2,7 +2,7 @@
 title: Career "Advice"
 date: 2013-10-05
 layout: text
-categories: [essay]
+categories: [thought]
 ---
 
 > I was invited to speak at a careers event run by the Edinburgh Hoppers, a group at the University of Edinburgh for female computer science students, to talk about my tech career so far. 

@@ -2,7 +2,7 @@
 title: Rubik's Noob
 date: 2014-02-19
 layout: text
-categories: [essay]
+categories: [thought]
 ---
 
 A few weeks ago I got it into my head that I should learn how to solve a Rubik's cube. I am not entirely sure why, but today, here I am, with a Rubik's cube in my hand.
