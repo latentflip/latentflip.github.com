@@ -66,7 +66,7 @@ Reports suggested that I would both love and hate everything about SF, and they 
 Highlight: walking the ~10 miles from the city across the Golden Gate Bridge to Sausalito and getting the ferry back. Everyone else does this on a bike - but I really enjoyed the slog.
 
 ![GGB](/assets/photos/other/sf-1.jpg)
-![Tram](/assets/photos/other/sf-1.jpg)
+![Tram](/assets/photos/other/sf-2.jpg)
 
 ### Albany, NY: August 2018
 
