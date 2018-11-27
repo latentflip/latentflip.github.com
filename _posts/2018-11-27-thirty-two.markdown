@@ -86,7 +86,7 @@ Jasper sighting his new homeland from the ferry.
 Becoming native
 
 ![Bridges](/assets/photos/other/ams-3.jpg)
-Becoming native
+Bridges
 
 ## Reflections
 Looking back, a few things become clear.
