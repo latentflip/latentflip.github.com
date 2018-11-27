@@ -8,13 +8,10 @@ categories: [essay]
 ## 31?
 First up in case you are wondering what happened to my 31 post, a picture tells a thousand words:
 
-![](2017-12-31_1.jpg)
-
-
-![Events from Thirty-One](/assets/photos/other/2017-12-31.jpg)
+![Events from Thirty-One](/assets/photos/other/2017-12-31_1.jpg)
 
 ## 32
-The day after my 31st birthday, my notice period at my [previous job](https://www.surevine.com/) ended, and I became officially unemployed. Hilary (who was only a few months in to her maternity leave after the birth of our son) convinced me to take some time off with the both of them, and had some grand ideas of getting away somewhere.
+The day after my 31st birthday, my notice period at my previous job ended, and I became officially unemployed. Hilary (who was only a few months in to her maternity leave after the birth of our son) convinced me to take some time off with the both of them, and had some grand ideas of getting away somewhere.
 
 While I was a little nervous about quitting my job with no plan I was inclined to agree with her: 2 weeks paternity leave (the UK's default) is frankly bullshit, and spending "maybe a month or two" to enjoy life with our new family sounded like a pretty good idea. Little did I know that "month or two" would soon become 5, and perhaps neither of us would have suggested it if we'd realised that's what would happen, but anyway.
 
